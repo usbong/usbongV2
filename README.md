@@ -8,8 +8,8 @@ Continue to increase know-how to build Electronic Book Readers with Human-Comput
 --> [UsbongTugon: Faster Execution, albeit NO Image AutoScaling using OpenGL](https://github.com/usbong/tugon)<br/>
 --> [UsbongPagong: with OpenGL CAN-DO Image AutoScaling](https://github.com/usbong/pagong)<br/>
 --> [UsbongSearchEngine: Newsletters](https://github.com/usbong/newsletters)<br/>
---> [UsbongLikhaApp (mobile): "Nasaan ang Langit?"](https://github.com/usbong/newsletters)<br/>
---> [Usbong (mobile): Flowchart](https://github.com/usbong/usbong)<br/>
+--> [UsbongLikhaApp (mobile): Multilingual Interactive Storybook Apps (MISA)](https://github.com/usbong/usbong_pagtsing)<br/>
+--> [Usbong (mobile): General Purpose Flowcharts](https://github.com/usbong/usbong)<br/>
 --> [eIMCI (mobile): Integrated Management of Childhood Illness](https://github.com/masarapmabuhay/e-imci)
 
 ## 2. Reference
