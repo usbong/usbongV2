@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usbong Tugon System
+# Usbong (version 2.0) System
 #
 # C/C++ Computer Language and Simple Directmedia Layer (SDL) + SDL Image
 #
@@ -9,7 +9,7 @@
 # @company: USBONG
 # @author: SYSON, MICHAEL B.
 # @date created: 20211115
-# @last updated: 20220102; 20211124
+# @last updated: 20220115; 20220102
 # @website address: http://www.usbong.ph
 #
 # Additional Notes:
@@ -32,7 +32,7 @@ sudo ./make.sh
 echo "Executable Application File now in output folder.";
 
 echo "--";
-echo "Usbong Tugon System: Installation Complete.";
+echo "Usbong (version 2.0) System: Installation Complete.";
 
 sudo ./execute.sh
 
