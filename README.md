@@ -14,7 +14,10 @@ Continue to increase know-how to build Electronic Book Readers with Human-Comput
 --> [Usbong (mobile): General Purpose Flowcharts](https://github.com/usbong/usbong)<br/>
 --> [eIMCI (mobile): Integrated Management of Childhood Illness](https://github.com/masarapmabuhay/e-imci)
 
-## 2. Reference
+## 2. References
+
+<img src="https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/References/zeldaGameAndWatchSystem/zeldaGameAndWatchSystem.jpg" width="60%">
+
 <img src="https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/References/kindleEBookSystem/kindleEBookPartFromTrainingOfTheZenBuddhistMonk20220115T0759.jpg" width="60%">
 
 ## 3. Open Source Software License
