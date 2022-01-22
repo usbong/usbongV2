@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220114
+ * @date updated: 20220122; from 20220114
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2469,6 +2469,25 @@ void update() {
 		if (myKeysDown[KEY_W] == TRUE) {		
 //				myKeysDown[KEY_W] = TRUE;
 				iPilotY-=iStepY;
+		}
+
+		//added by Mike, 20220122
+		//daigdig wrap around
+		//reminder: faster to identify MAP position with MAP identification per Window Screen, 
+		//instead of vertical and horizontal scrolling; 
+		//TO-DO: -add: Multiplayer
+		if (iPilotX<=0+iCurrentOffsetWidth) {
+			iPilotX=0+iCurrentOffsetWidth+myWindowWidthAsPixel-myUnit->getWidth();			
+		}
+		else if (iPilotX+myUnit->getWidth()>=0+iCurrentOffsetWidth+myWindowWidthAsPixel) {
+			iPilotX=0+iCurrentOffsetWidth;			
+		}
+
+		if (iPilotY<=0+iCurrentOffsetHeight) {
+			iPilotY=0+iCurrentOffsetHeight+myWindowHeightAsPixel-myUnit->getHeight();			
+		}
+		else if (iPilotY+myUnit->getHeight()>=0+iCurrentOffsetHeight+myWindowHeightAsPixel) {
+			iPilotY=0+iCurrentOffsetHeight;			
 		}
 
 		
