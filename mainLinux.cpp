@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220122; from 20220114
+ * @date updated: 20220124; from 20220122
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -91,6 +91,9 @@
 
 //added by Mike, 20211120
 #include "Sdlwav.h"
+
+//added by Mike, 20220124
+#include "Level2D.h"
 
 //added by Mike, 20211122
 #include <thread>
@@ -232,6 +235,8 @@ Font *myFont;
 //added by Mike, 20211114
 Text *myText;
 
+//added by Mike, 20220124
+Level2D *myLevel2D;
 
 /*
 //added by Mike, 20211119
@@ -868,7 +873,10 @@ printf(">>>>>iScreenOffsetRightSide: %i\n",iScreenOffsetRightSide);
 
 //  printf(">> inside mainLinux.cpp fGridSquareWidth: %f\n",fGridSquareWidth);
 
-	
+	//added by Mike, 20220124
+	myLevel2D = new Level2D(mySDLRenderer,0,0,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
+	myLevel2D->setGridTileWidthHeight(fGridSquareWidth,fGridSquareHeight);	
+
 	//added by Mike, 20211120
 	myArrayOfInputStringsBeatSound = (char **)malloc(2 * sizeof(char *)); //for only 1 item
  	myArrayOfInputStringsBeatSound [0] = (char *)"./sdlwav"; //add this, albeit NOT used; arg count 1 as filename used

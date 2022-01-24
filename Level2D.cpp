@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220122; from 20211004
+ * @date updated: 20220124; from 20220122
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -207,8 +207,12 @@ enum Keys
 //Level2D::RobotShip(): MyDynamicObject(0,0,0)
 //edited by Mike, 20210625
 //Level2D::Text(float xPos, float yPos, float zPos, int windowWidth, int windowHeight): MyDynamicObject(xPos,yPos,0.0f, windowWidth, windowHeight)
-Level2D::Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float fWindowHeight): MyDynamicObject(xPos,yPos,0.0f, fWindowWidth, fWindowHeight)
-{
+//edited by Mike, 20220124
+//Level2D::Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float fWindowHeight): MyDynamicObject(xPos,yPos,0.0f, fWindowWidth, fWindowHeight)
+
+Level2D::Level2D(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos, int windowWidth, int windowHeight): MyDynamicObject(xPos,yPos,zPos, windowWidth, windowHeight)
+{ 
+
     //edited by Mike, 20201001
     //currentState=IN_TITLE_STATE;//MOVING_STATE;
     currentState=MOVING_STATE;
@@ -252,14 +256,10 @@ Level2D::Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float f
     myZPos=zPos;
 */
     
-    fMyWindowWidth=fWindowWidth;
-    fMyWindowHeight=fWindowHeight;
-    
-/* //removed by Mike, 20220122    
-    //added by Mike, 20210626
-    fMyWindowWidthAsPixelRatioToHeightPixel=1.0f;
-    iMyWindowWidthAsPixelOffset=0;
-*/
+		fMyWindowWidth=windowWidth;
+		fMyWindowHeight=windowHeight;
+			
+/* //removed by Mike, 20220124
       
     //edited by Mike, 20210724; edited by Mike, 20210921
 //    iRowCountMax=10;
@@ -282,25 +282,11 @@ Level2D::Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float f
     //auto-set width and height based on grid tile
     iMyWidthAsPixel=fGridSquareWidth;
     iMyHeightAsPixel=fGridSquareHeight;    
-/*
-    //edited by Mike, 20210910
-    //added by Mike, 20210901
-    stepX=fGridSquareWidth/10/4; //0.2    
-    stepY=fGridSquareHeight/10/4; //0.2;    
-    stepZ=fGridSquareWidth/10/4; //0.2;
-*/
-/*
-    stepX=fGridSquareWidth/10/2;
-    //edited by Mike, 20210917
-    stepY=fGridSquareHeight/10/2;
-//    stepY=fGridSquareHeight/10/4;
 
-    stepZ=fGridSquareWidth/10/2;
-*/
     iStepXAsPixel=fGridSquareWidth/10;
     iStepYAsPixel=fGridSquareHeight/10;
     iStepZAsPixel=fGridSquareWidth/10;
-    
+*/    
     
     //added by Mike, 20210910
     fMyCanvasPosPrevX=0.0f;
@@ -391,6 +377,7 @@ Level2D::Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float f
     //    readInputText("inputHalimbawa.txt");
     //edited by Mike, 20210712
     //    readInputText("inputLevel1.csv");
+    
     read((char*)"inputLevel1.csv");
     
     //edited by Mike, 20210707; removed by Mike, 20210827
@@ -580,7 +567,6 @@ void Level2D::setPilot(Pilot* myPilotInput) {
 //edited by Mike, 20210923
 //void Level2D::drawLevelMapInViewPort(GLfloat fMyCanvasPosXInput, GLfloat fMyCanvasPosYInput, GLfloat fMyCanvasPosZInput, GLfloat fX, GLfloat fY, GLfloat fZ)
 void Level2D::drawLevelMapInViewPort(float fX, float fY, float fZ)
-
 {
 /* //removed by Mike, 20210923
 	 //added by Mike, 20210916
@@ -1187,37 +1173,14 @@ void Level2D::read(char *inputFilename) {
     //	char** iCurrentLevelMapContainer = new char[100][100];
     int iRowCount=0;
     int iColumnCount=0;
-    
-    
-    /*	//edited by Mike, 20210305
-     for (iRowCount=0; iRowCount<MAX_Z_AXIS_VIEWPORT; iRowCount++) {
-     for (iColumnCount=0; iColumnCount<MAX_X_AXIS_VIEWPORT; iColumnCount++) {
-     sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"-1";//'G';
-     }
-     }
-     */
-    //edited by Mike, 20210310
-    /*
-     for (iRowCount=0; iRowCount<100; iRowCount++) {
-     for (iColumnCount=0; iColumnCount<100; iColumnCount++) {
-     sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"-1";//'G';
-     }
-     }
-     */
-    /*	//edited by Mike, 20210321
-     //add +60 to be 160; where 60 : viewport max
-     for (iRowCount=0; iRowCount<160; iRowCount++) {
-     for (iColumnCount=0; iColumnCount<160; iColumnCount++) {
-     sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"-1";//'G';
-     }
-     }
-     */
-    
+
     for (iRowCount=0; iRowCount<MAX_Y_AXIS_MAP; iRowCount++) {
         for (iColumnCount=0; iColumnCount<MAX_X_AXIS_MAP; iColumnCount++) {
             //edited by Mike, 20210724
 //            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"-1";//'G';
-            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0";//-1";//'G';
+						//edited by Mike, 20220124
+//            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0";
+            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0    "; //add space to make output columns aligned
         }
     }
     
@@ -1237,7 +1200,7 @@ void Level2D::read(char *inputFilename) {
     strcat(input, inputFilename); //already includes .txt
     //	strcat(input,".txt");
     
-    //	printf("dito: %s",input);
+//    printf("dito: %s",input);
     
     //	file = fopen("input/"+inputFilename, "r"); //.txt file
     //	file = fopen("input/inputHalimbawa.txt", "r"); //.txt file
@@ -1302,19 +1265,22 @@ void Level2D::read(char *inputFilename) {
                  printf("%i,",iColumnCount);
                  */
                  
-/* //removed by Mike, 20211004                                  
-                printf("HALLO %i:",iColumnCount);
+ 								//added by Mike, 20220124
+                printf("%i:",iColumnCount);
                 printf("%s,",ch);
-*/
-                
+/*
+								if (strcmp(ch,"0")==0) {
+									//add space to make output columns aligned
+                	printf("%s    ,",ch);
+								}
+								else {
+                	printf("%s,",ch);
+								}
+*/								                
                 iColumnCount=iColumnCount+1;
                 ch = strtok(NULL, ",");
             }
             
-            //edited by Mike, 20210311
-            //			if (iRowCount<100) {
-            //edited by Mike, 20210321
-            //			if (iRowCount<160) {
             if (iRowCount<MAX_X_AXIS_MAP) {
                 iRowCount=iRowCount+1;
             }

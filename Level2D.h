@@ -11,11 +11,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
+ * 
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220122; from 20210923
+ * @date updated: 20220124; from 20220122
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -49,28 +49,6 @@
 //added by Mike, 20201226
 #define TRUE 1
 #define FALSE 0
-
-//added by Mike, 20210122; edited by Mike, 20210123
-#define MAX_PUNCHING_ANIMATION_COUNT 2
-
-//added by Mike, 20210712
-#define MAX_INPUT_TEXT_PER_LINE 240
-
-//added by Mike, 20210614; edited by Mike, 20210616
-//#define MAX_TEXT_CHAR_ROW 2idrawPressNextSymbolCount
-//edited by Mike, 20210618
-//#define MAX_TEXT_CHAR_ROW 3
-//edited by Mike, 20210618
-//per textbox
-#define MAX_TEXT_CHAR_ROW 4 //TO-DO: -auto-identify if over MAX; execute pause write action
-//note: MAX rows in Random Access Memory (RAM) storage
-//reminder: "Random" need not be so, due to existing pattern; albeit "RAM" is still used
-#define MAX_TEXT_CHAR_ROW_RAM 100 //TO-DO: -auto-identify if over MAX; execute pause write action
-
-//edited by Mike, 20210615
-//#define MAX_TEXT_CHAR_COLUMN 8 //note: 8 with comma to be end of line
-//#define MAX_TEXT_CHAR_COLUMN 16 //note: 8 with comma to be end of line
-#define MAX_TEXT_CHAR_COLUMN 42 //note: 8 with comma to be end of line
 
 //added by Mike, 20210129
 //+reverified: with Windows Machine; 5 with Linux Machine
@@ -114,6 +92,10 @@
 #if defined(__APPLE__)
 #define MAX_WAIT_COUNT 5
 #endif
+
+//edited by Mike, 20220124
+//#define MAX_INPUT_TEXT_PER_LINE 240
+#define MAX_INPUT_TEXT_PER_LINE MAX_X_AXIS_MAP*5 //14x5; due to value can be "2-0"
 
 //edited by Mike, 20210129
 //TO-DO: -add: robotship dash background movement animation
@@ -317,6 +299,9 @@ private:
     //std::string sCurrentTextContainer[MAX_TEXT_CHAR_COLUMN][MAX_TEXT_CHAR_ROW]; //TO-DO: -add: auto-update max size
     //edited by Mike, 20210618
     //    char cCurrentTextContainer[MAX_TEXT_CHAR_ROW][MAX_TEXT_CHAR_COLUMN];
+
+    //removed by Mike, 20220124
+/*    
     char cCurrentTextContainer[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];
     
     //added by Mike, 20210616
@@ -324,6 +309,7 @@ private:
     //added by Mike, 20210617; edited by Mike, 20210619
     int iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW];
     //    int iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW_RAM];
+*/
     
     //added by Mike, 20210618
     int iRowCountPageNumber; //start at zero
@@ -396,7 +382,11 @@ public:
     //    Text(float xPos, float yPos, float zPos,int windowWidth,int windowHeight);
     //edited by Mike, 20210815
 //    Level2D(float xPos, float yPos, float zPos, float windowWidth, float windowHeight);
-    Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float fWindowHeight);
+
+    //edited by Mike, 20220124
+//    Level2D(float xPos, float yPos, float zPos, float fWindowWidth, float fWindowHeight);  
+    Level2D(SDL_Renderer* mySDLRenderer, int xPos, int yPos, int zPos,int windowWidth,int windowHeight);
+
     
     ~Level2D();
     
