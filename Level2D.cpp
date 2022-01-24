@@ -492,10 +492,9 @@ void Level2D::drawLevelWithTextureUsingInputFileNoScrollYet()
     return;
 */
     
-    //edited by Mike, 20210724
-    iRowCountMax=10;
-    iColumnCountMax=18;
-    iHeightCountMax=10;
+    iRowCountMax=MAX_Y_AXIS_MAP; //10
+    iColumnCountMax=MAX_X_AXIS_MAP; //14
+    iHeightCountMax=MAX_Y_AXIS_MAP; //10
         
     for (int iRowCount=0; iRowCount<iRowCountMax; iRowCount++) {
         //iCurrentMaxColumnCountPerRowContainer[iRowCount];
@@ -534,6 +533,12 @@ void Level2D::drawLevelWithTextureUsingInputFileNoScrollYet()
                 		drawTileAsQuadWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount]);
                 glPopMatrix();
 */
+
+							//TO-DO: -add: auto-draw Tile image of read inputs
+
+std::cout << "sCurrentLevelMapContainer[iRowCount][iColumnCount]): " << sCurrentLevelMapContainer[iRowCount][iColumnCount] << "\n";
+
+
             }
         }
     }

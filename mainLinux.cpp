@@ -2140,6 +2140,9 @@ void draw(int x, int y)
 	//note: excess drawn pixel due to drawGrid()...
 	drawGrid();
 
+	//added by Mike, 20220124
+	myLevel2D->draw();
+
 	//added by Mike, 20220108
 	myUnit->draw();
 
