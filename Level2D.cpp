@@ -348,8 +348,12 @@ Level2D::Level2D(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos,
     myWidth=16.0f;
     myHeight=16.0f;
 */
+/* //edited by Mike, 20220125
     iMyWidthAsPixel=fGridSquareWidth; //64; //16;
     iMyHeightAsPixel=fGridSquareHeight; //64; //16;
+*/
+    iMyWidthAsPixel=64; //fGridSquareWidth; //64; //16;
+    iMyHeightAsPixel=64; //fGridSquareHeight; //64; //16;
         
     
 //    printf("Level2D.cpp myWindowWidth: %f\n",myWindowWidth);
@@ -504,8 +508,10 @@ void Level2D::drawTileWithTexture(std::string sTileId) {
   	SrcR.w = iMyWidthAsPixel; 
   	SrcR.h = iMyHeightAsPixel; 
 	
-  	DestR.x = getXPos();
-  	DestR.y = getYPos();  	
+//	printf("iMyWidthAsPixel: %i\n",iMyWidthAsPixel);
+	
+  	DestR.x = 0; //getXPos();
+  	DestR.y = 0; //getYPos();  	
   	
 /* //edited by Mike, 20211209  	
   	DestR.w = iMyWidthAsPixel;
