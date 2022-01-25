@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220124; from 20220122
+ * @date updated: 20220125; from 20220124
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -380,6 +380,10 @@ Level2D::Level2D(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos,
     
     read((char*)"inputLevel1.csv");
     
+    //added by Mike, 20220125
+		mySDLRenderer = mySDLRendererInput;
+  	texture = loadTexture((char*)"textures/level2D.png");    
+    
     //edited by Mike, 20210707; removed by Mike, 20210827
 //    setupLevel(LEVEL_2D_TEXTURE); //LEVEL_TEXTURE
     //edited by Mike, 20210831
@@ -470,6 +474,52 @@ void Level2D::drawTileAsQuadWithTexture(std::string sTileId)
 */    
 }
 
+//added by Mike, 20220125
+//TO-DO: -update: this
+void Level2D::drawTileWithTexture(std::string sTileId) {	
+  	//Rectangles for drawing which will specify source (inside the texture)
+  	//and target (on the screen) for rendering our textures.
+  	SDL_Rect SrcR;
+  	SDL_Rect DestR;
+  	
+		//TO-DO: -add: this  	
+/*
+	  fTx = 0.0f+0.0625f*(myUsbongUtils->autoIdentifyColumnInputInLevelMapContainer(sTileId)); //column
+    fTy = 0.0f+0.0625f*(myUsbongUtils->autoIdentifyRowInputInLevelMapContainer(sTileId)); //row    
+*/
+  	
+/*  	
+		iCountAnimationFrame=iCountAnimationFrame+1;		               																				
+
+		if (iCountAnimationFrame>=2) { //2 frames of animation only
+			iCountAnimationFrame=0;
+		}
+	    	
+  	SrcR.x = 0+iCountAnimationFrame*iMyWidthAsPixel;
+  	SrcR.y = 0+iCurrentKeyInput*iMyHeightAsPixel;
+*/
+  	SrcR.x = 0;
+  	SrcR.y = 0;
+	
+  	SrcR.w = iMyWidthAsPixel; 
+  	SrcR.h = iMyHeightAsPixel; 
+	
+  	DestR.x = getXPos();
+  	DestR.y = getYPos();  	
+  	
+/* //edited by Mike, 20211209  	
+  	DestR.w = iMyWidthAsPixel;
+  	DestR.h = iMyHeightAsPixel;
+*/
+  	DestR.w = fGridSquareWidth;
+  	DestR.h = fGridSquareHeight;	
+	
+  	//note: SDL color max 255; GIMP color max 100
+//		SDL_SetRenderDrawColor(mySDLRenderer, 255*1, 255*1, 255*1, 255); //white
+		
+		SDL_RenderCopy(mySDLRenderer, texture, &SrcR, &DestR);
+}
+
 
 //added by Mike, 20210708; edited by Mike, 20210910
 //TO-DO: -add: function with tile patterns
@@ -538,11 +588,12 @@ void Level2D::drawLevelWithTextureUsingInputFileNoScrollYet()
 
 std::cout << "sCurrentLevelMapContainer[iRowCount][iColumnCount]): " << sCurrentLevelMapContainer[iRowCount][iColumnCount] << "\n";
 
-
+							//added by Mike, 20220125
+							//TO-DO: -update: this
+							drawTileWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount]);
             }
         }
     }
-    
 }
 
  //edited by Mike, 20210923
@@ -1183,9 +1234,9 @@ void Level2D::read(char *inputFilename) {
         for (iColumnCount=0; iColumnCount<MAX_X_AXIS_MAP; iColumnCount++) {
             //edited by Mike, 20210724
 //            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"-1";//'G';
-						//edited by Mike, 20220124
-//            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0";
-            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0    "; //add space to make output columns aligned
+						//edited by Mike, 20220125
+            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0";
+//            sCurrentLevelMapContainer[iRowCount][iColumnCount]=(char*)"0    "; //add space to make output columns aligned
         }
     }
     
