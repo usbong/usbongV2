@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220124; from 20220122
+ * @date updated: 20220126; from 20220124
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2485,19 +2485,35 @@ void update() {
 		//added by Mike, 20220122
 		//daigdig wrap around
 		//reminder: faster to identify MAP position with MAP identification per Window Screen, 
-		//instead of vertical and horizontal scrolling; 
-		//TO-DO: -add: Multiplayer
-		if (iPilotX<=0+iCurrentOffsetWidth) {
+		//instead of vertical and horizontal scrolling;
+		//edited by Mike, 20220126 
+		//note: No need to execute additional Window Screen movement 
+		//as with Zelda: Link's Awakening (Game&Watch), Final Fantasy Adventure, et cetera
+		//to speed-up identification of positions of Multiple Unit Members
+		//located @multiple Window Screens		
+		//additional note:
+		//observed: Multiplayer PoyPoy preferred over Bomberman 
+		//by Female and Male Filipino children of a set Family Unit
+		
+		//edited by Mike, 20220126
+//		if (iPilotX<=0+iCurrentOffsetWidth) {
+		if (iPilotX<0+iCurrentOffsetWidth) {
 			iPilotX=0+iCurrentOffsetWidth+myWindowWidthAsPixel-myUnit->getWidth();			
 		}
-		else if (iPilotX+myUnit->getWidth()>=0+iCurrentOffsetWidth+myWindowWidthAsPixel) {
+		//edited by Mike, 20220126
+//		else if (iPilotX+myUnit->getWidth()>=0+iCurrentOffsetWidth+myWindowWidthAsPixel) {
+		else if (iPilotX+myUnit->getWidth()>0+iCurrentOffsetWidth+myWindowWidthAsPixel) {
 			iPilotX=0+iCurrentOffsetWidth;			
 		}
 
-		if (iPilotY<=0+iCurrentOffsetHeight) {
+		//edited by Mike, 20220126
+//		if (iPilotY<=0+iCurrentOffsetHeight) {
+		if (iPilotY<0+iCurrentOffsetHeight) {
 			iPilotY=0+iCurrentOffsetHeight+myWindowHeightAsPixel-myUnit->getHeight();			
 		}
-		else if (iPilotY+myUnit->getHeight()>=0+iCurrentOffsetHeight+myWindowHeightAsPixel) {
+		//edited by Mike, 20220126
+//		else if (iPilotY+myUnit->getHeight()>=0+iCurrentOffsetHeight+myWindowHeightAsPixel) {
+		else if (iPilotY+myUnit->getHeight()>0+iCurrentOffsetHeight+myWindowHeightAsPixel) {
 			iPilotY=0+iCurrentOffsetHeight;			
 		}
 
