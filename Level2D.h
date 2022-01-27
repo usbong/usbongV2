@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220125; from 20220124
+ * @date updated: 20220127
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -127,8 +127,8 @@
 #endif
 */
 
-//added by Mike, 20210516; removed by Mike, 20220122
-//class UsbongUtils;
+//added by Mike, 20220127
+class UsbongUtils;
 
 
 //TO-DO: -update: this
@@ -375,8 +375,9 @@ private:
 //    void drawTileAsQuadWithTexture(); //added by Mike, 20210717
     void drawTileAsQuadWithTexture(std::string sTileId);    
     
-    //added by Mike, 20220125
-    void drawTileWithTexture(std::string sTileId);
+    //added by Mike, 20220125; edited by Mike, 20220127
+    //void drawTileWithTexture(std::string sTileId);
+		void drawTileWithTexture(std::string sTileId, int iColumnCount, int iRowCount);	
     
 public:
     //edited by Mike, 20201115
@@ -398,8 +399,8 @@ public:
     int iColumnCountMax;
     int iHeightCountMax;
     
-    //added by Mike, 20210523; removed by Mike, 20220122
-//    UsbongUtils *myUsbongUtils;
+    //added by Mike, 20220127
+		UsbongUtils *myUsbongUtils;
  
  
 /*  //added by Mike, 20210916; edited by Mike, 20210922

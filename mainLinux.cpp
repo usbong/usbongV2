@@ -873,9 +873,13 @@ printf(">>>>>iScreenOffsetRightSide: %i\n",iScreenOffsetRightSide);
 
 //  printf(">> inside mainLinux.cpp fGridSquareWidth: %f\n",fGridSquareWidth);
 
-	//added by Mike, 20220124
-	myLevel2D = new Level2D(mySDLRenderer,0,0,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
+	//added by Mike, 20220124; edited by Mike, 20220127
+//	myLevel2D = new Level2D(mySDLRenderer,0,0,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
+	myLevel2D = new Level2D(mySDLRenderer,0+iCurrentOffsetWidth,0+iCurrentOffsetHeight,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
+
 	myLevel2D->setGridTileWidthHeight(fGridSquareWidth,fGridSquareHeight);	
+
+
 
 	//added by Mike, 20211120
 	myArrayOfInputStringsBeatSound = (char **)malloc(2 * sizeof(char *)); //for only 1 item

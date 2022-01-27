@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220125; from 20220124
+ * @date updated: 20220127
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -129,8 +129,8 @@
 //added by Mike, 20210614; removed by Mike, 20210703
 //#include "Font.h"
 
-//added by Mike, 20210516; removed by Mike, 20220122
-//#include "UsbongUtils.h"
+//added by Mike, 20220127
+#include "UsbongUtils.h"
 
 #include <string.h>
 
@@ -337,12 +337,10 @@ Level2D::Level2D(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos,
     fMyWindowWidthAsPixelRatioToHeightPixel=1.0f;
     iMyWindowWidthAsPixelOffset=0; //added by Mike, 20210701
 */
-
-/*    
-    //added by Mike, 20210516; removed by Mike, 20220122
+		
+		//added by Mike, 20220127
     myUsbongUtils = new UsbongUtils();
-    myUsbongUtils->setWindowWidthHeight(fMyWindowWidth, fMyWindowHeight); //added by Mike, 20210626
-*/    
+    myUsbongUtils->setWindowWidthHeight(fMyWindowWidth, fMyWindowHeight);
     
 /*    //edited by Mike, 20210831
     myWidth=16.0f;
@@ -478,9 +476,9 @@ void Level2D::drawTileAsQuadWithTexture(std::string sTileId)
 */    
 }
 
-//added by Mike, 20220125
-//TO-DO: -update: this
-void Level2D::drawTileWithTexture(std::string sTileId) {	
+//added by Mike, 20220125; edited by Mike, 20220127
+//void Level2D::drawTileWithTexture(std::string sTileId) {	
+void Level2D::drawTileWithTexture(std::string sTileId, int iColumnCount, int iRowCount) {	
   	//Rectangles for drawing which will specify source (inside the texture)
   	//and target (on the screen) for rendering our textures.
   	SDL_Rect SrcR;
@@ -491,6 +489,9 @@ void Level2D::drawTileWithTexture(std::string sTileId) {
 	  fTx = 0.0f+0.0625f*(myUsbongUtils->autoIdentifyColumnInputInLevelMapContainer(sTileId)); //column
     fTy = 0.0f+0.0625f*(myUsbongUtils->autoIdentifyRowInputInLevelMapContainer(sTileId)); //row    
 */
+			
+		//OK
+//		printf("myUsbongUtils->autoIdentifyColumnInputInLevelMapContainer(sTileId): %i;\n myUsbongUtils->autoIdentifyRowInputInLevelMapContainer(sTileId): %i\n",myUsbongUtils->autoIdentifyColumnInputInLevelMapContainer(sTileId),myUsbongUtils->autoIdentifyRowInputInLevelMapContainer(sTileId));
   	
 /*  	
 		iCountAnimationFrame=iCountAnimationFrame+1;		               																				
@@ -502,17 +503,26 @@ void Level2D::drawTileWithTexture(std::string sTileId) {
   	SrcR.x = 0+iCountAnimationFrame*iMyWidthAsPixel;
   	SrcR.y = 0+iCurrentKeyInput*iMyHeightAsPixel;
 */
+/* //edited by Mike, 20220127
   	SrcR.x = 0;
   	SrcR.y = 0;
+*/
+  	SrcR.x = 0+iMyWidthAsPixel*(myUsbongUtils->autoIdentifyColumnInputInLevelMapContainer(sTileId));
+  	SrcR.y = 0+iMyHeightAsPixel*(myUsbongUtils->autoIdentifyRowInputInLevelMapContainer(sTileId));
 	
   	SrcR.w = iMyWidthAsPixel; 
   	SrcR.h = iMyHeightAsPixel; 
 	
 //	printf("iMyWidthAsPixel: %i\n",iMyWidthAsPixel);
-	
+
+/* //edited by Mike, 20220127	
   	DestR.x = 0; //getXPos();
   	DestR.y = 0; //getYPos();  	
-  	
+*/
+		//iMyXPosAsPixel
+  	DestR.x = 0+getXPos()+iColumnCount*fGridSquareWidth;
+  	DestR.y = 0+getYPos()+iRowCount*fGridSquareHeight;
+
 /* //edited by Mike, 20211209  	
   	DestR.w = iMyWidthAsPixel;
   	DestR.h = iMyHeightAsPixel;
@@ -594,9 +604,10 @@ void Level2D::drawLevelWithTextureUsingInputFileNoScrollYet()
 
 std::cout << "sCurrentLevelMapContainer[iRowCount][iColumnCount]): " << sCurrentLevelMapContainer[iRowCount][iColumnCount] << "\n";
 
-							//added by Mike, 20220125
-							//TO-DO: -update: this
-							drawTileWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount]);
+							//added by Mike, 20220125; edited by Mike, 20220127
+//							drawTileWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount]);
+							drawTileWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount],iColumnCount,iRowCount);
+
             }
         }
     }
