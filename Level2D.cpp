@@ -417,65 +417,6 @@ float* Level2D::getXYZPos()
     return myXYZ;
 }
 
-//edited by Mike, 20210716; edited by Mike, 20210828
-//void Level2D::drawTileAsQuadWithTexture()
-//edited by Mike, 20210720
-//void Level2D::drawTileAsQuadWithTexture(std::string sTileId)
-	//TO-DO: -update: this
-void Level2D::drawTileAsQuadWithTexture(std::string sTileId)
-{
-/* //removed by Mike, 20220122 										
-	//added by Mike, 20210826
-//	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //removed by Mike, 20210829
-	glLoadIdentity();
-    
-    //added by Mike, 20210830; removed by Mike, 20210830
-//    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-    
-    
-//  	//edited by Mike, 20210830
-//    myXPosAsPixel=0;//300; //0;
-//    myYPosAsPixel=0;//300;//0;
-
-    //note: we increase the size value to make texture larger than the actual pixel size in the image file
-    //TO-DO: -reverify: larger image to be blurred
-    //edited by Mike, 20210830
-    myWidth=fGridSquareWidth; //64; //16;
-    myHeight=fGridSquareHeight; //64; //16;
-
-//    glTranslatef(myUsbongUtils->autoConvertFromPixelToVertexPointX(myXPosAsPixel), myUsbongUtils->autoConvertFromPixelToVertexPointY(myYPosAsPixel), 0);
-
-		//added by Mike, 20210830
-    //triangle tile with 90degrees angle
-    if (sTileId.compare("0-2") == 0) {//True    
-        glBegin(GL_TRIANGLES);
-          glVertex3f(0.0f, 0.0f, 0.0f);
-          glVertex3f(0.0f-myWidth, 0.0f-myHeight, 0.0f);
-          glVertex3f(0.0f, 0.0f-myHeight, 0.0f);
-        glEnd();
-    }
-    else {
-      //note: 3rd quadrant; counter clock-wise
-      glBegin(GL_QUADS); // Each set of 4 vertices form a quad
-    	  glVertex3f(0.0f, 0.0f, 0.0f);   	
-    	  glVertex3f(0.0f-myWidth, 0.0f, 0.0f);    	
-    	  glVertex3f(0.0f-myWidth, 0.0f-myHeight, 0.0f);    	
-    	  glVertex3f(0.0f, 0.0f-myHeight, 0.0f);
-   	  glEnd();
-    }
-    
-    //TO-DO: -remove: openGLITexture in input parameter of function
-    //edited by Mike, 20210830
-//	openGLDrawTexture(myXPosAsPixel, myYPosAsPixel, openGLITexture, myWidth, myHeight);
-//    openGLDrawTexture(myXPos, myYPos, myWidth, myHeight);
-		//edited by Mike, 20210920
-//    openGLDrawTexture(myXPos, myYPos, myWidth, myHeight, sTileId);    
-		//edited by Mike, 20210921
-//    openGLDrawTexture(myXPos-myWidth, myYPos, myWidth, myHeight, sTileId);    
-    openGLDrawTexture(myXPos-myWidth, myYPos-myHeight, myWidth, myHeight, sTileId);    
-*/    
-}
-
 //added by Mike, 20220125; edited by Mike, 20220127
 //void Level2D::drawTileWithTexture(std::string sTileId) {	
 void Level2D::drawTileWithTexture(std::string sTileId, int iColumnCount, int iRowCount) {	
@@ -1110,54 +1051,39 @@ void Level2D::move(int key, MyDynamicObject* mdoPilot)
 }
 */
 
-//added by Mike, 20210724; edited by Mike, 20210725
+//edited by Mike, 20220128
 bool Level2D::isLevel2DCollideWith(MyDynamicObject* mdo)
-{
-    
+{    
     if ((!checkIsCollidable())||(!mdo->checkIsCollidable()))    
     {
     		printf(">>>>>NOT COLLIDABLE");
         return false;
     }
- 
-        //edited by Mike, 20210911
-/*		for (int iRowCount=0; iRowCount<iRowCountMax; iRowCount++) {
-                for (int iColumnCount=0; iColumnCount<iColumnCountMax; iColumnCount++) {
-*/
-    
 
-    //TO-DO: -fix: problem with forward movement, then backward movement;
-    //if forward +3 tiles, then backward movement -1 tile, based on auto-drawn tiles
- //removed by Mike, 20210915    
+/*     
 printf(">>>> iCurrentLevelMapContainerOffsetY: %i;",iCurrentLevelMapContainerOffsetY);
 //printf(">>>> iCurrentLevelMapContainerOffsetX: %i;\n",iCurrentLevelMapContainerOffsetX);
   
 printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapContainerOffsetMaxViewPortY);
 //printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortX: %i;\n",iCurrentLevelMapContainerOffsetMaxViewPortX);
+*/
 
     int iStartRowCount=0; //7;
     int iStartColumnCount=0; //1//6; //7;
 
-/*  //removed by Mike, 20210917
-  	//added by Mike, 20210917
-  	iCurrentLevelMapContainerOffsetMaxViewPortY=10;
-  	iCurrentLevelMapContainerOffsetMaxViewPortX=18;
+/*
+		//added by Mike, 20220128					
+    iRowCountMax=MAX_Y_AXIS_MAP; //10
+    iColumnCountMax=MAX_X_AXIS_MAP; //14
+    iHeightCountMax=MAX_Y_AXIS_MAP; //10					
 */
-  				//edited by Mike, 20210913  
-//        for (int iRowCount=iCurrentLevelMapContainerOffsetY; iRowCount<(iCurrentLevelMapContainerOffsetY+iRowCountMax); iRowCount++) {
 					
-					//edited by Mike, 20210918
-        for (int iRowCount=iStartRowCount+iCurrentLevelMapContainerOffsetY; iRowCount<iCurrentLevelMapContainerOffsetMaxViewPortY; iRowCount++) {
-//        for (int iRowCount=0; iRowCount<iCurrentLevelMapContainerOffsetMaxViewPortY-iCurrentLevelMapContainerOffsetY; iRowCount++) {
+//        for (int iRowCount=iStartRowCount+iCurrentLevelMapContainerOffsetY; iRowCount<iCurrentLevelMapContainerOffsetMaxViewPortY; iRowCount++) {
+        for (int iRowCount=0; iRowCount<iRowCountMax; iRowCount++) {
         
-        
-        			//edited by Mike, 20210913
-//            for (int iColumnCount=iCurrentLevelMapContainerOffsetX; iColumnCount<(iCurrentLevelMapContainerOffsetX+iColumnCountMax); iColumnCount++) {
-//           for (int iColumnCount=iStartColumnCount+iCurrentLevelMapContainerOffsetX; iColumnCount<iCurrentLevelMapContainerOffsetMaxViewPortX; iColumnCount++) {
+//        for (int iColumnCount=iStartColumnCount+iCurrentLevelMapContainerOffsetX; iColumnCount<iCurrentLevelMapContainerOffsetMaxViewPortX; iColumnCount++) {
+        for (int iColumnCount=0; iColumnCount<iColumnCountMax; iColumnCount++) {
 
-					//edited by Mike, 20210918
-        for (int iColumnCount=iStartColumnCount+iCurrentLevelMapContainerOffsetX; iColumnCount<iCurrentLevelMapContainerOffsetMaxViewPortX; iColumnCount++) {
-//        for (int iColumnCount=0; iColumnCount<iCurrentLevelMapContainerOffsetMaxViewPortX-iCurrentLevelMapContainerOffsetX; iColumnCount++) {
                  
 //printf(">>>> iRowCount: %i; iColumnCount: %i;",iRowCount,iColumnCount);
     				//note: "0" for empty, instead of "-1"
@@ -1165,6 +1091,9 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
             if (sCurrentLevelMapContainer[iRowCount][iColumnCount].compare("0") == 0) { //TRUE
             }
             else {
+            
+            //added by Mike, 20220128
+            //TO-DO: -add: this
 
 /* //removed by Mike, 20220122
                 if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount-iCurrentLevelMapContainerOffsetX-1)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount-iCurrentLevelMapContainerOffsetY-1)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {

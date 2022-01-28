@@ -2533,6 +2533,9 @@ void update() {
 				break;
 			}
 		}		
+		
+		//added by Mike, 20220128
+		myLevel2D->isLevel2DCollideWith(myUnit);
 
 }
 
