@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220126; from 20220124
+ * @date updated: 20220128; from 20220126
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -875,6 +875,8 @@ printf(">>>>>iScreenOffsetRightSide: %i\n",iScreenOffsetRightSide);
 
 	//added by Mike, 20220124; edited by Mike, 20220127
 //	myLevel2D = new Level2D(mySDLRenderer,0,0,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
+	//edited by Mike, 20220128
+	//myLevel2D = new Level2D(mySDLRenderer,0+iCurrentOffsetWidth,0+iCurrentOffsetHeight,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
 	myLevel2D = new Level2D(mySDLRenderer,0+iCurrentOffsetWidth,0+iCurrentOffsetHeight,0,myWindowWidthAsPixel+iScreenOffsetRightSide,myWindowHeightAsPixel+iScreenOffsetBottomSide);
 
 	myLevel2D->setGridTileWidthHeight(fGridSquareWidth,fGridSquareHeight);	
@@ -2142,7 +2144,7 @@ void draw(int x, int y)
 
 	//added by Mike, 20211111
 	//note: excess drawn pixel due to drawGrid()...
-	drawGrid();
+//	drawGrid();
 
 	//added by Mike, 20220124
 	myLevel2D->draw();

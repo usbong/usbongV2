@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220127
+ * @date updated: 20220128; 20220127
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -519,7 +519,12 @@ void Level2D::drawTileWithTexture(std::string sTileId, int iColumnCount, int iRo
   	DestR.x = 0; //getXPos();
   	DestR.y = 0; //getYPos();  	
 */
-		//iMyXPosAsPixel
+
+/*
+	printf("fGridSquareWidth: %i\n",64); //fGridSquareWidth);
+	printf("fGridSquareHeight: %i\n",64);//fGridSquareHeight);
+*/
+
   	DestR.x = 0+getXPos()+iColumnCount*fGridSquareWidth;
   	DestR.y = 0+getYPos()+iRowCount*fGridSquareHeight;
 
