@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220130; from 20220128
+ * @date updated: 20220202; from 20220130
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -93,7 +93,7 @@
 #include <OpenGL/glu.h>
 //#include <GLUT/glut.h>
 #else
-#include <GL/gl.h>
+#include <GL/gl.h>20220128
 #include <GL/glu.h>
 //#include <GL/glut.h>
 #endif
@@ -1093,13 +1093,20 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
             else {
             
             //added by Mike, 20220128; edited by Mike, 20220130
-  	
-                if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
-                    
-//                	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
+
+//                	printf(">>>>> fStepMovemenGridX: %f",fStepMovemenGridX); 	
+
+  							//edited by Mike, 20220202
+//                if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
+//                  if (mdo->collideWithLevel2DTileRect(0.0f+iCurrentOffsetWidth+fGridSquareWidth*(iColumnCount),0.0f+iCurrentOffsetHeight+fGridSquareHeight*(iRowCount), fGridSquareWidth, fGridSquareHeight)) {
+                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount),0.0f+getYPos()+fGridSquareHeight*(iRowCount), fGridSquareWidth, fGridSquareHeight)) {
+                  
+                	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
+                	//added by Mike, 20220202
+                	//OK; TO-DO: -reverify: Collision Action
                     return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
-                                             0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,
-                                             0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY);
+                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount)/*-fStepMovemenGridX*/,
+                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)/*-fStepMovemenGridY*/);
   				}  		
 
 /* //removed by Mike, 20220122
