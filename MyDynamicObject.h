@@ -318,6 +318,9 @@ public:
     //void collideWith(MyDynamicObject* mdo);   
     bool collideWith(MyDynamicObject* mdo);   
     
+    //added by Mike, 20220130
+    bool collideWithLevel2DTileRect(float fTilePosX, float fTilePosY, float fTileWidth, float fTileHeight);
+    
     virtual bool isIntersectingRect(MyDynamicObject* mdo1, MyDynamicObject* mdo2);        
     virtual void setCurrentMovingState(int iMovingState) {
         currentMovingState = iMovingState;

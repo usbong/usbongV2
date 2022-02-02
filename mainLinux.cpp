@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220128; from 20220126
+ * @date updated: 20220130; from 20220128
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2632,7 +2632,12 @@ int main(int argc, char *argv[])
 		  drawTameMeter(0, 0+iCurrentOffsetWidth,
 									  myWindowHeightAsPixel+fGridSquareHeight/4+iCurrentOffsetHeight);
 */		
-		
+
+		bIsInTitleScreen=false;				
+		//removed by Mike, 20220128
+		//TO-DO: -add: this
+/*
+
 		if (bIsInTitleScreen) {	
 			drawTitleNote(myWindowWidthAsPixel/2-2*fGridSquareWidth-fGridSquareWidth/2+iCurrentOffsetWidth,
 									  myWindowHeightAsPixel/2-2*fGridSquareHeight+iCurrentOffsetHeight);
@@ -2652,7 +2657,8 @@ int main(int argc, char *argv[])
 			}			
 			iPressKCount=iPressKCount+1;
 		}
-		
+*/
+								
 		if (bIsMissionComplete) { //(1)
 				//if iMinuteCount>=30 AND NOT iCountIpisDestroyed>=360
 				//add: CHALLENGE: DESTROY IPIS x360 in 30MINS ONLY

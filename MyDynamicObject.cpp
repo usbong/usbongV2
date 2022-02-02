@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B. 
  * @date created: 20211116
- * @date updated: 20211129
+ * @date updated: 20220130; from 20211129
  * @website address: http://www.usbong.ph
  *
  */
@@ -85,6 +85,41 @@ bool MyDynamicObject::checkIsCollidable() {
 void MyDynamicObject::setCollidable(bool c) {
      isCollidable=c;
 }
+
+//added by Mike, 20220130
+bool MyDynamicObject::collideWithLevel2DTileRect(float fTilePosX, float fTilePosY, float fTileWidth, float fTileHeight)
+{
+		//TO-DO: -reverify: this using only 1 wall tile
+printf("dito\n");
+
+			//note: we add iOffsetXPosAsPixel and iOffsetYPosAsPixel 
+			//to cause need of bigger collision rectangle, before hit
+			//tile position at right of object
+			//TO-DO: -clarify: to use floating point numbers instead of integers, i.e. whole numbers
+		//edited by Mike, 20210831
+			if ((fTilePosX > getXPos()+getWidth()-iOffsetXPosAsPixel+getStepX()) || 
+			 			//tile position at left of object
+            (fTilePosX+fTileWidth < getXPos()+iOffsetXPosAsPixel -getStepX()) ||
+            //tile position at top of object
+            (fTilePosY+fTileHeight < getYPos()+iOffsetYPosAsPixel -getStepY()) || 
+						//tile position at bottom of object            
+            (fTilePosY > getYPos()+getHeight()-iOffsetYPosAsPixel +getStepY())) { 
+/*
+			if ((fTilePosX > getX()+getWidth()+getStepX()) || 
+			 			//tile position at left of object
+            (fTilePosX+fTileWidth < getX()-getStepX()) ||
+            //tile position at top of object
+            (fTilePosY+fTileHeight < getY()-getStepY()) || 
+						//tile position at bottom of object            
+            (fTilePosY > getY()+getHeight()+getStepY())) { 
+*/
+//			printf("outside tile\n");
+			return false;
+		}	
+
+		return true;
+}
+
 
 bool MyDynamicObject::isIntersectingRect(MyDynamicObject* mdo1, MyDynamicObject* mdo2)
 {     

@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220128; 20220127
+ * @date updated: 20220130; from 20220128
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -548,7 +548,7 @@ void Level2D::drawLevelWithTextureUsingInputFileNoScrollYet()
 
 							//TO-DO: -add: auto-draw Tile image of read inputs
 
-std::cout << "sCurrentLevelMapContainer[iRowCount][iColumnCount]): " << sCurrentLevelMapContainer[iRowCount][iColumnCount] << "\n";
+//std::cout << "sCurrentLevelMapContainer[iRowCount][iColumnCount]): " << sCurrentLevelMapContainer[iRowCount][iColumnCount] << "\n";
 
 							//added by Mike, 20220125; edited by Mike, 20220127
 //							drawTileWithTexture(sCurrentLevelMapContainer[iRowCount][iColumnCount]);
@@ -1077,14 +1077,14 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
     iColumnCountMax=MAX_X_AXIS_MAP; //14
     iHeightCountMax=MAX_Y_AXIS_MAP; //10					
 */
+
 					
 //        for (int iRowCount=iStartRowCount+iCurrentLevelMapContainerOffsetY; iRowCount<iCurrentLevelMapContainerOffsetMaxViewPortY; iRowCount++) {
         for (int iRowCount=0; iRowCount<iRowCountMax; iRowCount++) {
         
 //        for (int iColumnCount=iStartColumnCount+iCurrentLevelMapContainerOffsetX; iColumnCount<iCurrentLevelMapContainerOffsetMaxViewPortX; iColumnCount++) {
         for (int iColumnCount=0; iColumnCount<iColumnCountMax; iColumnCount++) {
-
-                 
+               
 //printf(">>>> iRowCount: %i; iColumnCount: %i;",iRowCount,iColumnCount);
     				//note: "0" for empty, instead of "-1"
     				//with "0", no need to add quotation marks
@@ -1092,8 +1092,15 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
             }
             else {
             
-            //added by Mike, 20220128
-            //TO-DO: -add: this
+            //added by Mike, 20220128; edited by Mike, 20220130
+  	
+                if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
+                    
+//                	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
+                    return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
+                                             0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,
+                                             0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY);
+  				}  		
 
 /* //removed by Mike, 20220122
                 if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount-iCurrentLevelMapContainerOffsetX-1)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount-iCurrentLevelMapContainerOffsetY-1)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
@@ -1113,8 +1120,18 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
     return false;
 }
 
-//TO-DO: -add: this
-//bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos)
+//added by Mike, 20220130
+bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True 
+    	return true;
+  	}
+  	
+  	return false;
+}
 
 void Level2D::hitBy(MyDynamicObject* mdo)
 {
