@@ -95,10 +95,6 @@ void Unit::drawUnit() {
 	KEY_D,
 	KEY_A,
 */
-		//added by Mike, 20220103
-		//TO-DO: -update: image file
-		if (iCurrentKeyInput==KEY_D) {
-		}
 
   	SrcR.y = 0+iCurrentKeyInput*iMyHeightAsPixel;
 
