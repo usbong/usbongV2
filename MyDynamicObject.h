@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211112
- * @date updated: 20211230
+ * @date updated: 20220103; from 20211230
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -325,6 +325,11 @@ public:
     virtual void setCurrentMovingState(int iMovingState) {
         currentMovingState = iMovingState;
     }        
+
+		//added by Mike, 20220203
+		int getCurrentFacingState() {
+			return currentFacingState;
+		}
                 
     virtual void destroy();
 };

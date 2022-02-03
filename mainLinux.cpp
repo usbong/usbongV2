@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220130; from 20220128
+ * @date updated: 20220203; from 20220130
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -259,9 +259,13 @@ enum Keys
 {
 	KEY_W = 0,
 	KEY_S,
+/* //edited by Mike, 20220103
 	KEY_D,
 	KEY_A,
-
+*/
+	KEY_A,
+	KEY_D,
+	
 	KEY_J,
 	KEY_L,
 	KEY_I,

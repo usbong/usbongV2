@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220202; from 20220130
+ * @date updated: 20220203; from 20220202
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -180,8 +180,15 @@ enum Keys
      */
     KEY_W = 0,
     KEY_S,
-    KEY_D,
-    KEY_A,
+    
+/* //edited by Mike, 20220103
+		KEY_D,
+		KEY_A,
+*/
+		KEY_A,
+		KEY_D,
+    	
+    
     /* //removed by Mike, 20210130
      KEY_UP,
      KEY_DOWN,
@@ -1096,30 +1103,41 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
 
 //                	printf(">>>>> fStepMovemenGridX: %f",fStepMovemenGridX); 	
 
-  							//edited by Mike, 20220202
-//                if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
-//                  if (mdo->collideWithLevel2DTileRect(0.0f+iCurrentOffsetWidth+fGridSquareWidth*(iColumnCount),0.0f+iCurrentOffsetHeight+fGridSquareHeight*(iRowCount), fGridSquareWidth, fGridSquareHeight)) {
-                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount),0.0f+getYPos()+fGridSquareHeight*(iRowCount), fGridSquareWidth, fGridSquareHeight)) {
+  							//edited by Mike, 20220203
+//                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount),0.0f+getYPos()+fGridSquareHeight*(iRowCount), fGridSquareWidth, fGridSquareHeight)) {
+								 //added by Mike, 20220103
+								 //TO-DO: -add: in MyDynamicObject.h
+/*							 //edited by Mike, 20220103
+								 int iStepXVelocity = 0;
+								 int iStepYVelocity = 0;
+*/
+								 iStepXVelocity = 0;
+								 iStepYVelocity = 0;
+								 
+			      		 if (mdo->getCurrentFacingState()==FACING_LEFT) {
+								   iStepXVelocity = -mdo->getStepX();
+			      		 }
+			      		 else if (mdo->getCurrentFacingState()==FACING_RIGHT) {
+								   iStepXVelocity = mdo->getStepX();								 
+								 }
+
+			      		 if (mdo->getCurrentFacingState()==FACING_UP) {
+								 	 iStepYVelocity = -mdo->getStepY();
+			      		 }
+			      		 else if (mdo->getCurrentFacingState()==FACING_DOWN) {
+								 	 iStepYVelocity = mdo->getStepY(); 		 
+								 }			
+
+                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity, fGridSquareWidth, fGridSquareHeight)) {
                   
                 	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
                 	//added by Mike, 20220202
                 	//OK; TO-DO: -reverify: Collision Action
                     return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
-                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount)/*-fStepMovemenGridX*/,
-                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)/*-fStepMovemenGridY*/);
-  				}  		
+                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,
+                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepXVelocity);
+  							 }  		
 
-/* //removed by Mike, 20220122
-                if (mdo->collideWithLevel2DTileRect(0.0f+fGridSquareWidth*(iColumnCount-iCurrentLevelMapContainerOffsetX-1)-fStepMovemenGridX,0.0f+fGridSquareHeight*(iRowCount-iCurrentLevelMapContainerOffsetY-1)-fStepMovemenGridY, fGridSquareWidth, fGridSquareHeight)) {
-                    
-                printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth);
-  	
-                    return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
-                                             0.0f+fGridSquareWidth*(iColumnCount-iCurrentLevelMapContainerOffsetX-1)-fStepMovemenGridX,
-                                             0.0f+fGridSquareHeight*(iRowCount-iCurrentLevelMapContainerOffsetY-1)-fStepMovemenGridY);
-
-  									}  									
-*/  									
 		        }		        
 		   }
 		}
@@ -1133,7 +1151,30 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 //    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
 
 		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
-    if (sTileId.compare("0-0") == 0) {//True 
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+    	
+    	//added by Mike, 20220103
+/*    	
+    	mdo->setYPos(mdo->getYPos() + -(iStepYVelocity));
+    	mdo->setXPos(mdo->getXPos() + -(iStepXVelocity));
+*/
+    	
+/*			
+      if (mdo->getCurrentFacing()==FACING_UP) {
+        mdo->setYPos(mdo->getY()+mdo->getStepY()*(1+(mdo->getStepX()*0.02f*fStepDashMultiplier)/cos(iTileAngle))+1);
+      }
+*/
+/* 								
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+    		mdo->setXPos(iTileXPos*fGridSquareWidth + fGridSquareWidth + -(iStepXVelocity));
+			}
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+    		mdo->setXPos(iTileXPos*fGridSquareWidth + -(iStepXVelocity));
+			}
+*/			
+			    
     	return true;
   	}
   	

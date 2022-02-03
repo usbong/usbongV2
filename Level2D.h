@@ -194,6 +194,12 @@ private:
     float fMyCanvasPosY;
     float fMyCanvasPosZ;
     
+    //added by Mike, 20220103
+    //TO-DO: -delete: excess instructions
+    int iStepXVelocity;
+		int iStepYVelocity;
+
+    
     //added by Mike, 20210910
     float fStepMovemenGridZ,
         fStepMovemenGridX,
