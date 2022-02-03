@@ -1154,26 +1154,24 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
     if (sTileId.compare("0-0") == 0) {//True
 			//added by Mike, 20220203
     	//std::cout << "DITO; sTileId: " << sTileId << "\n";
-    	
-    	//added by Mike, 20220103
 /*    	
+    	//added by Mike, 20220103
     	mdo->setYPos(mdo->getYPos() + -(iStepYVelocity));
     	mdo->setXPos(mdo->getXPos() + -(iStepXVelocity));
-*/
-    	
+*/    	
 /*			
       if (mdo->getCurrentFacing()==FACING_UP) {
         mdo->setYPos(mdo->getY()+mdo->getStepY()*(1+(mdo->getStepX()*0.02f*fStepDashMultiplier)/cos(iTileAngle))+1);
       }
 */
-/* 								
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-    		mdo->setXPos(iTileXPos*fGridSquareWidth + fGridSquareWidth + -(iStepXVelocity));
+//    		mdo->setXPos(iTileXPos*fGridSquareWidth + fGridSquareWidth + mdo->getStepX());
 			}
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-    		mdo->setXPos(iTileXPos*fGridSquareWidth + -(iStepXVelocity));
+//    		mdo->setXPos(iTileXPos*fGridSquareWidth -mdo->getStepX());
+//    		mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2);
+    		mdo->setXPos(iTileXPos -fGridSquareWidth -mdo->getWidth() - iStepXVelocity - mdo->getStepX());
 			}
-*/			
 			    
     	return true;
   	}

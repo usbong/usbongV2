@@ -148,6 +148,11 @@ SDL_Renderer *mySDLRenderer = NULL;
 
 int iPilotX;
 int iPilotY;
+
+//added by Mike, 20220203
+int iPilotXPrev;
+int iPilotYPrev;			
+
 int iCountTaoAnimationFrame;
 int iCountTileAnimationFrame; //added by Mike, 20211113
 
@@ -2530,16 +2535,41 @@ void update() {
 		
 		for (int iCount=0; iCount<4; iCount++) { //directional keys only
 			if (myKeysDown[iCount]==TRUE) {
+			  //edited by Mike, 20220203
+/*			  
 				myUnit->setXPosAsPixel(iPilotX);
 				myUnit->setYPosAsPixel(iPilotY);
-						
 				myUnit->move(iCount);
+*/
+				if (!myLevel2D->isLevel2DCollideWith(myUnit)) {
+/*
+					myUnit->setXPosAsPixel(iPilotX);
+					myUnit->setYPosAsPixel(iPilotY);	
+					myUnit->move(iCount);
+*/					
+					//added by Mike, 20220203
+					iPilotXPrev=iPilotX;
+					iPilotYPrev=iPilotY;
+				}
+				else {
+					iPilotX=iPilotXPrev;
+					iPilotY=iPilotYPrev;			
+				}
+				
+				myUnit->setXPosAsPixel(iPilotX);
+				myUnit->setYPosAsPixel(iPilotY);	
+				myUnit->move(iCount);
+			
 				break;
 			}
 		}		
 		
+
+		
+/* //removed by Mike, 20220203		
 		//added by Mike, 20220128
 		myLevel2D->isLevel2DCollideWith(myUnit);
+*/
 
 }
 
