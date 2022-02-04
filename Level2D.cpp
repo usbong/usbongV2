@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220203; from 20220202
+ * @date updated: 20220204; from 20220203
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1165,12 +1165,18 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
       }
 */
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-//    		mdo->setXPos(iTileXPos*fGridSquareWidth + fGridSquareWidth + mdo->getStepX());
+    		mdo->setXPos(iTileXPos*fGridSquareWidth + iStepXVelocity + mdo->getStepX());
 			}
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-//    		mdo->setXPos(iTileXPos*fGridSquareWidth -mdo->getStepX());
-//    		mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2);
     		mdo->setXPos(iTileXPos -fGridSquareWidth -mdo->getWidth() - iStepXVelocity - mdo->getStepX());
+			}
+
+			//added by Mike, 20220204
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+    		mdo->setYPos(iTileYPos*fGridSquareHeight -mdo->getHeight() - iStepYVelocity - mdo->getStepY());
+			}
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    		mdo->setYPos(iTileYPos +fGridSquareHeight + iStepYVelocity + mdo->getStepY());
 			}
 			    
     	return true;

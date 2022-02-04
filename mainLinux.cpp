@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220203; from 20220130
+ * @date updated: 20220204; from 20220203
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2541,6 +2541,12 @@ void update() {
 				myUnit->setYPosAsPixel(iPilotY);
 				myUnit->move(iCount);
 */
+				
+				//added by Mike, 20220204
+				//TO-DO: -update: this
+				//verify: use of velocity to be set to zero
+				//note: Unit (vehicle) movement currently based on Pilot X and Y positions
+
 				if (!myLevel2D->isLevel2DCollideWith(myUnit)) {
 /*
 					myUnit->setXPosAsPixel(iPilotX);
@@ -2550,16 +2556,47 @@ void update() {
 					//added by Mike, 20220203
 					iPilotXPrev=iPilotX;
 					iPilotYPrev=iPilotY;
-				}
+/*
+					//added by Mike, 20220204
+					myUnit->setXPosAsPixel(iPilotXPrev);
+					myUnit->setYPosAsPixel(iPilotYPrev);						
+*/
+					}
 				else {
+/*				//edited by Mike, 20220204
+					iPilotX=iPilotXPrev-10;
+					iPilotY=iPilotYPrev-10;			
+*/
+/*
 					iPilotX=iPilotXPrev;
 					iPilotY=iPilotYPrev;			
+*/
+					if (iPilotXPrev<0) { //going left
+						iPilotX=iPilotXPrev+iStepX;
+					}
+					else if (iPilotXPrev>0) { //going right
+						iPilotX=iPilotXPrev-iStepX;
+					}					
+
+/*	//TO-DO: -add: this					
+					if (iPilotYPrev<0) { //going up
+						iPilotY=iPilotYPrev+iStepY;
+					}
+					else if (iPilotYPrev>0) { //going down
+						iPilotY=iPilotYPrev-iStepY;
+					}
+*/
+
+/*
+					//added by Mike, 20220204
+					myUnit->setXPosAsPixel(iPilotX);
+					myUnit->setYPosAsPixel(iPilotY);						
+*/
 				}
 				
 				myUnit->setXPosAsPixel(iPilotX);
-				myUnit->setYPosAsPixel(iPilotY);	
-				myUnit->move(iCount);
-			
+				myUnit->setYPosAsPixel(iPilotY);					
+				myUnit->move(iCount);			
 				break;
 			}
 		}		
