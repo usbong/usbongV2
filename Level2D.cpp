@@ -1164,21 +1164,24 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
         mdo->setYPos(mdo->getY()+mdo->getStepY()*(1+(mdo->getStepX()*0.02f*fStepDashMultiplier)/cos(iTileAngle))+1);
       }
 */
+			//TO-DO: -reverify: this
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-    		mdo->setXPos(iTileXPos*fGridSquareWidth + iStepXVelocity + mdo->getStepX());
+    		mdo->setXPos(iTileXPos +iStepXVelocity +mdo->getStepX());
 			}
+			//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-    		mdo->setXPos(iTileXPos -fGridSquareWidth -mdo->getWidth() - iStepXVelocity - mdo->getStepX());
+    		mdo->setXPos(iTileXPos -mdo->getWidth() -iStepXVelocity -mdo->getStepX());
 			}
 
 			//added by Mike, 20220204
+/* //TO-DO: -update: this			
 		  if (mdo->getCurrentFacingState()==FACING_UP) {			
-    		mdo->setYPos(iTileYPos*fGridSquareHeight -mdo->getHeight() - iStepYVelocity - mdo->getStepY());
+    		mdo->setYPos(iTileYPos*fGridSquareHeight -mdo->getHeight() - iStepYVelocity);// - mdo->getStepY());
 			}
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
-    		mdo->setYPos(iTileYPos +fGridSquareHeight + iStepYVelocity + mdo->getStepY());
+    		mdo->setYPos(iTileYPos +fGridSquareHeight + iStepYVelocity); // + mdo->getStepY());
 			}
-			    
+*/			    
     	return true;
   	}
   	

@@ -2571,12 +2571,25 @@ void update() {
 					iPilotX=iPilotXPrev;
 					iPilotY=iPilotYPrev;			
 */
+/*	//edited by Mike, 20220204
 					if (iPilotXPrev<0) { //going left
 						iPilotX=iPilotXPrev+iStepX;
 					}
 					else if (iPilotXPrev>0) { //going right
 						iPilotX=iPilotXPrev-iStepX;
 					}					
+*/
+/*					
+					iPilotX=myUnit->getXPos()+myUnit->getStepX();
+					iPilotX=myUnit->getYPos()+myUnit->getStepY();
+*/
+					if (iPilotXPrev<0) { //going left
+						iPilotX=myUnit->getXPos(); //+myUnit->getStepX();
+					}
+					else if (iPilotXPrev>0) { //going right
+						iPilotX=myUnit->getXPos(); //-myUnit->getStepX();
+					}					
+				
 
 /*	//TO-DO: -add: this					
 					if (iPilotYPrev<0) { //going up
