@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220204; from 20220203
+ * @date updated: 20220205; from 20220204
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -395,18 +395,21 @@ void keyDown(SDL_KeyboardEvent *event)
 		{
 			myKeysDown[KEY_W] = TRUE;		
 		}
-		
-		if (event->keysym.scancode == SDL_SCANCODE_S)
+		//edited by Mike, 20220205
+		//if (event->keysym.scancode == SDL_SCANCODE_S)
+		else if (event->keysym.scancode == SDL_SCANCODE_S)
 		{
 			myKeysDown[KEY_S] = TRUE;					
 		}
-
-		if (event->keysym.scancode == SDL_SCANCODE_A)
+		//edited by Mike, 20220205
+//		if (event->keysym.scancode == SDL_SCANCODE_A)
+		else if (event->keysym.scancode == SDL_SCANCODE_A)
 		{
 			myKeysDown[KEY_A] = TRUE;					
 		}
-
-		if (event->keysym.scancode == SDL_SCANCODE_D)
+		//edited by Mike, 20220205
+		//if (event->keysym.scancode == SDL_SCANCODE_D)
+		else if (event->keysym.scancode == SDL_SCANCODE_D)
 		{
 			myKeysDown[KEY_D] = TRUE;					
 		}
@@ -2396,7 +2399,7 @@ void updateAutomotiveInCircuit() {
 				}
 			}
 		}
-		
+				
 		//added by Mike, 2021117
 		myUnit->setXPosAsPixel(iPilotX);
 		myUnit->setYPosAsPixel(iPilotY);
@@ -2477,6 +2480,7 @@ void update() {
 					iStepY=2;
 */
 
+/* //edited by Mike, 20220205
 		if (myKeysDown[KEY_D] == TRUE) {
 //				myKeysDown[KEY_D] = TRUE;
 				iPilotX+=iStepX;
@@ -2496,6 +2500,36 @@ void update() {
 //				myKeysDown[KEY_W] = TRUE;
 				iPilotY-=iStepY;
 		}
+*/
+
+		if (myKeysDown[KEY_D] == TRUE) {
+//				myKeysDown[KEY_D] = TRUE;
+				//added by Mike, 20220205
+				myKeysDown[KEY_A] = FALSE;
+
+				iPilotX+=iStepX;
+		}
+		else if (myKeysDown[KEY_A] == TRUE) {		
+//				myKeysDown[KEY_A] = TRUE;
+				//added by Mike, 20220205
+				myKeysDown[KEY_D] = FALSE;
+
+				iPilotX-=iStepX;
+		}
+	
+		if (myKeysDown[KEY_S] == TRUE) {
+				//added by Mike, 20220205
+				myKeysDown[KEY_W] = FALSE;
+
+				iPilotY+=iStepY;
+		}
+		else if (myKeysDown[KEY_W] == TRUE) {		
+				//added by Mike, 20220205
+				myKeysDown[KEY_S] = FALSE;
+	
+				iPilotY-=iStepY;
+		}
+				
 
 		//added by Mike, 20220122
 		//daigdig wrap around
@@ -2508,7 +2542,7 @@ void update() {
 		//located @multiple Window Screens		
 		//additional note:
 		//observed: Multiplayer PoyPoy preferred over Bomberman 
-		//by Female and Male Filipino children of a set Family Unit
+		//by Female and Male Filipino children of a set Family UnitTRUE
 		
 		//edited by Mike, 20220126
 //		if (iPilotX<=0+iCurrentOffsetWidth) {
@@ -2556,12 +2590,14 @@ void update() {
 					//added by Mike, 20220203
 					iPilotXPrev=iPilotX;
 					iPilotYPrev=iPilotY;
-/*
+
 					//added by Mike, 20220204
 					myUnit->setXPosAsPixel(iPilotXPrev);
-					myUnit->setYPosAsPixel(iPilotYPrev);						
-*/
-					}
+					myUnit->setYPosAsPixel(iPilotYPrev);		
+					
+					//added by Mike, 20220205
+					myUnit->move(iCount);			
+				}
 				else {
 /*				//edited by Mike, 20220204
 					iPilotX=iPilotXPrev-10;
@@ -2604,12 +2640,19 @@ void update() {
 					//added by Mike, 20220204
 					myUnit->setXPosAsPixel(iPilotX);
 					myUnit->setYPosAsPixel(iPilotY);						
-*/
+					myUnit->move(iCount);			
+*/				
+					for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
+						if (myUnit->getCurrentFacingState()!=iKeyCount) {
+										myUnit->move(iCount);			
+						}
+  				}
 				}
-				
+/*				
 				myUnit->setXPosAsPixel(iPilotX);
 				myUnit->setYPosAsPixel(iPilotY);					
 				myUnit->move(iCount);			
+*/
 				break;
 			}
 		}		
