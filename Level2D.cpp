@@ -1128,20 +1128,20 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
 								 	 iStepYVelocity = mdo->getStepY(); 		 
 								 }			
 								 	
-								 //edited by Mike, 20220205
-//                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity, fGridSquareWidth, fGridSquareHeight)) {
+ 				  //edited by Mike, 20220206 				  
+ 				  //TO-DO: -add: container for offset, e.g. 2
+                if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity+2,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity+2, fGridSquareWidth-2, fGridSquareHeight-2)) {
 
-//                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity+5,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity+5, fGridSquareWidth-5, fGridSquareHeight-5)) {
-//                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity-5,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity-5, fGridSquareWidth+5, fGridSquareHeight+5)) {
-                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity+2,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity+2, fGridSquareWidth-2, fGridSquareHeight-2)) {
                 	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
                 	//added by Mike, 20220202
                 	//OK; TO-DO: -reverify: Collision Action
+					///TO-DO: -add: if hit WALL, no diagonal movement against faced wall?                	
+                	
+                	//edited by Mike, 20220206
                     return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
                                              0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,
                                              0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity);
   							 }  		
-
 		        }		        
 		   }
 		}

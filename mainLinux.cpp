@@ -2626,15 +2626,18 @@ void update() {
 						iPilotX=myUnit->getXPos(); //-myUnit->getStepX();
 					}					
 				
-
-/*	//TO-DO: -add: this					
+					//added by Mike, 20220206
+					///TO-DO: -add: if hit WALL, no diagonal movement against faced wall?
+					
 					if (iPilotYPrev<0) { //going up
-						iPilotY=iPilotYPrev+iStepY;
+//						iPilotY=iPilotYPrev+iStepY;
+						iPilotY=myUnit->getYPos();
 					}
 					else if (iPilotYPrev>0) { //going down
-						iPilotY=iPilotYPrev-iStepY;
+//						iPilotY=iPilotYPrev-iStepY;
+						iPilotY=myUnit->getYPos();
 					}
-*/
+
 
 /*
 					//added by Mike, 20220204
