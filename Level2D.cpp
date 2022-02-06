@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220205; from 20220204
+ * @date updated: 20220206; from 20220205
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1139,7 +1139,7 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
                 	//OK; TO-DO: -reverify: Collision Action
                     return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
                                              0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,
-                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepXVelocity);
+                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity);
   							 }  		
 
 		        }		        
@@ -1171,20 +1171,21 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 			//TO-DO: -reverify: this
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
 //    		mdo->setXPos(iTileXPos +2 +iStepXVelocity +mdo->getStepX());
-    		mdo->setXPos(iTileXPos +5 +mdo->getStepX());
+    		mdo->setXPos(iTileXPos +fGridSquareWidth +5 +mdo->getStepX());
 			}
 			//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
 //    		mdo->setXPos(iTileXPos -mdo->getWidth() -2 -iStepXVelocity -mdo->getStepX());
     		mdo->setXPos(iTileXPos -mdo->getWidth() -5 -mdo->getStepX());
 			}
-			//added by Mike, 20220205
-			//TO-DO: -reverify: this
+			
+			//added by Mike, 20220205; edited by Mike, 20220206
+			//TO-DO: -reverify: this; incorrect iTileYPos
 		  if (mdo->getCurrentFacingState()==FACING_UP) {			
-    		mdo->setYPos(iTileYPos +mdo->getHeight() +5 +mdo->getStepY());
+    		mdo->setYPos(iTileYPos +fGridSquareHeight +5 +mdo->getStepY());
 			}
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
-    		mdo->setYPos(iTileYPos -5 -mdo->getStepY());
+    		mdo->setYPos(iTileYPos -mdo->getHeight() -5 -mdo->getStepY());
 			}
 
     	return true;
