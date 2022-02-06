@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B. 
  * @date created: 20211116
- * @date updated: 20220205; from 20220202
+ * @date updated: 20220207; from 20220205
  * @website address: http://www.usbong.ph
  *
  */
@@ -91,8 +91,13 @@ bool MyDynamicObject::collideWithLevel2DTileRect(float fTilePosX, float fTilePos
 {
 		//TO-DO: -reverify: this using only 1 wall tile
 printf("dito\n");
-//printf(">>iOffsetXPosAsPixel: %i\n",iOffsetXPosAsPixel);
 
+
+//added by Mike, 20220207
+iOffsetXPosAsPixel=2; //0; //2; //5;
+iOffsetYPosAsPixel=2; //0; //2; //5;
+
+//printf(">>iOffsetXPosAsPixel: %i\n",iOffsetXPosAsPixel);
 
 
 			//note: we add iOffsetXPosAsPixel and iOffsetYPosAsPixel 

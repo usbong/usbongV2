@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220206; from 20220205
+ * @date updated: 20220207; from 20220206
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1130,18 +1130,29 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
 								 	
  				  //edited by Mike, 20220206 				  
  				  //TO-DO: -add: container for offset, e.g. 2
-                if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity+2,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity+2, fGridSquareWidth-2, fGridSquareHeight-2)) {
+ 				  //edited by Mike, 20220207 				  
+//                if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity+2,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity+2, fGridSquareWidth-2, fGridSquareHeight-2)) {
+/*
+                if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity-2,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity-2, fGridSquareWidth+2, fGridSquareHeight+2)) {
+*/
+                if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity-0,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity-0, fGridSquareWidth+0, fGridSquareHeight+0)) {
 
                 	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
                 	//added by Mike, 20220202
                 	//OK; TO-DO: -reverify: Collision Action
 					///TO-DO: -add: if hit WALL, no diagonal movement against faced wall?                	
                 	
-                	//edited by Mike, 20220206
+                	//edited by Mike, 20220207
                     return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
-                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity,
-                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity);
-  							 }  		
+                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount) +iStepXVelocity,
+                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount) +iStepYVelocity);
+
+/*
+                    return this->hitByAtTile(mdo, sCurrentLevelMapContainer[iRowCount][iColumnCount],
+                                             0.0f+getXPos()+fGridSquareWidth*(iColumnCount) +iStepXVelocity*2,
+                                             0.0f+getYPos()+fGridSquareHeight*(iRowCount) +iStepYVelocity*2);                                             
+*/                                             
+  					}  		
 		        }		        
 		   }
 		}
@@ -1168,6 +1179,8 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
         mdo->setYPos(mdo->getY()+mdo->getStepY()*(1+(mdo->getStepX()*0.02f*fStepDashMultiplier)/cos(iTileAngle))+1);
       }
 */
+
+/* //edited by Mike, 20220207
 			//TO-DO: -reverify: this
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
 //    		mdo->setXPos(iTileXPos +2 +iStepXVelocity +mdo->getStepX());
@@ -1179,14 +1192,47 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
     		mdo->setXPos(iTileXPos -mdo->getWidth() -5 -mdo->getStepX());
 			}
 			
-			//added by Mike, 20220205; edited by Mike, 20220206
-			//TO-DO: -reverify: this; incorrect iTileYPos
-		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+		  //added by Mike, 20220205; edited by Mike, 20220207
+		  else if (mdo->getCurrentFacingState()==FACING_UP) {			
     		mdo->setYPos(iTileYPos +fGridSquareHeight +5 +mdo->getStepY());
 			}
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
     		mdo->setYPos(iTileYPos -mdo->getHeight() -5 -mdo->getStepY());
 			}
+*/
+
+/*
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX());
+		  }
+			//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX());
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_UP) {			
+    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY());
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY());
+		  }
+*/
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()*2);
+		  }
+	      //OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()*2);
+		  }
+		  
+		  //added by Mike, 20220207		  
+		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);
+		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()*2);
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()*2);
+		  }
 
     	return true;
   	}
