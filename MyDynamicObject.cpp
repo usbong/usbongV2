@@ -95,8 +95,8 @@ printf("dito\n");
 
 //added by Mike, 20220207
 //TO-DO: -add: animation sequence when hit and pushing WALL
-iOffsetXPosAsPixel=8; //2; //0; //2; //5;
-iOffsetYPosAsPixel=8; //2; //0; //2; //5;
+iOffsetXPosAsPixel=10; //8; //2; //0; //2; //5;
+iOffsetYPosAsPixel=10; //8; //2; //0; //2; //5;
 
 //printf(">>iOffsetXPosAsPixel: %i\n",iOffsetXPosAsPixel);
 
