@@ -1217,21 +1217,20 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 		  }
 */
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()*2);
+    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
 		  }
 	      //OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()*2);
+    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
 		  }
 		  
 		  //added by Mike, 20220207		  
-		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);
-		  
+		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);		  
 		  if (mdo->getCurrentFacingState()==FACING_UP) {			
-    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()*2);
+    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()); //*2);
 		  }
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
-    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()*2);
+    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
 		  }
 
     	return true;
