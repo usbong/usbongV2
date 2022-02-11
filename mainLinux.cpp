@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220206; from 20220205
+ * @date updated: 20220211; from 20220206
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2647,7 +2647,7 @@ void update() {
 */				
 					for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
 						if (myUnit->getCurrentFacingState()!=iKeyCount) {
-										myUnit->move(iCount);			
+										myUnit->move(iCount);		
 						}
   				}
 				}

@@ -1195,7 +1195,13 @@ bool Level2D::hitByAtTileDiagonalMovementNotYetOK(MyDynamicObject* mdo, std::str
 
 //added by Mike, 20220211
 //TO-DO: -reverify: this
-bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+/*
+Enter Container, Movement Reversed;
+Philippine Robot Armor on Water and Land Tiles;
+Palaka? Pagong?
+reminder: LAPU-LAPU
+*/
+bool Level2D::hitByAtTilePrev(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
 	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
 //    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
 
@@ -1229,6 +1235,277 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 
 		  }
 
+    	return true;
+  	}
+  	
+  	return false;
+}
+
+//added by Mike, 20220211
+bool Level2D::hitByAtTileBuggy(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+		
+		bool bHasResetPositionInXAxis=false;
+		bool bHasResetPositionInYAxis=false;
+
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+//    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2); //4); //*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2);
+//					  return false;
+							bHasResetPositionInXAxis=true;
+					}
+		  }
+	      //OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  	//edited by Mike, 20220211
+//    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2); //4); //*2);
+	
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2);
+//					  return false;
+							bHasResetPositionInXAxis=true;
+					}
+		  }
+		  
+		  //added by Mike, 20220207		  
+		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+//    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+    			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2);
+//					  return false;
+							bHasResetPositionInYAxis=true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+//    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2); //4); //*2);
+    			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2);
+//					  return false;
+							bHasResetPositionInYAxis=true;
+					}
+		  }
+		  
+		  //added by Mike, 20220211
+		  if (bHasResetPositionInXAxis) {
+
+				if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					//reset to previous position
+//					mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2);
+					mdo->setYPos(mdo->getYPos() -iStepYVelocity*2);
+				}
+		  	return false;
+		  }
+
+		  //added by Mike, 20220211
+		  if (bHasResetPositionInYAxis) {
+
+				if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					//reset to previous position
+//					mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2);
+					mdo->setXPos(mdo->getXPos() -iStepXVelocity*2);					
+				}
+		  	return false;
+		  }
+
+    	return true;
+  	}
+  	
+  	return false;
+}
+
+//added by Mike, 20220211
+//reminds: me of DQVI? stuck to wall at times?
+bool Level2D::hitByAtTileBuggyV2(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+		
+		bool bHasResetPositionInXAxis=false;
+		bool bHasResetPositionInYAxis=false;
+
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+//    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2); //4); //*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2);
+//					  return false;
+							bHasResetPositionInXAxis=true;
+					}
+		  }
+	      //OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  	//edited by Mike, 20220211
+//    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2); //4); //*2);
+	
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setXPos(mdo->getXPos() +mdo->getStepX()*3);
+//					  return false;
+							bHasResetPositionInXAxis=true;
+					}
+		  }
+		  
+		  //added by Mike, 20220207		  
+		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+//    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+    			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setYPos(mdo->getYPos() -mdo->getStepY()*3);
+//					  return false;
+							bHasResetPositionInYAxis=true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+//    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2); //4); //*2);
+    			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+						//reset to previous position
+					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*3);
+//					  return false;
+							bHasResetPositionInYAxis=true;
+					}
+		  }
+		  
+		  //added by Mike, 20220211
+		  if (bHasResetPositionInXAxis) {
+
+				if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					//reset to previous position
+//					mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2);
+					mdo->setYPos(mdo->getYPos() -iStepYVelocity*2);
+					//moving UP-RIGHT keys
+//					mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2);
+//					mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2);
+
+				}
+		  	return true;
+		  }
+
+		  //added by Mike, 20220211
+		  if (bHasResetPositionInYAxis) {
+
+				if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					//reset to previous position
+//					mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2);
+					mdo->setXPos(mdo->getXPos() -iStepXVelocity*2);					
+				}
+		  	return true;
+		  }
+
+    	return true;
+  	}
+  	
+  	return false;
+}
+
+//added by Mike, 20220211
+//TO-DO: -reverify: this due to can pass through concave corners
+bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+/*		
+		bool bHasResetPositionInXAxis=false;
+		bool bHasResetPositionInYAxis=false;
+*/
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+//    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2); //3);
+
+					//if still collides
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setXPos(mdo->getXPos() -mdo->getStepX()*3);
+//						return true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  	//edited by Mike, 20220211
+//    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2); //3); 
+	
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setXPos(mdo->getXPos() +mdo->getStepX()*3);
+//						return true;
+					}
+		  }
+		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+    			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2); //3);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setYPos(mdo->getYPos() -mdo->getStepY()*3);
+//					  return true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //3);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4);
+//					  return true;
+					}
+		  }
+		  
+			//if still collides
+			if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+/*
+					if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+    				mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+		  		}
+	      		//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  		else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+    				mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+		  		}
+		  		
+		  		//added by Mike, 20220207		  
+		  		//TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);		  
+		  		if (mdo->getCurrentFacingState()==FACING_UP) {			
+    				mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()); //*2);
+		  		}
+		  		else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    				mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
+		  		}
+*/		  		
+			}
+		  
     	return true;
   	}
   	

@@ -566,9 +566,16 @@ public:
     //edited by Mike, 20210803
 //    void hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     bool hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+
+    //added by Mike, 20220211
+    bool hitByAtTilePrev(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     
     //added by Mike, 20220211
     bool hitByAtTileDiagonalMovementNotYetOK(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+
+    //added by Mike, 20220211
+    bool hitByAtTileBuggy(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+    bool hitByAtTileBuggyV2(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     
     //added by Mike, 20201016
     virtual void destroy();
