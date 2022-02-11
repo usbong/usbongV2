@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220207; from 20220206
+ * @date updated: 20220211; from 20220207
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1160,8 +1160,8 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
     return false;
 }
 
-//added by Mike, 20220130
-bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+//added by Mike, 20220130; edited by Mike, 20220211
+bool Level2D::hitByAtTileDiagonalMovementNotYetOK(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
 	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
 //    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
 
@@ -1169,53 +1169,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
     if (sTileId.compare("0-0") == 0) {//True
 			//added by Mike, 20220203
     	//std::cout << "DITO; sTileId: " << sTileId << "\n";
-/*    	
-    	//added by Mike, 20220103
-    	mdo->setYPos(mdo->getYPos() + -(iStepYVelocity));
-    	mdo->setXPos(mdo->getXPos() + -(iStepXVelocity));
-*/    	
-/*			
-      if (mdo->getCurrentFacing()==FACING_UP) {
-        mdo->setYPos(mdo->getY()+mdo->getStepY()*(1+(mdo->getStepX()*0.02f*fStepDashMultiplier)/cos(iTileAngle))+1);
-      }
-*/
 
-/* //edited by Mike, 20220207
-			//TO-DO: -reverify: this
-		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-//    		mdo->setXPos(iTileXPos +2 +iStepXVelocity +mdo->getStepX());
-    		mdo->setXPos(iTileXPos +fGridSquareWidth +5 +mdo->getStepX());
-			}
-			//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
-		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-//    		mdo->setXPos(iTileXPos -mdo->getWidth() -2 -iStepXVelocity -mdo->getStepX());
-    		mdo->setXPos(iTileXPos -mdo->getWidth() -5 -mdo->getStepX());
-			}
-			
-		  //added by Mike, 20220205; edited by Mike, 20220207
-		  else if (mdo->getCurrentFacingState()==FACING_UP) {			
-    		mdo->setYPos(iTileYPos +fGridSquareHeight +5 +mdo->getStepY());
-			}
-		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
-    		mdo->setYPos(iTileYPos -mdo->getHeight() -5 -mdo->getStepY());
-			}
-*/
-
-/*
-		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
-    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX());
-		  }
-			//OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
-		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
-    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX());
-		  }
-		  else if (mdo->getCurrentFacingState()==FACING_UP) {			
-    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY());
-		  }
-		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
-    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY());
-		  }
-*/
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
     		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
 		  }
@@ -1231,6 +1185,48 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 		  }
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
     		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
+		  }
+
+    	return true;
+  	}
+  	
+  	return false;
+}
+
+//added by Mike, 20220211
+//TO-DO: -reverify: this
+bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+//    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+    		mdo->setXPos(mdo->getXPos() +mdo->getStepX()*2); //4); //*2);
+		  }
+	      //OK; TO-DO: -add: NO simultaneous pressing of buttons with opposite directions
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  	//edited by Mike, 20220211
+//    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+    		mdo->setXPos(mdo->getXPos() -mdo->getStepX()*2); //4); //*2);
+		  }
+		  
+		  //added by Mike, 20220207		  
+		  //TO-DO: -reverify: output; reference battle city with diagonal movement; zelda (game&watch);		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+//    		mdo->setYPos(iTileYPos +fGridSquareHeight +0 +mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+    		mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2); //4); //*2);
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+//    		mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
+//    		mdo->setYPos(mdo->getYPos() +mdo->getStepY()*2); //4); //*2);
+    		mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //4); //*2);
+
 		  }
 
     	return true;

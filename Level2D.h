@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220128; from 20220127
+ * @date updated: 20220211; from 20220128
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -566,6 +566,9 @@ public:
     //edited by Mike, 20210803
 //    void hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     bool hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+    
+    //added by Mike, 20220211
+    bool hitByAtTileDiagonalMovementNotYetOK(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     
     //added by Mike, 20201016
     virtual void destroy();
