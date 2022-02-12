@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211112
- * @date updated: 20220103; from 20211230
+ * @date updated: 220220212; from 0220103
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -195,7 +195,11 @@ public:
         	return false;
         }
     }
-
+    
+    //added by Mike, 20220212
+    void setCurrentFacingState(int iNewFacingState) {
+        currentFacingState = iNewFacingState;
+    }
 
   	//TO-DO: -add: this  
 //    void setUsbongUtils(UsbongUtils* c);
@@ -310,8 +314,19 @@ public:
 */
 		}
 
-    void move(int iKeyInput);
-    
+		//edited by Mike, 20220212
+    //void move(int iKeyInput);
+    void move(int iKeyInput) {
+			iCurrentKeyInput = iKeyInput;
+		//	printf("iCurrentKeyInput: %i\n",iCurrentKeyInput);
+  		
+  		if (iKeyInput>=4) {
+  		}
+  		else {
+  			currentFacingState=iKeyInput;
+  		}
+  	}
+    		
     bool checkCollision(MyDynamicObject* mdo1, MyDynamicObject* mdo2);
     
     //edited by Mike, 20211122

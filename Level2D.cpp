@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220211; from 20220207
+ * @date updated: 20220212; from 20220211
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -243,6 +243,10 @@ Level2D::Level2D(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos,
     fMyCanvasPosX=0;
     fMyCanvasPosY=0;
     fMyCanvasPosZ=0;
+    
+    //added by Mike, 20220212
+    iHitRowCountPrev=-1;
+		iHitColumnCountPrev=-1;
     
     //    printf(">>myXPosAsPixel: %i\n",myXPosAsPixel);
     
@@ -1137,7 +1141,19 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
 */
                 if (mdo->collideWithLevel2DTileRect(0.0f+getXPos()+fGridSquareWidth*(iColumnCount)+iStepXVelocity-0,0.0f+getYPos()+fGridSquareHeight*(iRowCount)+iStepYVelocity-0, fGridSquareWidth+0, fGridSquareHeight+0)) {
 
+
                 	printf(">>>>> fGridSquareWidth: %f",fGridSquareWidth); 	
+                	
+                	//added by Mike, 20220212
+                	//identify if stuck in same tile; add shake head as with Chrono Trigger?
+									if ((iHitRowCountPrev==iRowCount) && (iHitColumnCountPrev==iColumnCount)) {
+//										return false;										
+									}
+									
+    							iHitRowCountPrev=iRowCount;
+									iHitColumnCountPrev=iColumnCount;
+
+                	
                 	//added by Mike, 20220202
                 	//OK; TO-DO: -reverify: Collision Action
 					///TO-DO: -add: if hit WALL, no diagonal movement against faced wall?                	
@@ -1434,7 +1450,7 @@ bool Level2D::hitByAtTileBuggyV2(MyDynamicObject* mdo, std::string sTileId, int 
 
 //added by Mike, 20220211
 //TO-DO: -reverify: this due to can pass through concave corners
-bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+bool Level2D::hitByAtTileOKWithNoConcaveCorners(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
 	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
 //    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
 /*		
@@ -1479,14 +1495,13 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
     			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*2); //3);
 
 					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
-					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4);
+					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*3); //edited by Mike, 20220212
 //					  return true;
 					}
 		  }
 		  
 			//if still collides
 			if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
-/*
 					if (mdo->getCurrentFacingState()==FACING_LEFT) {			
     				mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
 		  		}
@@ -1503,7 +1518,6 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 		  		else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
     				mdo->setYPos(iTileYPos -mdo->getHeight() -0 -mdo->getStepY()); //*2);
 		  		}
-*/		  		
 			}
 		  
     	return true;
@@ -1511,6 +1525,98 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
   	
   	return false;
 }
+
+
+//added by Mike, 20220212
+bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
+	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
+//    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
+/*		
+		bool bHasResetPositionInXAxis=false;
+		bool bHasResetPositionInYAxis=false;
+*/
+		//TO-DO: -set: all tiles in row 0, classifed as wall collision?
+    if (sTileId.compare("0-0") == 0) {//True
+			//added by Mike, 20220203
+    	//std::cout << "DITO; sTileId: " << sTileId << "\n";
+
+		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+//    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4); //3);
+
+					//if still collides
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4);
+//						return true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  	//edited by Mike, 20220211
+//    		mdo->setXPos(iTileXPos -mdo->getWidth() -0 -mdo->getStepX()); //*2);
+    			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4); //3); 
+	
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4);
+//						return true;
+					}
+		  }
+		  
+		  if (mdo->getCurrentFacingState()==FACING_UP) {			
+    			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4); //3);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4);
+//					  return true;
+					}
+		  }
+		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+    			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4); //3);
+
+					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4);
+//					  return true;
+					}
+		  }
+		  
+			//if still collides
+			//TO-DO: -updated: instructions to execute after identification of collision
+			//identify via keys pressed, e.g. DOWN and LEFT;
+			//shake head animation action as with Chrono Trigger? 
+			if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+			
+				printf("STILL COLLIDES\n!");
+				
+				if (mdo->getCurrentFacingState()==FACING_LEFT) {			
+		  			//reversed direction
+//					mdo->setCurrentFacingState(FACING_RIGHT);
+					mdo->move(FACING_RIGHT);		
+		  	}
+		  	else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
+		  			//reversed direction
+//					mdo->setCurrentFacingState(FACING_LEFT);
+					mdo->move(FACING_LEFT);		
+		  	}
+		  	
+		  	if (mdo->getCurrentFacingState()==FACING_UP) {			
+		  			//reversed direction
+//					mdo->setCurrentFacingState(FACING_DOWN);
+					mdo->move(FACING_DOWN);		
+		  	}
+		  	else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
+		  			//reversed direction
+//					mdo->setCurrentFacingState(FACING_UP);
+					mdo->move(FACING_UP);		
+		  	}			
+
+				
+			}
+		  
+    	return true;
+  	}
+  	
+  	return false;
+}
+
 
 void Level2D::hitBy(MyDynamicObject* mdo)
 {

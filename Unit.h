@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211117
- * @date updated: 20220203; from 20220124
+ * @date updated: 20220212; from 20220203
  * @website address: http://www.usbong.ph
  *
  */
@@ -48,7 +48,9 @@ public:
 	int getState();
 
 	void reset(int iXPosInput, int iYPosInput);     
-	void move(int key);	
+
+	//removed by Mike, 20220212
+	//void move(int key);	
 	
   virtual void hitBy(MyDynamicObject* mdo);
   virtual void destroy();

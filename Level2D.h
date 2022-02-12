@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220211; from 20220128
+ * @date updated: 20220212; from 20220211
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -95,7 +95,10 @@
 
 //edited by Mike, 20220124
 //#define MAX_INPUT_TEXT_PER_LINE 240
-#define MAX_INPUT_TEXT_PER_LINE MAX_X_AXIS_MAP*5 //14x5; due to value can be "2-0"
+//edited by Mike, 20220212
+//#define MAX_INPUT_TEXT_PER_LINE MAX_X_AXIS_MAP*5 //14x5; due to value can be "2-0"
+//we add comma delimiter 
+#define MAX_INPUT_TEXT_PER_LINE MAX_X_AXIS_MAP*5+MAX_X_AXIS_MAP*MAX_Y_AXIS_MAP //14x5; due to value can be "2-0"
 
 //edited by Mike, 20210129
 //TO-DO: -add: robotship dash background movement animation
@@ -199,7 +202,10 @@ private:
     int iStepXVelocity;
 		int iStepYVelocity;
 
-    
+		//added by Mike, 20220212
+		int iHitRowCountPrev;
+		int iHitColumnCountPrev;
+
     //added by Mike, 20210910
     float fStepMovemenGridZ,
         fStepMovemenGridX,
@@ -474,11 +480,13 @@ public:
     float getCurrentFacingState() {
         return currentFacingState;
     }
-    
+
+/* //removed by Mike, 20220212    
     //added by Mike, 20210102; edited by Mike, 20210106
     void setCurrentFacingState(int iNewFacingState) {
         currentFacingState = iNewFacingState;
     }
+*/
     
     //added by Mike, 20210911; edited by Mike, 20210923
     void setPilotStep(float fPilotStepX, float fPilotStepY, float fPilotStepZ);
@@ -576,6 +584,9 @@ public:
     //added by Mike, 20220211
     bool hitByAtTileBuggy(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     bool hitByAtTileBuggyV2(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+
+    //added by Mike, 20220212
+		bool hitByAtTileOKWithNoConcaveCorners(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
     
     //added by Mike, 20201016
     virtual void destroy();

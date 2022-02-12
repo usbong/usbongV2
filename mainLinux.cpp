@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220211; from 20220206
+ * @date updated: 20220212; from 20220211
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -449,6 +449,13 @@ void keyDown(SDL_KeyboardEvent *event)
     		
     		iDestroyBugShakeDelayCount=0; //added by Mike, 20211122
     }
+    
+    //added by Mike, 20220212
+    for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
+    	if (myKeysDown[iKeyCount]==true) {    
+ 	  		myLevel2D->keyDown(iKeyCount);
+ 	  	}
+    }    
 	}
 }
 
@@ -505,7 +512,14 @@ void keyUp(SDL_KeyboardEvent *event)
 			exit(0);
 		}    	 
 */		
-	}
+    //added by Mike, 20220212
+    for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
+    	if (myKeysDown[iKeyCount]==false) {        
+	 	  	myLevel2D->keyUp(iKeyCount);
+	 	  }
+    }    
+
+	}	
 }
 
 void doInput(void)
@@ -2581,7 +2595,10 @@ void update() {
 				//verify: use of velocity to be set to zero
 				//note: Unit (vehicle) movement currently based on Pilot X and Y positions
 
+				//edited by Mike, 20220212
 				if (!myLevel2D->isLevel2DCollideWith(myUnit)) {
+//				if (true) {
+
 /*
 					myUnit->setXPosAsPixel(iPilotX);
 					myUnit->setYPosAsPixel(iPilotY);	

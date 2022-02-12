@@ -137,7 +137,7 @@ void Unit::draw()
 	}    
 }
 
-
+/* //removed by Mike, 20220212
 void Unit::move(int iKeyInput) 
 {
 	iCurrentKeyInput = iKeyInput;
@@ -150,6 +150,7 @@ void Unit::move(int iKeyInput)
   	currentFacingState=iKeyInput;
   }
 }
+*/
 
 void Unit::update()
 {
