@@ -1586,6 +1586,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 			
 				printf("STILL COLLIDES\n!");
 				
+/* //edited by Mike, 20220212				
 				if (mdo->getCurrentFacingState()==FACING_LEFT) {			
 		  			//reversed direction
 //					mdo->setCurrentFacingState(FACING_RIGHT);
@@ -1607,8 +1608,12 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 //					mdo->setCurrentFacingState(FACING_UP);
 					mdo->move(FACING_UP);		
 		  	}			
-
-				
+*/
+				//TO-DO: -reverify: this
+				if (myKeysDown[FACING_LEFT] and myKeysDown[FACING_DOWN]) {
+					mdo->move(FACING_LEFT);
+					mdo->move(FACING_DOWN);
+				}
 			}
 		  
     	return true;
