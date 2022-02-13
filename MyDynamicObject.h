@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211112
- * @date updated: 220220212; from 0220103
+ * @date updated: 220220213; from 220220212
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -214,6 +214,7 @@ public:
         return iMyXPosAsPixel;
     }
 
+/*	//edited by Mike, 20220213
     virtual float getYPos()
     {
         return iMyYPosAsPixel;
@@ -243,6 +244,40 @@ public:
         return iStepYAsPixel;
     }
     virtual float getStepZ()
+    {
+        return iStepZAsPixel;
+    }
+*/
+
+    virtual int getYPos()
+    {
+        return iMyYPosAsPixel;
+    }
+
+    virtual int getZPos()
+    {
+        return iMyZPosAsPixel;
+    }
+    
+    virtual int getWidth()
+    {
+        return iMyWidthAsPixel;
+    }
+
+    virtual int getHeight()
+    {
+        return iMyHeightAsPixel;
+    }
+            
+    virtual int getStepX()
+    {
+        return iStepXAsPixel;
+    }
+    virtual int getStepY()
+    {
+        return iStepYAsPixel;
+    }
+    virtual int getStepZ()
     {
         return iStepZAsPixel;
     }

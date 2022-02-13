@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220212; from 20220211
+ * @date updated: 20220213; from 20220212
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -587,6 +587,10 @@ public:
 
     //added by Mike, 20220212
 		bool hitByAtTileOKWithNoConcaveCorners(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+		
+	//added by Mike, 20220213
+	bool hitByAtTileNotYetOK(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos);
+
     
     //added by Mike, 20201016
     virtual void destroy();
