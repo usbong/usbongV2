@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220212; from 20220211
+ * @date updated: 20220213; from 20220212
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -393,26 +393,57 @@ void keyDown(SDL_KeyboardEvent *event)
 	{
 		if (event->keysym.scancode == SDL_SCANCODE_W)
 		{
-			myKeysDown[KEY_W] = TRUE;		
+			myKeysDown[KEY_W] = TRUE;
+					
+			//added by Mike, 202202013
+			myKeysDown[KEY_S] = FALSE;		
 		}
 		//edited by Mike, 20220205
 		//if (event->keysym.scancode == SDL_SCANCODE_S)
 		else if (event->keysym.scancode == SDL_SCANCODE_S)
 		{
 			myKeysDown[KEY_S] = TRUE;					
+
+			//added by Mike, 202202013
+			myKeysDown[KEY_W] = FALSE;		
 		}
 		//edited by Mike, 20220205
 //		if (event->keysym.scancode == SDL_SCANCODE_A)
 		else if (event->keysym.scancode == SDL_SCANCODE_A)
 		{
 			myKeysDown[KEY_A] = TRUE;					
+
+			//added by Mike, 202202013
+			myKeysDown[KEY_D] = FALSE;		
 		}
 		//edited by Mike, 20220205
 		//if (event->keysym.scancode == SDL_SCANCODE_D)
 		else if (event->keysym.scancode == SDL_SCANCODE_D)
 		{
 			myKeysDown[KEY_D] = TRUE;					
+
+			//added by Mike, 202202013
+			myKeysDown[KEY_A] = FALSE;		
 		}
+
+	//added by Mike, 20220212
+	//directional keys;
+	//only two (2) simultaneous keys pressed at a time;
+	//no key presses of opposite directions
+	int iKeyPressedCount=0;
+    for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
+    	
+    	if (iKeyPressedCount<2) {    
+    		if (myKeysDown[iKeyCount]==true) {    
+ 	  			myLevel2D->keyDown(iKeyCount);
+ 	  			iKeyPressedCount=iKeyPressedCount+1;
+ 	  		}
+ 	  	}
+ 	  	else {
+ 	  		break;
+ 	  	}
+    }    
+    
 
     //note: one button press only; beat, cadence; skipping stone?
     
@@ -450,12 +481,12 @@ void keyDown(SDL_KeyboardEvent *event)
     		iDestroyBugShakeDelayCount=0; //added by Mike, 20211122
     }
     
-    //added by Mike, 20220212
-    for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
-    	if (myKeysDown[iKeyCount]==true) {    
- 	  		myLevel2D->keyDown(iKeyCount);
- 	  	}
-    }    
+    	//added by Mike, 20220212
+    	for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
+    		if (myKeysDown[iKeyCount]==true) {    
+ 	  			myLevel2D->keyDown(iKeyCount);
+ 	  		}
+    	}    
 	}
 }
 

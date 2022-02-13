@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220212; from 20220211
+ * @date updated: 20220213; from 20220212
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1528,6 +1528,11 @@ bool Level2D::hitByAtTileOKWithNoConcaveCorners(MyDynamicObject* mdo, std::strin
 
 
 //added by Mike, 20220212
+//note: remembers DQVI battle with mu-do- (NO DOUGH, i.e. MONEY?) at start;
+//no diagonal movement in DQVI; income < expenses if work TIME excessively used for component part
+//TO-DO: -reverify: use of Tile side to identify WALL to STOP movement as with Zelda (Game&Watch)?
+//--> due to concave TILEs NOT yet OK; example: when at bottom-left corner, 
+//press DOWN+LEFT, then UP+LEFT directional keys
 bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXPos, int iTileYPos) {
 	sTileId = myUsbongUtils->autoDeleteQuotationMark(sTileId);
 //    std::cout << "autoDeleted sTileId: " << sTileId << "\n";
@@ -1540,6 +1545,34 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 			//added by Mike, 20220203
     	//std::cout << "DITO; sTileId: " << sTileId << "\n";
 
+		  //TO-DO: -reverify: this
+		  if (myKeysDown[FACING_LEFT] and myKeysDown[FACING_DOWN]) {
+			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4); //LEFT
+			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4); //DOWN
+		    return true;					
+		  }
+
+		  if (myKeysDown[FACING_RIGHT] and myKeysDown[FACING_DOWN]) {
+			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4); //RIGHT
+			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4); //DOWN
+		    return true;					
+		  }
+
+		  if (myKeysDown[FACING_LEFT] and myKeysDown[FACING_UP]) {
+			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4); //LEFT
+			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4); //UP
+		    return true;					
+		  }
+
+		  if (myKeysDown[FACING_RIGHT] and myKeysDown[FACING_UP]) {
+			mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4); //RIGHT
+			mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4); //UP
+		    return true;					
+		  }
+		  
+//		    return true;					
+
+
 		  if (mdo->getCurrentFacingState()==FACING_LEFT) {			
 //    		mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
     			mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4); //3);
@@ -1549,6 +1582,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 					  mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4);
 //						return true;
 					}
+					
 		  }
 		  else if (mdo->getCurrentFacingState()==FACING_RIGHT) {			
 		  	//edited by Mike, 20220211
@@ -1559,6 +1593,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 					  mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4);
 //						return true;
 					}
+					
 		  }
 		  
 		  if (mdo->getCurrentFacingState()==FACING_UP) {			
@@ -1568,6 +1603,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 					  mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4);
 //					  return true;
 					}
+					
 		  }
 		  else if (mdo->getCurrentFacingState()==FACING_DOWN) {			
     			mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4); //3);
@@ -1575,7 +1611,7 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 					if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
 					  mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4);
 //					  return true;
-					}
+					}					
 		  }
 		  
 			//if still collides
@@ -1609,11 +1645,6 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 					mdo->move(FACING_UP);		
 		  	}			
 */
-				//TO-DO: -reverify: this
-				if (myKeysDown[FACING_LEFT] and myKeysDown[FACING_DOWN]) {
-					mdo->move(FACING_LEFT);
-					mdo->move(FACING_DOWN);
-				}
 			}
 		  
     	return true;
