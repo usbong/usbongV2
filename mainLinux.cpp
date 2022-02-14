@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220213; from 20220212
+ * @date updated: 20220214; from 20220213
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2611,9 +2611,27 @@ void update() {
 			iPilotY=0+iCurrentOffsetHeight;			
 		}
 
-		
+/*
+		//edited by Mike, 20220214
+		KEY_W = 0,
+		KEY_S,
+		KEY_A,
+		KEY_D,			
+		0,2,1,3
+*/		
+
+int iKeySequenceContainer[4];
+iKeySequenceContainer[0]=0;
+iKeySequenceContainer[1]=2;
+iKeySequenceContainer[2]=1;
+iKeySequenceContainer[3]=3;
+
+					
+//		for (int iCount=0; iCount<4; iCount++) { //directional keys only
 		for (int iCount=0; iCount<4; iCount++) { //directional keys only
-			if (myKeysDown[iCount]==TRUE) {
+				
+//			if (myKeysDown[iCount]==TRUE) {			
+			if (myKeysDown[iKeySequenceContainer[iCount]]==TRUE) {
 			  //edited by Mike, 20220203
 /*			  
 				myUnit->setXPosAsPixel(iPilotX);
@@ -2643,8 +2661,9 @@ void update() {
 					myUnit->setXPosAsPixel(iPilotXPrev);
 					myUnit->setYPosAsPixel(iPilotYPrev);		
 					
-					//added by Mike, 20220205
-					myUnit->move(iCount);			
+					//added by Mike, 20220205; edited by Mike, 20220214
+//					myUnit->move(iCount);			
+					myUnit->move(iKeySequenceContainer[iCount]);			
 				}
 				else {
 /*				//edited by Mike, 20220204
@@ -2695,7 +2714,9 @@ void update() {
 */				
 					for (int iKeyCount=0; iKeyCount<4; iKeyCount++) {
 						if (myUnit->getCurrentFacingState()!=iKeyCount) {
-										myUnit->move(iCount);		
+								//edited by Mike, 20220214
+			//					myUnit->move(iCount);			
+								myUnit->move(iKeySequenceContainer[iCount]);			
 						}
   				}
 				}

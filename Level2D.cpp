@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220213; from 20220212
+ * @date updated: 20220214; from 20220213
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1118,9 +1118,8 @@ printf(">>>> iCurrentLevelMapContainerOffsetMaxViewPortY: %i;",iCurrentLevelMapC
 */
 								 iStepXVelocity = 0;
 								 iStepYVelocity = 0;
-								 
-								 
-								 printf("mdo->getStepX(): %i\n",mdo->getStepX());
+								 							 
+//								 printf("mdo->getStepX(): %i\n",mdo->getStepX());
 								 
 			      		 if (mdo->getCurrentFacingState()==FACING_LEFT) {
 								   iStepXVelocity = -mdo->getStepX();
@@ -1458,6 +1457,27 @@ bool Level2D::hitByAtTile(MyDynamicObject* mdo, std::string sTileId, int iTileXP
 		  
 			//if still collides
 			if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+					printf("still collides\n");
+
+					//added by Mike, 20220214
+					//set position to center		  		
+					//note: auto-identifies IF need to add or subtract to make object position to be @center
+		  		if ((mdo->getCurrentFacingState()==FACING_UP) or (mdo->getCurrentFacingState()==FACING_DOWN)) {			
+    				mdo->setXPos(mdo->getXPos() +mdo->getStepX()*4);
+
+						if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+    					mdo->setXPos(mdo->getXPos() -mdo->getStepX()*4*2);
+						}
+		  		}
+
+					if ((mdo->getCurrentFacingState()==FACING_LEFT) or (mdo->getCurrentFacingState()==FACING_RIGHT)) {			
+    				mdo->setYPos(mdo->getYPos() +mdo->getStepY()*4);
+
+						if (mdo->collideWithLevel2DTileRect(iTileXPos,iTileYPos, fGridSquareWidth, fGridSquareHeight)) {
+    					mdo->setYPos(mdo->getYPos() -mdo->getStepY()*4*2);
+						}
+		  		}
+		  		
 /*
 					if (mdo->getCurrentFacingState()==FACING_LEFT) {			
     				mdo->setXPos(iTileXPos +fGridSquareWidth +0 +mdo->getStepX()); //*2);
