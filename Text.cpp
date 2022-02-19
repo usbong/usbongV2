@@ -1,5 +1,5 @@
 /*
- * Copyright 2020~2021 SYSON, MICHAEL B.
+ * Copyright 2020~2022 SYSON, MICHAEL B.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220107; from 20211230
+ * @date updated: 20220219; from 20220218
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -811,7 +811,7 @@ void Text::drawText()
     }              	
 }
     
-void Text::drawTextWithFontTexture(int x, int y)
+void Text::drawTextWithFontTextureOK(int x, int y)
 {
 		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
     int iRowCount;    
@@ -824,23 +824,131 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
     }
 	}
         
+  	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCount]; iColumnCount++) {
+            	tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount]=cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount];
+  	}
+ 	
+    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+    	
+  	iTextAnimationCountDelay=0;
+  	
+  	if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
+      	iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
+      	
+      	//added by Mike, 20210617
+      	if (iCurrentMaxColumnCountPerRowContainer[iRowCount]>=MAX_TEXT_CHAR_COLUMN) {
+          	iCurrentMaxColumnCountPerRowContainer[iRowCount]=MAX_TEXT_CHAR_COLUMN;
+      	}
+  	}
+        	
+        	
+  	//'\n'){ //new line; "\0" empty character
+  	if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iCurrentMaxColumnCountPerRowContainer[iRowCount]-1]=='\n') {
+      	
+  	//TO-DO: -add: instructions to auto-identify end row by removing empty rows after reading input file
+  	//if next row is already empty
+  	//row, column
+  	if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iCurrentMaxColumnCountPerRowContainer[iTextCurrentMaxRowCount]]=='\0') {
+      	//removed by Mike, 20210905
+	//      iTextCurrentMaxRowCount=iTextCurrentMaxRowCount;
+  	}
+  	else {
+      	
+      	if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
+          	iTextCurrentMaxRowCount++;
+      	}
+      	
+      	//added by Mike, 20210618
+      	//if has reached end of rows, no need to execute this
+      	//TO-DO: -add: auto-identify if at MAX row
+      	if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW+1][0]=='\0') {
+          	printf(">>>>>>>>>>>>>>> WAKAS!\n");
+          	
+          	bHasReachedEndOfTextMessage=true;
+          	
+          	break;
+      	}
+      	else {
+	/*
+          	printf(">>> iRowCount: %i\n",iRowCount);
+          	printf(">>> iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
+	*/          
+          	
+          	if (iRowCount>=MAX_TEXT_CHAR_ROW) {
+              	iRowCountPageNumber++;
+              	iTextCurrentMaxRowCount=1;
+              	iRowCount=-1; //note: we add 1 near the closing of the for loop
+          	}
+      	}
+    	}
+  	
+      	//edited by Mike, 20210618
+      	//re-set isAtMaxTextCharRow to FALSE after button press
+      	//edited by Mike, 20210905
+      	if ((iRowCount+1)>=MAX_TEXT_CHAR_ROW) {
+      			iRowCount=3;
+      			//edited by Mike, 20211229
+	//          iTextCurrentMaxRowCount=4;
+          	iTextCurrentMaxRowCount=3;
+	
+          	isAtMaxTextCharRow=true;
+      	}
+            	
+            	//printf("iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
+            	
+            	//added by Mike, 20210617
+            	//TO-DO: fix: next row only iTextCurrentMaxColumnCount=1       
+  			}
+  			else {
+      			break;
+  			}
+              	
+      	iTextAnimationCountDelay+=1;
+      	
+        	//added by Mike, 20210618
+        	iRowCount=iRowCount+1;       
+    	}
+}
+
+void Text::drawTextWithFontTexture(int x, int y)
+{
+		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
+    int iRowCount;    
+          
+for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
+
+  for (int iRowCountToSetDefault=0; iRowCountToSetDefault<MAX_TEXT_CHAR_ROW_RAM; iRowCountToSetDefault++) {
+    for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
+        tempText[iRowCountToSetDefault][iColumnCount]='\0'; //verified: in macOS, with Japanese keyboard ro-maji input, "¥0", backspace is "¥"
+    }
+	}
+  
+        
+/* //edited by Mike, 20220218        
   for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCount]; iColumnCount++) {
             tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount]=cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount];
   }
-  
-  	//edited by Mike, 20211215
-//    myFont->draw_string(x+fGridSquareWidth,y+fGridSquareHeight/2*iRowCount,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+*/
+  for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCount]; iColumnCount++) {
 
-		//edited by Mike, 20211217
-//    myFont->draw_string(x+fGridSquareWidth,fMyWindowHeight-fMyWindowHeight/4 +fGridSquareHeight/2*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
-		
-		//edited by Mike, 20211222
-//    myFont->draw_string(x+fGridSquareWidth+fGridSquareWidth*0.2,fMyWindowHeight-fMyWindowHeight/3.5 +fGridSquareHeight/2*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
-	//edited by Mike, 20211230
-	
-//    myFont->draw_string(x+fGridSquareWidth+fGridSquareWidth*1.4,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
     
+    printf(">>> iRowCount: %i\n",iRowCount);    
+    printf(">>> bilang: %i\n",iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
+    
+//    tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow][iColumnCount];
+
+    tempText[iRowCount+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCount+iCountInputTextCharRow][iColumnCount];
+
+  }
+
+/*  
     myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+*/
+
+//    myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow]);
+    myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iCountInputTextCharRow]);
+
     
   iTextAnimationCountDelay=0;
   
@@ -853,14 +961,24 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
       }
   }
         
-        
+/*        
   //'\n'){ //new line; "\0" empty character
   if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iCurrentMaxColumnCountPerRowContainer[iRowCount]-1]=='\n') {
+*/
+
+/*
+  if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow  ][iCurrentMaxColumnCountPerRowContainer[iRowCount]-1]=='\n') {
+*/
+  if (cCurrentTextContainer[iRowCount+iCountInputTextCharRow  ][iCurrentMaxColumnCountPerRowContainer[iRowCount]-1]=='\n') {
       
   //TO-DO: -add: instructions to auto-identify end row by removing empty rows after reading input file
   //if next row is already empty
   //row, column
+/*
   if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iCurrentMaxColumnCountPerRowContainer[iTextCurrentMaxRowCount]]=='\0') {
+*/
+  if (cCurrentTextContainer[iRowCount+iCountInputTextCharRow][iCurrentMaxColumnCountPerRowContainer[iTextCurrentMaxRowCount]]=='\0') {
+
       //removed by Mike, 20210905
 //      iTextCurrentMaxRowCount=iTextCurrentMaxRowCount;
   }
@@ -873,7 +991,10 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
       //added by Mike, 20210618
       //if has reached end of rows, no need to execute this
       //TO-DO: -add: auto-identify if at MAX row
+/*
       if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW+1][0]=='\0') {
+*/
+      if (cCurrentTextContainer[iRowCount+iCountInputTextCharRow+1][0]=='\0') {
           printf(">>>>>>>>>>>>>>> WAKAS!\n");
           
           bHasReachedEndOfTextMessage=true;
@@ -886,11 +1007,24 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
           printf(">>> iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
 */          
           
+/* //edited by Mike, 20220218          
           if (iRowCount>=MAX_TEXT_CHAR_ROW) {
               iRowCountPageNumber++;
               iTextCurrentMaxRowCount=1;
               iRowCount=-1; //note: we add 1 near the closing of the for loop
           }
+*/
+          if (iRowCount>=MAX_TEXT_CHAR_ROW) {
+/*
+//removed by Mike, 20220218          
+              iRowCountPageNumber++;
+              iTextCurrentMaxRowCount=1;
+              iRowCount=-1; //note: we add 1 near the closing of the for loop
+*/
+//              iRowCount=-1; //note: we add 1 near the closing of the for loop
+
+          }
+
       }
     }
   
@@ -919,8 +1053,10 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
       
         //added by Mike, 20210618
         iRowCount=iRowCount+1;       
-    }
-    
+        
+//        printf(">>>> DITO; iTextCurrentMaxRowCount: %i",iTextCurrentMaxRowCount);
+        
+    }        
 }
 
 void Text::update(float dt)
@@ -947,8 +1083,116 @@ void Text::update(float dt)
 */    
 }
 
-//added by Mike, 20201226
+//added by Mike, 20201226; edited by Mike, 20220218
+//TO-DO: -update: this buggy
 void Text::keyDown(int keyCode) {
+    myKeysDown[keyCode] = TRUE;
+    
+//    printf(">>keyDown: %i",keyCode);
+    //added by Mike, 20210619
+    //TO-DO: -reverify: output of over 6 rows in input file
+    if (myKeysDown[KEY_K]==TRUE) {
+        if (bHasReachedEndOfTextMessage) {
+            bHasPressedKeyToCloseEndOfTextMessage=true;
+        }
+        else {
+ //edited by Mike, 20220218        
+/* 
+            if (isAtMaxTextCharRow) {
+                isAtMaxTextCharRow=false;
+                
+                iRowCountPageNumber++;
+                iTextCurrentMaxRowCount=1;
+                
+                //next row; reminder: MAX_TEXT_CHAR_ROW=4
+                for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
+                    iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+                }
+            }
+*/
+            if (isAtMaxTextCharRow) {
+                isAtMaxTextCharRow=false;
+                
+                //iRowCountPageNumber++;
+                iTextCurrentMaxRowCount=1;                
+                iCountInputTextCharRow++;
+                                               
+                //iRowCount=MAX_TEXT_CHAR_ROW;                               
+/* 							//edited by Mike, 20220219                                               
+                //next row; reminder: MAX_TEXT_CHAR_ROW=4
+                for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
+                    iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+                }
+*/                
+								//new row
+								//TO-DO: -reverify: if only 2 remaining rows in page
+//                iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW-1]=1;
+                for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
+/*
+                		if (iCount==MAX_TEXT_CHAR_ROW-1) {
+                    	iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+                		}
+                		else {
+                    	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
+                		}
+*/
+/*
+                		if (iCount==0) {
+                    	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
+  									}
+  									else {
+                    	iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+  									}
+*/  									
+										//TO-DO: -reverfy: this
+										//start row after button press OK;
+										//however, auto-draws all character columns in rows again;
+										//TO-DO: -add: scroll upward animation sequence 
+										//before auto-drawing each character of new row
+										iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+                }
+
+
+            }
+            
+/*
+            if (isAtMaxTextCharRow) {
+                isAtMaxTextCharRow=false;
+
+								if (iCountInputTextCharRow%MAX_TEXT_CHAR_ROW==0) {
+                	iRowCountPageNumber++;                
+								}
+								
+								printf(">>>iRowCountPageNumber: %i\n",iRowCountPageNumber);
+								
+                iCountInputTextCharRow+=iRowCountPageNumber*(MAX_TEXT_CHAR_ROW-2);
+
+
+//                iCountInputTextCharRow+=iRowCountPageNumber*(MAX_TEXT_CHAR_ROW);
+								
+								if (iCountInputTextCharRow<0) {
+									iCountInputTextCharRow=0;
+								}
+
+printf("iCountInputTextCharRow: %i\n",iCountInputTextCharRow);
+
+//                iTextCurrentMaxRowCount=iCountInputTextCharRow+3; //1;
+
+                
+////                //next row; reminder: MAX_TEXT_CHAR_ROW=4
+////                for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
+////                    iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+////                }
+                
+            }
+*/
+        }
+    }
+}
+
+//added by Mike, 20220219
+//note: reusable as with Kindle eBook reader
+void Text::keyDownOK(int keyCode) {
     myKeysDown[keyCode] = TRUE;
     
 //    printf(">>keyDown: %i",keyCode);
@@ -973,6 +1217,7 @@ void Text::keyDown(int keyCode) {
         }
     }
 }
+
 
 void Text::keyUp(int keyCode) {
     myKeysDown[keyCode] = FALSE;
@@ -1028,6 +1273,8 @@ void Text::readInputText(char *inputFilename) {
     //added by Mike, 20210618
     iRowCountPageNumber=0; //start at zero
     
+    //added by Mike, 20220228
+    iCountInputTextCharRow=0;
 				
     //noted by Mike, 20201210
     //note: if concatenated string exceeds size, "stack smashing detected"; terminated; Aborted (core dumped)
