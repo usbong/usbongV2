@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220221; from 20220219
+ * @date updated: 20220224; from 20220221
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -968,19 +968,36 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
   //TO-DO: -add: scroll upward;
   //TO-DO: -update: ... (iRowCount<2) if remaining row from input .txt < 2
   if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
-      if (iRowCount<2) {      	
-      	//added by Mike, 20210617
-//      	if (iCurrentMaxColumnCountPerRowContainer[iRowCount]>=MAX_TEXT_CHAR_COLUMN) {
-//          	iCurrentMaxColumnCountPerRowContainer[iRowCount]=MAX_TEXT_CHAR_COLUMN+1;
-//      	}
-//      	iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
-      	iCurrentMaxColumnCountPerRowContainer[iRowCount]+=6;
+//  iCountInputTextCharRow
+				//edited by Mike, 20220224; removed by Mike, 20220224
+/*
+      	if (iRowCount<2) {      	
+*/      	
+/*
+				//verify if there are still at least 3 rows remaining in input .txt file		
+				if (iRowCount < iRowCount%3) { 
+      		//added by Mike, 20210617
+	//      	if (iCurrentMaxColumnCountPerRowContainer[iRowCount]>=MAX_TEXT_CHAR_COLUMN) {
+	//          	iCurrentMaxColumnCountPerRowContainer[iRowCount]=MAX_TEXT_CHAR_COLUMN+1;
+	//      	}
+	//      	iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
+//      		iCurrentMaxColumnCountPerRowContainer[iRowCount]+=6;
+	
+	printf(">>>DITO\n");
+      	}
+      	else {
+*/
+      		iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
+/*
+      	}
+*/
 
-printf(">>>DITO\n");
-      }
-      else {
-      	iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
-      }
+/*
+     }
+     else {
+     		
+     }
+*/     
   }
       
  
@@ -1007,11 +1024,23 @@ printf(">>>DITO\n");
 //      iTextCurrentMaxRowCount=iTextCurrentMaxRowCount;
   }
   else {
-      
+  		//edited by Mike, 20220224    
       if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
           iTextCurrentMaxRowCount++;
       }
-      
+
+/* //TO-DO: -reverify: this to immediately auto-write the complete text of the previous rows for the text display
+      if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
+      		//edited by Mike, 20220224
+          //iTextCurrentMaxRowCount++;
+          
+          for (int iCount=0; iCount<(iRowCount-1); iCount++) {
+          	iTextCurrentMaxRowCount++;
+          	iRowCount++;
+          }          
+      }
+*/
+           
       //added by Mike, 20210618
       //if has reached end of rows, no need to execute this
       //TO-DO: -add: auto-identify if at MAX row
@@ -1063,6 +1092,7 @@ printf(">>>DITO\n");
 
           isAtMaxTextCharRow=true;
       }
+            
             
             //printf("iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
             
@@ -1152,29 +1182,24 @@ void Text::keyDown(int keyCode) {
 								//TO-DO: -reverify: if only 2 remaining rows in page
 //                iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW-1]=1;
                 for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
-/*
+//OK;
+//TO-DO: -add: identify remaining row count from input .txt file
                 		if (iCount==MAX_TEXT_CHAR_ROW-1) {
                     	iCurrentMaxColumnCountPerRowContainer[iCount]=1;
                 		}
                 		else {
                     	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
                 		}
-*/
-/*
-                		if (iCount==0) {
-                    	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
-  									}
-  									else {
-                    	iCurrentMaxColumnCountPerRowContainer[iCount]=1;
-  									}
-*/  									
+
  //edited by Mike, 20220221
+/*	//edited by Mike, 20220224
 										//TO-DO: -reverfy: this
 										//start row after button press OK;
 										//however, auto-draws all character columns in rows again;
 										//TO-DO: -add: scroll upward animation sequence 
 										//before auto-drawing each character of new row
 										iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+*/
 									
 /*	
 										printf("iCount: %i\n",iCount);
