@@ -6,7 +6,7 @@ Continue to increase know-how to build Electronic Book Readers with Human-Comput
 <br/>
 <b>Usbong History Examples (from 2011~PRESENT):</b><br/>
 --> [Usbong Information Technology Asset Management System (ITAMS)](https://github.com/usbong/ITAMS)<br/>
---> [UsbongTugon: Faster Execution, albeit NO Image AutoScaling using OpenGL](https://github.com/usbong/tugon)<br/>
+--> [UsbongTugon: Faster Execution; NO Image AutoScaling using OpenGL](https://github.com/usbong/tugon)<br/>
 --> [UsbongPagong: with OpenGL CAN-DO Image AutoScaling](https://github.com/usbong/pagong)<br/>
 --> [UsbongSearchEngine: Newsletters](https://github.com/usbong/newsletters)<br/>
 --> [UsbongKMS: Knowledge Management System](https://github.com/usbong/KMS)<br/>
