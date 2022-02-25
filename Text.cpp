@@ -969,11 +969,11 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
 	for (iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
  		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) { 		  		
  			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
-			
-			    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);    
-    			
+/*	//removed by Mike, 20220225			
+			    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);        			
     			printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
     			printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
+*/
     			
     			tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   			}
@@ -1133,12 +1133,13 @@ void Text::keyDown(int keyCode) {
                 iCountInputTextCharRow++;
                                                
                 //iRowCount=MAX_TEXT_CHAR_ROW;                               
-/* 							//edited by Mike, 20220219                                               
+ 								//edited by Mike, 20220219; edited again by Mike, 20220225                                               
                 //next row; reminder: MAX_TEXT_CHAR_ROW=4
                 for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
                     iCurrentMaxColumnCountPerRowContainer[iCount]=1;
                 }
-*/                
+
+/*                
 								//new row
 								//TO-DO: -reverify: if only 2 remaining rows in page
 //                iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW-1]=1;
@@ -1151,32 +1152,8 @@ void Text::keyDown(int keyCode) {
                 		else {                		
                     	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
                 		}
-
-
- //edited by Mike, 20220221
-/*	//edited by Mike, 20220224
-										//TO-DO: -reverfy: this
-										//start row after button press OK;
-										//however, auto-draws all character columns in rows again;
-										//TO-DO: -add: scroll upward animation sequence 
-										//before auto-drawing each character of new row
-										iCurrentMaxColumnCountPerRowContainer[iCount]=1;
-*/
-									
-/*	
-										printf("iCount: %i\n",iCount);
-										printf("MAX_TEXT_CHAR_ROW: %i\n",MAX_TEXT_CHAR_ROW);
-										printf("MAX_TEXT_CHAR_COLUMN: %i\n",MAX_TEXT_CHAR_COLUMN);
-
-                		if (iCount==MAX_TEXT_CHAR_ROW-1) {
-                    	iCurrentMaxColumnCountPerRowContainer[iCount]=1;
-                		}
-                		else {
-                    	iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_COLUMN;
-                		}
-*/                		
                 }
-
+*/
 
             }
             
