@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220225; from 20220224
+ * @date updated: 20220226; from 20220225
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -911,7 +911,7 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
 }
 
 //note: MS Powerpoint text effects? billboard text effects?
-//TO-DO: -update: this
+//TO-DO: -update: this; row before last row still displayed per character
 void Text::drawTextWithFontTexture(int x, int y)
 {
 		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
@@ -967,7 +967,9 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
 
 
 	for (iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
- 		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) { 		  		
+		//edited by Mike, 20220226
+ 		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) {  				  		
+// 		if (iRowCountPartTwo==iTextCurrentMaxRowCount) {  				  		
  			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
 /*	//removed by Mike, 20220225			
 			    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);        			
@@ -1022,7 +1024,10 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
       			//edited by Mike, 20210618
       			//re-set isAtMaxTextCharRow to FALSE after button press
       			//edited by Mike, 20210905
+      			//edited by Mike, 20220226
       			if ((iRowCountPartTwo+1)>=MAX_TEXT_CHAR_ROW) {
+//      			if ((iRowCountPartTwo)>=MAX_TEXT_CHAR_ROW) {
+
       					iRowCountPartTwo=3;
       					//edited by Mike, 20211229
 			//          iTextCurrentMaxRowCount=4;
@@ -1045,7 +1050,10 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
 			//        printf(">>>> DITO; iTextCurrentMaxRowCount: %i",iTextCurrentMaxRowCount);        			
   	}          	
     else {
-    	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
+    	//edited by Mike, 20220226
+    	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) 
+//    	for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) 
+    	{
 				
 				//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
     				
@@ -1053,15 +1061,17 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
     				printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
     				
     				tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
+
   		}
+
+    	printf(">>> tempText: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 				
     	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
     	    	    	
     	//added by Mike, 20220225
     	iRowCountPartTwo++;
- 			iRowCount=iRowCount+1;				
+ 			iRowCount=iRowCount+1;				 			
  			continue;
-
     }
   }
   
@@ -1138,6 +1148,13 @@ void Text::keyDown(int keyCode) {
                 for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
                     iCurrentMaxColumnCountPerRowContainer[iCount]=1;
                 }
+
+/*//removed by Mike, 20220226
+								//added by Mike, 20220226
+                for(int iCount=0; iCount<iCountInputTextCharRow; iCount++) {
+                    iCurrentMaxColumnCountPerRowContainer[iCount]=MAX_TEXT_CHAR_ROW;
+                }
+*/
 
 /*                
 								//new row
