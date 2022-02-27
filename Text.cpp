@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220226; from 20220225
+ * @date updated: 20220227; from 20220226
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -790,7 +790,7 @@ void Text::drawText()
 
 		drawTextBackgroundWithTexture();
 
-   	drawTextWithFontTexture(0, 0);
+   		drawTextWithFontTexture(0, 0);
 
 		if (isAtMaxTextCharRow) {		
 /*  
@@ -911,7 +911,7 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
 }
 
 //note: MS Powerpoint text effects? billboard text effects?
-//TO-DO: -update: this; row before last row still displayed per character
+//TO-DO: -verify: this; row before last row still displayed per character
 void Text::drawTextWithFontTexture(int x, int y)
 {
 		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
@@ -919,77 +919,42 @@ void Text::drawTextWithFontTexture(int x, int y)
     int iRowCountPartTwo=0;  
           
 //          printf(">>> iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
-          
-for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
+  
+//edited by Mike, 20220227        
+//for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
+for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
 
   for (int iRowCountToSetDefault=0; iRowCountToSetDefault<MAX_TEXT_CHAR_ROW_RAM; iRowCountToSetDefault++) {
     for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
         tempText[iRowCountToSetDefault][iColumnCount]='\0'; //verified: in macOS, with Japanese keyboard ro-maji input, "¥0", backspace is "¥"
     }
-	}
-  
-  //edited by Mike, 20220225 
-/*
-  for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCount]; iColumnCount++) {
-//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
-    
-    printf(">>> iRowCount: %i\n",iRowCount);    
-    printf(">>> bilang: %i\n",iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-    
-    tempText[iRowCount+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCount+iCountInputTextCharRow][iColumnCount];
   }
-
-    myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iCountInputTextCharRow]);
-*/
-
-//added by Mike, 20220225; edited by Mike, 20220225; effect cascading TOP to BOTTOM; BOTTOM row per character
-/*
-for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountPartTwo++) {
-
-
- if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) {
- 	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
-	//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
-    	
-    	printf(">>> iRowCountPartTwo: %i\n",iRowCountPartTwo);    
-    	printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-    	
-    	tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
-  	}	
-  	
-  	 myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
-
- }
- else {
- }
-}
-*/
-
-
+  
 	for (iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
-		//edited by Mike, 20220226
- 		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) {  				  		
+		//edited by Mike, 20220227
+		//@last row;
+// 		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) {
+		//TO-DO: -verify: OR if last row is 1st row of input text
+		//TO-DO: -add: another Daigdig member to speak with?
+		//note: DQ6 and FF6 as OPEN WORLD; Battle as Pocky&Rocky; TIME as MOTHER series set in Marikina City;
+ 		if ((iRowCountPartTwo==iTextCurrentMaxRowCount-1) or (iTextCurrentMaxRowCount==0)) {  				  		
+
 // 		if (iRowCountPartTwo==iTextCurrentMaxRowCount) {  				  		
  			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
-/*	//removed by Mike, 20220225			
-			    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);        			
-    			printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
-    			printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-*/
-    			
     			tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   			}
 			
     			myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 			
-			
+			//TO-DO: -add: animation delay in drawing each character of last row text
+						
   			//removed by Mike, 20220225
   			//iTextAnimationCountDelay=0;
   			
  			
   			//edited by Mike, 20220221
   			//TO-DO: -reverify: this
-  			//TO-DO: -add: scroll upward;
+  			//TO-DO: -add: scroll upward; half of row height?
   			//TO-DO: -update: ... (iRowCount<2) if remaining row from input .txt < 2
   			if ((iRowCountPartTwo)==(iTextCurrentMaxRowCount-1)) {
   				iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
@@ -1015,10 +980,6 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
           					
           					break;
       					}
-      					else {
-          					if (iRowCountPartTwo>=MAX_TEXT_CHAR_ROW) {
-          					}	
-      					}
     				}
   			
       			//edited by Mike, 20210618
@@ -1028,9 +989,7 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
       			if ((iRowCountPartTwo+1)>=MAX_TEXT_CHAR_ROW) {
 //      			if ((iRowCountPartTwo)>=MAX_TEXT_CHAR_ROW) {
 
-      					iRowCountPartTwo=3;
-      					//edited by Mike, 20211229
-			//          iTextCurrentMaxRowCount=4;
+      				iRowCountPartTwo=3;
           			iTextCurrentMaxRowCount=3;
 			
           			isAtMaxTextCharRow=true;          			
@@ -1038,30 +997,19 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
     		}
   			else {
       			break;
-  			}
-			
-  			//added by Mike, 20210618
-//  			iRowCount=iRowCount+1;
-       
-/* //removed by Mike, 20220225  			
-  			iRowCount=iRowCount+1;				
- 				continue;
-*/ 			
-			//        printf(">>>> DITO; iTextCurrentMaxRowCount: %i",iTextCurrentMaxRowCount);        			
+  			}			
   	}          	
     else {
     	//edited by Mike, 20220226
     	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) 
 //    	for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) 
-    	{
-				
+    	{				
 				//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
     				
-    				printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
-    				printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-    				
-    				tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
-
+    		printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
+    		printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
+    		
+    		tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   		}
 
     	printf(">>> tempText: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
@@ -1070,9 +1018,9 @@ for (int iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;iRowCountP
     	    	    	
     	//added by Mike, 20220225
     	iRowCountPartTwo++;
- 			iRowCount=iRowCount+1;				 			
- 			continue;
-    }
+ 		iRowCount=iRowCount+1;
+ 		continue;
+	}
   }
   
 //     iRowCount=iRowCount+1;			
