@@ -1,5 +1,5 @@
 /*
- * Copyright 2020~2021 SYSON, MICHAEL B.
+ * Copyright 2020~2022 SYSON, MICHAEL B.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220218; from 20211230
+ * @date updated: 20220227; from 20220218
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -131,7 +131,9 @@ public:
     void update(float dt);
     
     //added by Mike, 20201226
-    void keyDown(int keyCode);	
+    void keyDown(int keyCode);	    
+    void keyDownOK(int keyCode);	//added by Mike, 20201227
+
     void keyUp(int keyCode);
     
     virtual void destroy();
