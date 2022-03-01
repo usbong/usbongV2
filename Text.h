@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220227; from 20220218
+ * @date updated: 20220301; from 20220228
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -73,6 +73,9 @@ private:
     int iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW];
     
     int iRowCountPageNumber; //start at zero
+
+		//added by Mike, 20220301
+		int iAutoKeyPressedKCount;
     
     //added by Mike, 20220218
     int iCountInputTextCharRow;
@@ -127,7 +130,9 @@ public:
     void drawTextWithFontTexture(int x, int y);
     //added by Mike, 20220218
     void drawTextWithFontTextureOK(int x, int y);
-    
+    //added by Mike, 20220228
+    void drawTextWithFontTextureV20220228(int x, int y);
+        
     void update(float dt);
     
     //added by Mike, 20201226
