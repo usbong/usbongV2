@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220214; from 20220213
+ * @date updated: 20220302; from 20220214
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2908,7 +2908,10 @@ int main(int argc, char *argv[])
 		presentScene();
 		
 		//TO-DO: add: auto-identify delay input count
-		SDL_Delay(8);
+		//note: TO-DO: -fix: 1st row NOT auto-displayed per character
+//		SDL_Delay(8);
+		SDL_Delay(100);
+
 	}
 
 	return 0;

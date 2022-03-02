@@ -170,9 +170,15 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 
 		//added by Mike, 20220301
 		iAutoKeyPressedKCount=0;
-			
-  	mySDLRenderer = mySDLRendererInput;
 
+  	//added by Mike, 20220302
+  	iTextCurrentMaxRowCount=0;  	
+    for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
+        iCurrentMaxColumnCountPerRowContainer[iCount]=1;
+    }  	
+
+  	mySDLRenderer = mySDLRendererInput;
+  	
 /*	//removed by Mike, 20211218
 		//added by Mike, 20211215
 		myFont = new Font(mySDLRenderer,0,0,0,windowWidth,windowHeight);
@@ -923,8 +929,17 @@ void Text::drawTextWithFontTexture(int x, int y)
 
           
 //          printf(">>> iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
-    
-          
+
+    //TO-DO: -fix: 1st row of input .txt file NOT auto-displayed per character
+/* //removed by Mike, 20220302          
+    //added by Mike, 20220302
+    if (iTextCurrentMaxRowCount==0) {    
+printf(">>>>>>>> DITO");    
+    	iTextCurrentMaxRowCount=1;
+    	drawTextWithFontTextureOK(x, y);
+			return;
+    }
+*/  
   
 //edited by Mike, 20220227        
 //for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
@@ -1010,10 +1025,24 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
           			//removed by Mike, 20220301
           			//iAutoKeyPressedKCount=3;
 
+printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
+
 //          			if (iAutoKeyPressedKCount>0) {
+									//edited by Mike, 20220302
           			if (iAutoKeyPressedKCount==3) {
+//          			if (iAutoKeyPressedKCount<=2) {
+//          			if (iAutoKeyPressedKCount<=3) {
           				keyDown(KEY_K);
+
           				iAutoKeyPressedKCount--;
+//          				iAutoKeyPressedKCount-=2;
+          			}
+          			else if (iAutoKeyPressedKCount==2) {
+
+//									printf("DITO\n");
+
+          				keyDown(KEY_K);
+          				iAutoKeyPressedKCount=0;          				
           			}
 	
 
@@ -1029,14 +1058,17 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
 //    	for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) 
     	{				
 				//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
-    				
+
+/*    	//removed by Mike, 20220302
     		printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
     		printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-    		
+*/    		
     		tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   		}
 
+/*    	//removed by Mike, 20220302
     	printf(">>> tempText: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+*/
 				
     	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
     	    	    	
@@ -1046,20 +1078,17 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
  		
  		//removed by Mike, 20220301
  		//continue; 		
+ 		
+/*  //removed by Mike, 20220302; note: key press only when next button press arrow displayed
+			//added by Mike, 20220302 		
+printf(">>>>>> iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);			
+      if (iAutoKeyPressedKCount==1) {
+        keyDown(KEY_K);
+        iAutoKeyPressedKCount--;
+      } 		
+*/      
 	}
-  }
-  
-//     iRowCount=iRowCount+1;			
-
-//TO-DO: -reverify: auto-key press
-
-								printf(">>iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
-          			
-          			if (iAutoKeyPressedKCount>0) {
-          				keyDown(KEY_K);
-
-          				iAutoKeyPressedKCount--;
-          			}			          			
+  }    			     			
   }  
 }
 
@@ -1251,8 +1280,11 @@ void Text::keyDown(int keyCode) {
                 //added by Mike, 20220301; removed by Mike, 20220301
 //                iRowCountPageNumber=iTextCurrentMaxRowCount%3;
 
-								//added by Mike, 20220301
+								//added by Mike, 20220301; edited by Mike, 20220302
           			iAutoKeyPressedKCount=3;
+//          			iAutoKeyPressedKCount=4;
+
+printf(">>>>>>>>>>>>>>>>>>>>>>>>\n");
 
                 
 /*//removed by Mike, 20220226
