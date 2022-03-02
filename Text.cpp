@@ -952,6 +952,9 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
   }
   
 	for (iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
+	
+printf(">>>1\n");
+	
 		//edited by Mike, 20220227
 		//@last row;
 // 		if (iRowCountPartTwo==iTextCurrentMaxRowCount-1) {
@@ -960,10 +963,17 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
 		//note: DQ6 and FF6 as OPEN WORLD; Battle as Pocky&Rocky; TIME as MOTHER series set in Marikina City;
  		if ((iRowCountPartTwo==iTextCurrentMaxRowCount-1) or (iTextCurrentMaxRowCount==0)) {  				  		
 
+printf(">>>>>2\n");
+
+
 // 		if (iRowCountPartTwo==iTextCurrentMaxRowCount) {  				  		
  			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
     			tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   			}
+  			
+printf(">>>>>3: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+  			
+  			
 			
     			myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 			
@@ -972,12 +982,18 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
   			//removed by Mike, 20220225
   			//iTextAnimationCountDelay=0;
   			
+
+printf(">>>>4: iRowCountPartTwo: %i; iTextCurrentMaxRowCount-1: %i;\n",iRowCountPartTwo,iTextCurrentMaxRowCount-1);  			
  			
   			//edited by Mike, 20220221
   			//TO-DO: -reverify: this
   			//TO-DO: -add: scroll upward; half of row height?
   			//TO-DO: -update: ... (iRowCount<2) if remaining row from input .txt < 2
-  			if ((iRowCountPartTwo)==(iTextCurrentMaxRowCount-1)) {
+				//edited by Mike, 20220302
+//  			if ((iRowCountPartTwo)==(iTextCurrentMaxRowCount-1)) {
+  			if ((iRowCountPartTwo)<=(iTextCurrentMaxRowCount-1)) {
+printf(">>>>5: %i\n",iRowCountPartTwo);  			
+  			
   				iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
   			}
  			
@@ -1069,6 +1085,8 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 /*    	//removed by Mike, 20220302
     	printf(">>> tempText: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 */
+
+//printf("HALLO\n");
 				
     	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
     	    	    	

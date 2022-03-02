@@ -2908,9 +2908,11 @@ int main(int argc, char *argv[])
 		presentScene();
 		
 		//TO-DO: add: auto-identify delay input count
-		//note: TO-DO: -fix: 1st row NOT auto-displayed per character
-//		SDL_Delay(8);
-		SDL_Delay(100);
+		//note: TO-DO: -fix: 1st row NOT auto-displayed per character;
+		//reverify: output if NOT @start of execution;
+		//example: when interacting with Tauhan in Daigdig;
+		SDL_Delay(8);
+//		SDL_Delay(100);
 
 	}
 
