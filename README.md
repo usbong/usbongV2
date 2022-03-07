@@ -21,7 +21,18 @@ Continue to increase know-how to build Electronic Book Readers with Human-Comput
 
 <img src="https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/References/kindleEBookSystem/kindleEBookPartFromTrainingOfTheZenBuddhistMonk20220115T0759.jpg" width="60%">
 
-## 3. Open Source Software License
+## 3. Recommended Reading
+### 3.1 [『ドラゴンクエスト』 Family Computer](https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/ComputerInteractiveLessonsLearned/DORAGONKUESUTO1.MD)<br/>
+--> observed: 『ドラゴンクエスト』 captured local (Japanese) MARKET due to among others:<br/>
+--> <b>combination in generations</b><br/>
+--> <b>Additional Note:</b> By the 1990's, reached 2Million Japanese Followers based on Actual Sales<br/>
+
+### 3.2 Deutschland System of Pension Insurance:
+"The statutory pension insurance is the most important pillar of old-age provisions. Its financing is split: The monthly contributions paid by employees and employers pay the pensions of those currently in retirement. Through their contributions, those insured acquire some rights when they themselves become pensioners. In turn, coming generations provide for these future rents with their contributions (<b>cross-generational contract</b>). In addition, company and private pensions are the second and third pillars of provisions for old age. Under certain conditions these also enjoy government support."<br/>
+<br/>
+(Hintereder, P. (2010). "FACTS about Germany". Germany: Societäts-Verlag)
+
+## 4. Open Source Software License
 Copyright 2022 SYSON, MICHAEL B.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
