@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220301; from 20220228
+ * @date updated: 20220314; from 20220301
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -149,16 +149,28 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 */  	
   	iRowCountMax=10;
   	iColumnCountMax=iRowCountMax;//18; 
-  	
+  	  	
 		//auto-resize width
   	fGridSquareHeight = (windowWidth)/iRowCountMax;
   	fGridSquareWidth = (windowWidth)/iColumnCountMax;
+
+  	//added by Mike, 20220314
+  	//auto-resize height
+//  	fMyWindowHeight = iColumnCountMax*fGridSquareHeight;
+
   	  	
 		//TO-DO: -add: auto-verify if Portrait, NOT landscape
 		//edited by Mike, 20211230
 		//iTextBackgroundWidthOffset = (fMyWindowWidth-fMyWindowHeight)/fGridSquareWidth;
 		iTextBackgroundWidthOffset = (fMyWindowWidth-fMyWindowHeight)/64; //64 size of each square tile
 		
+		//added by Mike, 20220314
+		//TO-DO: -reverify: output with wide screen computer monitor
+		iTextHeightOffset = (fMyWindowWidth-fMyWindowHeight)/64/2-1; //64 size of each square tile
+
+printf(">>>> iTextHeightOffset : %i\n",iTextHeightOffset );				    	   
+
+				
 		//removed by Mike, 20220107			    	   
 //printf(">>>> iTextBackgroundWidthOffset: %i\n",iTextBackgroundWidthOffset);				    	   
 				    	   
@@ -974,8 +986,11 @@ printf(">>>>>2\n");
 printf(">>>>>3: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
   			
   			
-			
-    			myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+			//edited by Mike, 20220314
+//    			myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    			myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+
+
 			
 			//TO-DO: -add: animation delay in drawing each character of last row text
 						
@@ -1087,9 +1102,11 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 */
 
 //printf("HALLO\n");
-				
-    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
-    	    	    	
+		//edited by Mike, 20220314				
+//    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+
+
     	//added by Mike, 20220225
     	iRowCountPartTwo++;
  		iRowCount=iRowCount+1;

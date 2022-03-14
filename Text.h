@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220301; from 20220228
+ * @date updated: 20220314; from 20220301
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -85,6 +85,10 @@ private:
     
     //added by Mike, 20211223
     int iTextBackgroundWidthOffset;
+	
+	//added by Mike, 20220314
+    int iTextHeightOffset;
+
     
     //added by Mike, 20210723
     bool bHasReachedEndOfTextMessage,
