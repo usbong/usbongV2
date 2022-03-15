@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220314; from 20220301
+ * @date updated: 20220315; from 20220314
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -135,7 +135,9 @@ Text::Text(SDL_Renderer* mySDLRendererInput, int xPos, int yPos, int zPos, int w
 		//TO-DO: -set:fMyWindowWidth to integer	
 		//TO-DO: -set:fMyWindowHeight to integer	
 		fMyWindowWidth=windowWidth;
+		//edited by Mike, 20220315
 		fMyWindowHeight=windowHeight;
+//		fMyWindowHeight=windowWidth;
 
 printf(">>> fMyWindowWidth: %f\n",fMyWindowWidth);
 printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
@@ -164,13 +166,22 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 		//iTextBackgroundWidthOffset = (fMyWindowWidth-fMyWindowHeight)/fGridSquareWidth;
 		iTextBackgroundWidthOffset = (fMyWindowWidth-fMyWindowHeight)/64; //64 size of each square tile
 		
-		//added by Mike, 20220314
-		//TO-DO: -reverify: output with wide screen computer monitor
-		iTextHeightOffset = (fMyWindowWidth-fMyWindowHeight)/64/2-1; //64 size of each square tile
+		//added by Mike, 20220314; edited by Mike, 20220315
+		//reverified: output with wide screen computer monitor; OK
+		//TO-DO: -reverify: output with non-wide screen computer monitor
+	  iTextHeightOffset = fMyWindowHeight/fGridSquareHeight-iRowCountMax/2;
+	
+		//iTextHeightOffset = 0;
 
-printf(">>>> iTextHeightOffset : %i\n",iTextHeightOffset );				    	   
+	printf(">>>> iTextHeightOffset : %i\n",iTextHeightOffset );				    	   
+//printf(">>>> iTextBackgroundWidthOffset/fGridSquareWidth : %f\n",iTextBackgroundWidthOffset/fGridSquareWidth);			
+	printf(">>>> fMyWindowHeight/fGridSquareHeight : %f\n",fMyWindowHeight/fGridSquareHeight);				    	   
+	
+	//TO-DO: fix: this due to text NOT closed
+	//*** stack smashing detected ***: terminated
+	//./execute.sh: line 21: 27319 Aborted                 sudo ./UsbongV2Linux
 
-				
+			
 		//removed by Mike, 20220107			    	   
 //printf(">>>> iTextBackgroundWidthOffset: %i\n",iTextBackgroundWidthOffset);				    	   
 				    	   
@@ -988,10 +999,12 @@ printf(">>>>>3: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
   			
 			//edited by Mike, 20220314
 //    			myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
-    			myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+			//edited by Mike, 20220315
+//    			myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+//    			myFont->draw_string(x+fGridSquareWidth*2,y+iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    			myFont->draw_string(x+fGridSquareWidth*2,
+    			fMyWindowHeight-iTextHeightOffset*fGridSquareHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 
-
-			
 			//TO-DO: -add: animation delay in drawing each character of last row text
 						
   			//removed by Mike, 20220225
@@ -1104,7 +1117,10 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 //printf("HALLO\n");
 		//edited by Mike, 20220314				
 //    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
-    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+			//edited by Mike, 20220315
+//    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+//    	myFont->draw_string(x+fGridSquareWidth*2,y+iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-iTextHeightOffset*fGridSquareHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 
 
     	//added by Mike, 20220225
