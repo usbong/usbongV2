@@ -168,7 +168,7 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 		
 		//added by Mike, 20220314; edited by Mike, 20220315
 		//reverified: output with wide screen computer monitor; OK
-		//TO-DO: -reverify: output with non-wide screen computer monitor
+		//reverified: output with non-wide screen computer monitor; OK
 	  iTextHeightOffset = (fMyWindowHeight/fGridSquareHeight-iRowCountMax/2)/2;
 	
 		//iTextHeightOffset = 0;
