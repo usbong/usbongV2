@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20211111
- * @date updated: 20220302; from 20220214
+ * @date updated: 20220317; from 20220302
  * @website address: http://www.usbong.ph
  *
  * Notes:
@@ -2269,7 +2269,7 @@ void draw(int x, int y)
 */	
 
 	//added by Mike, 20220114
-	if (myKeysDown[KEY_K]) {
+	if (myKeysDown[KEY_K]) {		
 		drawTameMeter(0, 0+iCurrentOffsetWidth,
 										myWindowHeightAsPixel+fGridSquareHeight/4+iCurrentOffsetHeight);	
 	}

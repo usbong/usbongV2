@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220315; from 20220314
+ * @date updated: 20220317; from 20220315
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -822,7 +822,10 @@ void Text::drawText()
 
 		drawTextBackgroundWithTexture();
 
+		//edited by Mike, 20220317
    		drawTextWithFontTexture(0, 0);
+//   		drawTextWithFontTextureOK(0, 0);
+
 
 		if (isAtMaxTextCharRow) {		
 /*  
@@ -946,7 +949,9 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
 //TO-DO: -verify: this; row before last row still displayed per character
 void Text::drawTextWithFontTexture(int x, int y)
 {
-		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
+	//removed by Mike, 20220317; causes STACK SMASHING, i.e. temporary memory storage buffer overflow
+//	char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];       
+ 
     int iRowCount;  
     int iRowCountPartTwo=0;  
 
@@ -990,7 +995,11 @@ printf(">>>>>2\n");
 
 
 // 		if (iRowCountPartTwo==iTextCurrentMaxRowCount) {  				  		
- 			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
+			//edited by Mike, 20220317
+			//TO-DO: -fix: this due to causes segmentation fault, i.e. use of NULL value over the set container size
+// 			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
+ 			for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
+
     			tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   			}
   			
@@ -1021,10 +1030,16 @@ printf(">>>>4: iRowCountPartTwo: %i; iTextCurrentMaxRowCount-1: %i;\n",iRowCount
   			//TO-DO: -update: ... (iRowCount<2) if remaining row from input .txt < 2
 				//edited by Mike, 20220302
 //  			if ((iRowCountPartTwo)==(iTextCurrentMaxRowCount-1)) {
+				//edited by Mike, 20220317
   			if ((iRowCountPartTwo)<=(iTextCurrentMaxRowCount-1)) {
-printf(">>>>5: %i\n",iRowCountPartTwo);  			
   			
-  				iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+printf(">>>>5: %i\n",iRowCountPartTwo);  			
+
+				//edited by Mike, 20220317
+				//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+				if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
+  					iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+				}  			
   			}
  			
   			if (cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow  ][iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]-1]=='\n') {
@@ -1127,8 +1142,18 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 
 
     	//added by Mike, 20220225
+/* //edited by Mike, 202203017
     	iRowCountPartTwo++;
  		iRowCount=iRowCount+1;
+*/
+		//edited by Mike, 20220317
+		if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
+//  			iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+    		iRowCountPartTwo++;
+		}
+
+ 		iRowCount=iRowCount+1;
+
  		
  		//removed by Mike, 20220301
  		//continue; 		

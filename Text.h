@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220314; from 20220301
+ * @date updated: 20220317; from 20220314
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -89,6 +89,8 @@ private:
 	//added by Mike, 20220314
     int iTextHeightOffset;
 
+	//added by Mike, 20220317
+	char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];
     
     //added by Mike, 20210723
     bool bHasReachedEndOfTextMessage,
