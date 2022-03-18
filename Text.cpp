@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220317; from 20220315
+ * @date updated: 20220318; from 20220317
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -997,8 +997,15 @@ printf(">>>>>2\n");
 // 		if (iRowCountPartTwo==iTextCurrentMaxRowCount) {  				  		
 			//edited by Mike, 20220317
 			//TO-DO: -fix: this due to causes segmentation fault, i.e. use of NULL value over the set container size
-// 			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
- 			for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
+			//edited by Mike, 20220317
+			
+			printf(">>>>>iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]:  %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);
+			
+			
+ 			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
+// 			for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
+// 			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo-1]; iColumnCount++) {
+
 
     			tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
   			}
@@ -1035,10 +1042,16 @@ printf(">>>>4: iRowCountPartTwo: %i; iTextCurrentMaxRowCount-1: %i;\n",iRowCount
   			
 printf(">>>>5: %i\n",iRowCountPartTwo);  			
 
-				//edited by Mike, 20220317
+				//edited by Mike, 20220318
 				//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+//				if (iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]<MAX_TEXT_CHAR_ROW) {
 				if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
-  					iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+					//edited by Mike, 20220318
+  					//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+
+					if (iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]<MAX_TEXT_CHAR_COLUMN) {
+  						iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+					}
 				}  			
   			}
  			
