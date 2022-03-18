@@ -899,8 +899,7 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
       	if (cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW+1][0]=='\0') {
           	printf(">>>>>>>>>>>>>>> WAKAS!\n");
           	
-          	bHasReachedEndOfTextMessage=true;
-          	
+          	bHasReachedEndOfTextMessage=true;          	
           	break;
       	}
       	else {
@@ -1001,6 +1000,15 @@ printf(">>>>>2\n");
 			
 			printf(">>>>>iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]:  %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);
 			
+			//added by Mike, 20220318
+			if (bHasReachedEndOfTextMessage) {
+				if (iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]==0) {
+					bHasPressedKeyToCloseEndOfTextMessage=false;
+					//removed by Mike, 20220318
+//					return;
+				}
+			}
+			
 			
  			for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) {
 // 			for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) {
@@ -1071,8 +1079,7 @@ printf(">>>>5: %i\n",iRowCountPartTwo);
       					if (cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow+1][0]=='\0') {
           					printf(">>>>>>>>>>>>>>> WAKAS!\n");
           					
-          					bHasReachedEndOfTextMessage=true;
-          					
+          					bHasReachedEndOfTextMessage=true;          					
           					break;
       					}
     				}
