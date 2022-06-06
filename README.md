@@ -1,6 +1,12 @@
 # usbongV2
 Usbong (Version 2.0): Electronic Book Reader with Human-Computer Interactivity
 
+## keyphrase:
+Simple Directmedia Layer (SDL) only; No Open Graphics Library (OpenGL)<br/>
+<br/>
+where: SDL : compression techniques<br/>
+OpenGL : 3D Graphics techniques
+
 ## 1. Objective
 Continue to increase know-how to build Electronic Book Readers with Human-Computer Interactivity<br/>
 <br/>
