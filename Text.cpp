@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220318; from 20220317
+ * @date updated: 20220613; from 20220610
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -185,6 +185,9 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 		//removed by Mike, 20220107			    	   
 //printf(">>>> iTextBackgroundWidthOffset: %i\n",iTextBackgroundWidthOffset);				    	   
 				    	   
+		//added by Mike, 20220610
+		idrawTextWithFontTextureCount=0;
+				    	   
   	iCountAnimationFrame=0;
 //  	iCurrentKeyInput=2; //start: face RIGHT
 
@@ -194,8 +197,8 @@ printf(">>> fMyWindowHeight: %f\n",fMyWindowHeight);
 		//added by Mike, 20220301
 		iAutoKeyPressedKCount=0;
 
-  	//added by Mike, 20220302
-  	iTextCurrentMaxRowCount=0;  	
+  	//added by Mike, 20220302; edited by Mike, 20220613
+  	iTextCurrentMaxRowCount=0; //1;  	
     for(int iCount=0; iCount<MAX_TEXT_CHAR_ROW; iCount++) {
         iCurrentMaxColumnCountPerRowContainer[iCount]=1;
     }  	
@@ -952,8 +955,10 @@ void Text::drawTextWithFontTexture(int x, int y)
 //	char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];       
  
     int iRowCount;  
-    int iRowCountPartTwo=0;  
-
+    //edited by Mike, 20220613
+    //int iRowCountPartTwo=0;  
+    int iRowCountPartTwo;  
+    
           
 //          printf(">>> iTextCurrentMaxRowCount: %i\n",iTextCurrentMaxRowCount);
 
@@ -977,8 +982,11 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount+1;) {
         tempText[iRowCountToSetDefault][iColumnCount]='\0'; //verified: in macOS, with Japanese keyboard ro-maji input, "¥0", backspace is "¥"
     }
   }
-  
+  	
+  	//edited by Mike, 20220613
 	for (iRowCountPartTwo=0; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
+//	for (iRowCountPartTwo=0; iRowCountPartTwo<=iTextCurrentMaxRowCount;) {	
+//	for (; iRowCountPartTwo<iTextCurrentMaxRowCount;) {
 	
 printf(">>>1\n");
 	
@@ -988,7 +996,23 @@ printf(">>>1\n");
 		//TO-DO: -verify: OR if last row is 1st row of input text
 		//TO-DO: -add: another Daigdig member to speak with?
 		//note: DQ6 and FF6 as OPEN WORLD; Battle as Pocky&Rocky; TIME as MOTHER series set in Marikina City;
+ 		
+printf(">>>>>>>>> iRowCountPartTwo: %i, iTextCurrentMaxRowCount: %i;\n", iRowCountPartTwo, iTextCurrentMaxRowCount);
+ 		
+ 		
+/* 		//removed by Mike, 20220613
+ 		//added by Mike, 20220613
+ 		//infinite loop error;
+ 		//Font char in row NOT displayed in sequence
+ 		if ((iRowCountPartTwo==0)) {// && (iRowCountPartTwo==iTextCurrentMaxRowCount)) {
+		}
+*/		
+ 		//edited by Mike, 20220613		
+ 		//verified: displayed OUTPUT NOT slow to cause 1st row to appear to be all already written 
+ 		//TO-DO: -add: TEXT background image to appear with animation
  		if ((iRowCountPartTwo==iTextCurrentMaxRowCount-1) or (iTextCurrentMaxRowCount==0)) {  				  		
+// 		if ((iRowCountPartTwo<=iTextCurrentMaxRowCount-1) or (iTextCurrentMaxRowCount==0)) {  				  		
+// 		if ((iRowCountPartTwo==iTextCurrentMaxRowCount-1) or (iTextCurrentMaxRowCount<=1)) {  				  		
 
 printf(">>>>>2\n");
 
@@ -1026,6 +1050,7 @@ printf(">>>>>3: %s\n",tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 			//edited by Mike, 20220315
 //    			myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 //    			myFont->draw_string(x+fGridSquareWidth*2,y+iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    			
     			myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 
 /*    			myFont->draw_string(x+fGridSquareWidth*2,
@@ -1050,6 +1075,8 @@ printf(">>>>4: iRowCountPartTwo: %i; iTextCurrentMaxRowCount-1: %i;\n",iRowCount
   			
 printf(">>>>5: %i\n",iRowCountPartTwo);  			
 
+
+/* //edited by Mike, 20220613
 				//edited by Mike, 20220318
 				//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
 //				if (iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]<MAX_TEXT_CHAR_ROW) {
@@ -1061,6 +1088,25 @@ printf(">>>>5: %i\n",iRowCountPartTwo);
   						iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
 					}
 				}  			
+*/
+
+
+	//TO-DO: -add: as settings, function to adjust text draw speed 
+	//add: HOLD button to speed-up?
+	//TO-DO: -add: narration voice-over
+	if(idrawTextWithFontTextureCount%40==0) { //5//10//20
+		if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
+			//edited by Mike, 20220318
+  			//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+
+			if (iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]<MAX_TEXT_CHAR_COLUMN) {
+  				iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+			}
+		}
+	}
+    idrawTextWithFontTextureCount=idrawTextWithFontTextureCount+1;
+
+
   			}
  			
   			if (cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow  ][iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]-1]=='\n') {
@@ -1097,8 +1143,9 @@ printf(">>>>5: %i\n",iRowCountPartTwo);
           			isAtMaxTextCharRow=true;          			
       			}
 */      			
-      			if ((iRowCountPartTwo+1)>=MAX_TEXT_CHAR_ROW) {
-      					iRowCountPartTwo=3;
+
+      			if ((iRowCountPartTwo+1)>=MAX_TEXT_CHAR_ROW) {      				
+      				iRowCountPartTwo=3;
           			iTextCurrentMaxRowCount=3;
 			
           			isAtMaxTextCharRow=true;          
@@ -1132,19 +1179,32 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
   			else {
       			break;
   			}			
-  	}          	
+  	}     
+  	//IF @LAST ROW     	
     else {
-    	//edited by Mike, 20220226
+    
+    		printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>> iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]);    
+    
+    	//edited by Mike, 20220226; edited again by Mike, 20220613
     	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]; iColumnCount++) 
 //    	for (int iColumnCount=0; iColumnCount<MAX_TEXT_CHAR_COLUMN; iColumnCount++) 
+//    	for (int iColumnCount=0; iColumnCount<iCurrentMaxColumnCountPerRowContainer[0]; iColumnCount++) 
     	{				
 				//    printf(">>> iCurrentMaxColumnCountPerRowContainer[iRowCount]: %i\n",iCurrentMaxColumnCountPerRowContainer[iRowCount]);    
 
 /*    	//removed by Mike, 20220302
     		printf(">>> iRowCount: %i\n",iRowCountPartTwo);    
     		printf(">>> bilang: %i\n",iRowCountPartTwo+iRowCountPageNumber*MAX_TEXT_CHAR_ROW-iCountInputTextCharRow);
-*/    		
+*/
+
+
+			//edited by Mike, 20220613    		
     		tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount];
+
+
+    		//tempText[iRowCountPartTwo+iCountInputTextCharRow][iColumnCount]=cCurrentTextContainer[iRowCountPartTwo+iCountInputTextCharRow][0];
+
+		//removed by Mike, 20220613; //added again by Mike, 20220613
   		}
 
 /*    	//removed by Mike, 20220302
@@ -1158,14 +1218,13 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 //    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
 //    	myFont->draw_string(x+fGridSquareWidth*2,y+iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
     	//myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-iTextHeightOffset*fGridSquareHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+  		
+  		//edited by Mike, 20220613  	
     	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+    	
+//    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[0]);
 
 
-    	//added by Mike, 20220225
-/* //edited by Mike, 202203017
-    	iRowCountPartTwo++;
- 		iRowCount=iRowCount+1;
-*/
 		//edited by Mike, 20220317
 		if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
 //  			iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
@@ -1173,6 +1232,28 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 		}
 
  		iRowCount=iRowCount+1;
+
+//added by Mike, 20220613; removed by Mike, 20220613
+//}
+
+
+/*		//delay causes objects outside text to also become SLOW
+		//causes CRASH @1;
+        if (idrawTextWithFontTextureCount<10) { //1) {
+			if (iRowCountPartTwo<MAX_TEXT_CHAR_ROW) {
+    			iRowCountPartTwo++;
+			}
+	
+ 			iRowCount=iRowCount+1;
+        	}
+        else {
+			//causes CRASH @10;
+        	if (idrawTextWithFontTextureCount>500) { //20) {
+        		idrawTextWithFontTextureCount=0;
+        	}
+        }
+        idrawTextWithFontTextureCount=idrawTextWithFontTextureCount+1;
+*/
 
  		
  		//removed by Mike, 20220301
