@@ -9,8 +9,26 @@ OpenGL : 3D Graphics techniques
 
 ## 1. Objective
 Continue to increase know-how to build Electronic Book Readers with Human-Computer Interactivity<br/>
-<br/>
-<b>Usbong History Examples (from 2011~PRESENT):</b><br/>
+
+### NOTE#1:
+increase: know-how via among others: newsletters, stories;<br/>
+--> BALITA on I.T., computer, et cetera<br/>
+--> Wikang Filipino<br/>
+--> combination of among others: ANIMATION, MUSIC/voice-over, COMPUTER<br/>
+--> RPG GENRE, e.g. Dragon Quest 6<br/>
+--> NEWS WEB SERVICE GENRE, e.g. ASAHI shimbun<br/>
+
+### NOTE#2:
+increase: USD in Philippines via EXPORT;<br/>
+--> where: USD vital for ENERGY, e.g. OIL, used by MACHINES<br/>
+Example: NINTENDO as BIG EXPORTER from JAPAN to U.S.A.<br/>
+--> ACTION; FIGHTING GENRE
+
+### NOTE#3:
+increase: know-how via increased use of COMPUTERS<br/>
+Example: SQUARE-ENIX, CAPCOM, SNK, SEGA via STEAM platform
+
+## Usbong History Examples (from 2011~PRESENT):
 --> [Usbong Information Technology Asset Management System (ITAMS)](https://github.com/usbong/ITAMS)<br/>
 --> [UsbongTugon: Faster Execution; NO Image AutoScaling using OpenGL](https://github.com/usbong/tugon)<br/>
 --> [UsbongPagong: with OpenGL CAN-DO Image AutoScaling](https://github.com/usbong/pagong)<br/>
