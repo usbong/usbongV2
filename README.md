@@ -17,12 +17,17 @@ increase: know-how via among others: newsletters, stories;<br/>
 --> combination of among others: ANIMATION, MUSIC/voice-over, COMPUTER<br/>
 --> RPG GENRE, e.g. Dragon Quest 6<br/>
 --> NEWS WEB SERVICE GENRE, e.g. ASAHI shimbun<br/>
+--> reminder: select news reports faster based on web service due to impact to country;<br/>
+--> Example: terrorist attack in Paris, France in the Year 2021 (Winter) via asahi shimbun;<br/>
 
 ### NOTE#2:
 increase: USD in Philippines via EXPORT;<br/>
 --> where: USD vital for ENERGY, e.g. OIL, used by MACHINES<br/>
 Example: NINTENDO as BIG EXPORTER from JAPAN to U.S.A.<br/>
---> ACTION; FIGHTING GENRE
+--> ACTION; FIGHTING GENRE<br/>
+--> reminder: can quickly create multiple copies using software;<br/>
+--> adds: software updates via connection to computer network<br/>
+--> software updates : technique against illegal copying classified to be software piracy
 
 ### NOTE#3:
 increase: know-how via increased use of COMPUTERS<br/>
