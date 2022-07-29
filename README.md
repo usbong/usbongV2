@@ -46,9 +46,15 @@ Example: SQUARE-ENIX, CAPCOM, SNK, SEGA via STEAM platform
 
 ## 2. References
 
+### 2.1 Game&Watch
 <img src="https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/References/zeldaGameAndWatchSystem/zeldaGameAndWatchSystem.jpg" width="60%">
 
+### 2.2 Kindle eBOOK Reader
 <img src="https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/References/kindleEBookSystem/kindleEBookPartFromTrainingOfTheZenBuddhistMonk20220115T0759.jpg" width="60%">
+
+### 2.3 YAMAHA Portasound PC-100 (Year 1982)
+--> since over 30years ago;<br/>
+--> KIKKOMAN 醤油, since over 300years ago
 
 ## 3. Recommended Reading
 ### 3.1 [『ドラゴンクエスト』 Family Computer](https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/ComputerInteractiveLessonsLearned/DORAGONKUESUTO1.MD)<br/>
