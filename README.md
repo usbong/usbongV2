@@ -33,6 +33,18 @@ Example: NINTENDO as BIG EXPORTER from JAPAN to U.S.A.<br/>
 increase: know-how via increased use of COMPUTERS<br/>
 Example: SQUARE-ENIX, CAPCOM, SNK, SEGA via STEAM platform
 
+### NOTE#4:
+--> USBONG: "ALAMAT"<br/>
+--> add: in GAMEPLAY: KILL COUNT @MINIMUM FOR BEST ENDING;<br/>
+--> as with CHRONO TRIGGER), where:<br/> 
+--> meeting with SYSON, MICHAEL B., sitting in front of COMPUTER, et cetera;<br/>
+--> add: HISTORY SETTING of OVER 300 years ago; <br/>
+--> keyphrase: KIKKOMAN, MONSTER HUNTER;<br/>
+--> where MONSTER : RYU/DINOSAUR/恐竜
+
+#### Reference: 
+--> "Ang Alamat ng Agimat: Anim na Perlas"
+
 ## Usbong History Examples (from 2011~PRESENT):
 --> [Usbong Information Technology Asset Management System (ITAMS)](https://github.com/usbong/ITAMS)<br/>
 --> [UsbongTugon: Faster Execution; NO Image AutoScaling using OpenGL](https://github.com/usbong/tugon)<br/>
@@ -55,6 +67,10 @@ Example: SQUARE-ENIX, CAPCOM, SNK, SEGA via STEAM platform
 ### 2.3 YAMAHA Portasound PC-100 (Year 1982)
 --> since over 30years ago;<br/>
 --> KIKKOMAN 醤油, since over 300years ago
+
+### 2.4 "Ang Alamat ng Agimat: Anim na Perlas" (Year 2004)
+--> Nokia Series 40, 60, Sony Ericsson Mobile Telephone;<br/>
+--> JAVA 2 Microedition (J2ME)
 
 ## 3. Recommended Reading
 ### 3.1 [『ドラゴンクエスト』 Family Computer](https://github.com/usbong/documentation/blob/master/Usbong/R%26D/Notes/ComputerInteractiveLessonsLearned/DORAGONKUESUTO1.MD)<br/>
