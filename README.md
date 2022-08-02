@@ -36,11 +36,11 @@ Example: SQUARE-ENIX, CAPCOM, SNK, SEGA via STEAM platform
 ### NOTE#4:
 --> USBONG: "ALAMAT"<br/>
 --> add: in GAMEPLAY: KILL COUNT @MINIMUM FOR BEST ENDING;<br/>
---> as with CHRONO TRIGGER), where:<br/> 
---> meeting with SYSON, MICHAEL B., sitting in front of COMPUTER, et cetera;<br/>
---> add: HISTORY SETTING of OVER 300 years ago; <br/>
+--> as with CHRONO TRIGGER (Super Nintendo Entertainment System・Super Family Computer),<br/> 
+--> where: meeting with SYSON, MICHAEL B., sitting in front of COMPUTER, et cetera;<br/>
+--> add: PHILIPPINE HISTORY SETTING of OVER 300 years ago; <br/>
 --> keyphrase: KIKKOMAN, MONSTER HUNTER;<br/>
---> where MONSTER : RYU/DINOSAUR/恐竜
+--> where MONSTER : RYU/DRAGON/DINOSAUR/恐竜
 
 #### Reference: 
 --> "Ang Alamat ng Agimat: Anim na Perlas"
