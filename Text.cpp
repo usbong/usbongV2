@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220613; from 20220610
+ * @date updated: 20220808; from 20220614
  * @website address: http://www.usbong.ph
  *
  * Reference:/home/unit_member/Documents/USBONG/usbongV2-main
@@ -98,7 +98,7 @@ enum Keys
      KEY_UP,
      KEY_DOWN,
      KEY_RIGHT,
-     KEY_LEFT,
+     KEY_LEFT,20220613
      KEY_SPACE,
      KEY_ENTER,
      */
@@ -825,9 +825,10 @@ void Text::drawText()
 
 		drawTextBackgroundWithTexture();
 
-		//edited by Mike, 20220317
-   		drawTextWithFontTexture(0, 0);
-//   		drawTextWithFontTextureOK(0, 0);
+		//edited by Mike, 20220317; edited by Mike, 20220808
+//   		drawTextWithFontTexture(0, 0); //TO-DO: -reverify: this
+   		drawTextWithFontTextureOK(0, 0);
+//   		drawTextWithFontTextureV20220228(0, 0);
 
 
 		if (isAtMaxTextCharRow) {		
@@ -848,8 +849,10 @@ void Text::drawText()
         idrawPressNextSymbolCount=idrawPressNextSymbolCount+1;
     }              	
 }
-    
+
+//edited by Mike, 20220614  
 void Text::drawTextWithFontTextureOK(int x, int y)
+//void Text::drawTextWithFontTexture(int x, int y)
 {
 		char tempText[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];        
     int iRowCount;    
@@ -866,9 +869,18 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
             	tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount]=cCurrentTextContainer[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW][iColumnCount];
   	}
  	
-    	myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
     	
-  	iTextAnimationCountDelay=0;
+    	//edited by Mike, 20220808
+    	//myFont->draw_string(x+fGridSquareWidth*2,fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+
+//    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCountPartTwo +fGridSquareHeight*0.2,0,tempText[iRowCountPartTwo+iCountInputTextCharRow]);
+
+    	myFont->draw_string(x+fGridSquareWidth*2,iTextHeightOffset*fGridSquareHeight+fMyWindowHeight-fMyWindowHeight/4.0 +fGridSquareHeight/1.5*iRowCount +fGridSquareHeight*0.2,0,tempText[iRowCount+iRowCountPageNumber*MAX_TEXT_CHAR_ROW]);
+
+
+
+//removed by Mike, 20220614
+//  	iTextAnimationCountDelay=0;
   	
   	if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
       	iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
@@ -918,15 +930,16 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
           	}
       	}
     	}
+
   	
       	//edited by Mike, 20210618
       	//re-set isAtMaxTextCharRow to FALSE after button press
       	//edited by Mike, 20210905
       	if ((iRowCount+1)>=MAX_TEXT_CHAR_ROW) {
       			iRowCount=3;
-      			//edited by Mike, 20211229
-	//          iTextCurrentMaxRowCount=4;
-          	iTextCurrentMaxRowCount=3;
+      			//edited by Mike, 20211229; edited again by Mike, 20220808
+	          iTextCurrentMaxRowCount=4;
+          	//iTextCurrentMaxRowCount=3;
 	
           	isAtMaxTextCharRow=true;
       	}
@@ -949,6 +962,7 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
 
 //note: MS Powerpoint text effects? billboard text effects?
 //TO-DO: -verify: this; row before last row still displayed per character
+//void Text::drawTextWithFontTextureScrollUpMovement(int x, int y)
 void Text::drawTextWithFontTexture(int x, int y)
 {
 	//removed by Mike, 20220317; causes STACK SMASHING, i.e. temporary memory storage buffer overflow
@@ -1169,7 +1183,7 @@ printf("iAutoKeyPressedKCount: %i\n",iAutoKeyPressedKCount);
 
 //									printf("DITO\n");
 
-          				keyDown(KEY_K);
+          				keyDown(KEY_K);        				
           				iAutoKeyPressedKCount=0;          				
           			}
 	
@@ -1414,7 +1428,8 @@ void Text::update(float dt)
 
 //added by Mike, 20201226; edited by Mike, 20220218
 //TO-DO: -update: this buggy
-void Text::keyDown(int keyCode) {
+//edited by Mike, 20220808
+void Text::keyDownBuggy(int keyCode) {
     myKeysDown[keyCode] = TRUE;
     
 //    printf(">>keyDown: %i",keyCode);
@@ -1529,7 +1544,9 @@ printf("iCountInputTextCharRow: %i\n",iCountInputTextCharRow);
 
 //added by Mike, 20220219
 //note: reusable as with Kindle eBook reader
-void Text::keyDownOK(int keyCode) {
+//edited by Mike, 20220808
+//void Text::keyDownOK(int keyCode) {
+void Text::keyDown(int keyCode) {
     myKeysDown[keyCode] = TRUE;
     
 //    printf(">>keyDown: %i",keyCode);

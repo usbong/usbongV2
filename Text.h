@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20220317; from 20220314
+ * @date updated: 20220808; from 20220614
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -68,6 +68,9 @@ private:
 		char cCurrentTextContainer[MAX_TEXT_CHAR_ROW_RAM][MAX_TEXT_CHAR_COLUMN];
     
     int iTextAnimationCountDelay;
+
+	//added by Mike, 20220610
+	int idrawTextWithFontTextureCount;
     
     int iTextCurrentMaxRowCount;
     int iCurrentMaxColumnCountPerRowContainer[MAX_TEXT_CHAR_ROW];
@@ -134,16 +137,23 @@ public:
     void drawTextBackgroundWithTextureTopSide();
     
     void drawTextWithFontTexture(int x, int y);
+    
     //added by Mike, 20220218
     void drawTextWithFontTextureOK(int x, int y);
+    
     //added by Mike, 20220228
     void drawTextWithFontTextureV20220228(int x, int y);
         
+    //added by Mike, 20220614
+	void drawTextWithFontTextureScrollUpMovement(int x, int y);
+	
     void update(float dt);
     
     //added by Mike, 20201226
     void keyDown(int keyCode);	    
     void keyDownOK(int keyCode);	//added by Mike, 20201227
+    //added by Mike, 20220808
+    void keyDownBuggy(int keyCode);
 
     void keyUp(int keyCode);
     
