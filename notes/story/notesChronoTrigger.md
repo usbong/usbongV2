@@ -33,6 +33,22 @@ mission; save world;<br/>
 
 ## Travel to the east in FUTURE; 3hrs total;
  
+multiple paths;
+ 
+### side path
 
+sewer; dungeon; laberinto<br/>
+fire + cyclone tech; flame thrower hits multiple monsters in path;<br/>
+boss snake; special attack reduces teammate's HP to 1; MARLE reserved for heal (aura);<br/>
+
+### main path
+
+junkyard ruins; race; with Johnny; variation in gameplay;<br/>
+boost at end to win;<br/>
+win only once OK;<br/>
+meet new friend (ROBO); <br/>
+3 only per team; choose between LUCCA or MARLE;
+
+## side path and main path; 4hrs total;
 
 
