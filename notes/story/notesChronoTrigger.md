@@ -34,6 +34,7 @@ mission; save world;<br/>
 ## Travel to the east in FUTURE; 3hrs total;
  
 multiple paths;
+
  
 ### side path
 
@@ -49,6 +50,13 @@ win only once OK;<br/>
 meet new friend (ROBO); <br/>
 3 only per team; choose between LUCCA or MARLE;
 
-## side path and main path; 4hrs total;
+## After side path and main path; 4hrs total;
 
+la fábrica abandonada; dungeon<br/>
+button sequences; combination of 2 buttons; 4 buttons<br/>
+boss; ROBO's bullies; heal when weak, attack when strong; double tech combo;<br/>
+remembers: FF; Mr SAKAGUCHI, Hironobu;<br/>
+MARLE and CHRONO;<br/>
+
+## Travel to the FUTURE; El fin del tiempo 4.5hrs total;
 
