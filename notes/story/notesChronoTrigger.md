@@ -69,4 +69,16 @@ diagonal; math; trigonometry;<br/>
 remembers: Secret of Mana 2;<br/>
 MAGIC for CHRONO, LUCCA, and MARLE; <br/>
 ROBO no magic, yet has the SUN (El sol); laser<br/>
-adds: 20mins (approx) to total time
+adds: 20mins (approx) to total time<br/>
+choose members to be part of three-member team; 
+
+## Travel to the PRESENT: el año 1000, 4.8hrs total;
+
+investigate; Speak with town people (who have turned into monsters)<br/>
+remembers: Dragonquest VI; <br/>
+new items from Borch(?); stronger weapon for CHRONO; <br/>
+stronger defense for MARLE and LUCCA; <br/>
+select items, e.g. pistola, already in own inventory;
+
+## Travel to the cave in west in PRESENT; 5hrs total;
+
