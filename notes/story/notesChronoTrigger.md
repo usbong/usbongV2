@@ -54,9 +54,19 @@ meet new friend (ROBO); <br/>
 
 la fábrica abandonada; dungeon<br/>
 button sequences; combination of 2 buttons; 4 buttons<br/>
+new items, e.g. stronger armor, stronger weapons;<br/>
 boss; ROBO's bullies; heal when weak, attack when strong; double tech combo;<br/>
 remembers: FF; Mr SAKAGUCHI, Hironobu;<br/>
 MARLE and CHRONO;<br/>
+variation in choice: LUCCA and CHRONO; use of items, instead of double tech?<br/>
 
-## Travel to the FUTURE; El fin del tiempo 4.5hrs total;
+## Travel to the FUTURE; El Fin del tiempo 4.5hrs total;
 
+Speccio; puzzle; walk along the walls of the room; three times! <br/>
+Tres rondas, anda desde la puerta, <br/>
+mientras tocando la pared de la habitación;<br/>
+diagonal; math; trigonometry;<br/>
+remembers: Secret of Mana 2;<br/>
+MAGIC for CHRONO, LUCCA, and MARLE; <br/>
+ROBO no magic, yet has the SUN (El sol); laser<br/>
+adds: 20mins (approx) to total time
