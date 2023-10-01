@@ -75,7 +75,7 @@ choose members to be part of three-member team;
 ## Travel to the PRESENT: el año 1000, 4.8hrs total;
 
 investigate; Speak with town people (who have turned into monsters)<br/>
-remembers: Dragonquest VI; <br/>
+remembers: Dragon Quest VI; <br/>
 new items from Borch(?); stronger weapon for CHRONO; <br/>
 stronger defense for MARLE and LUCCA; <br/>
 select items, e.g. pistola, already in own inventory;
