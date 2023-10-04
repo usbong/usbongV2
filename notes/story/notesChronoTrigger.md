@@ -82,3 +82,19 @@ select items, e.g. pistola, already in own inventory;
 
 ## Travel to the cave in west in PRESENT; 5hrs total;
 
+dungeon; magic against monsters; physical attacks substantially low;<br/>
+learned via experiment/trial and error;<br/>
+dungeon parts cover paths based on drawing priority;<br/>
+notes: variation with DQVI, more of FF6, yet improved version due to enemy monsters viewable, can be evaded;<br/>
+boss; monster; LUCCA main fuego attack;<br/> 
+monster attacks; team member CHRONO almost dies; yet survives; <br/> 
+puzzle solved via reserve MARLE and CHRONO double tech; cíclo de aura; heal all;<br/>
+story; Mágus created Lavos who shall destroy the planet<br/>
+
+## Travel to LUCCA's house via whirlpool in PRESENT; 5.5hrs total;
+
+Taban's favorite daughter; LUCCA; new armor; 50% defense against fire; velocidad+2;
+
+
+
+
