@@ -93,8 +93,6 @@ story; Mágus created Lavos who shall destroy the planet<br/>
 
 ## Travel to LUCCA's house via whirlpool in PRESENT; 5.5hrs total;
 
-La mapa como en el C&C Red Alert, los costeros, las orillas...
-
 La casa de LUCCA; Taban's favorite daughter; LUCCA; new armor; 50% defense against fire; velocidad+2;
 
 Residencia del alcade; explanaciones, las armas, armaduras, técnicas, etc.; +12min
@@ -105,5 +103,24 @@ La casa (El castillo después del bosque) de MARLE; No quiere ver su Padre. Esca
 
 Nuevos portales.
 
-## Travel to 65.000.000 in PAST; 6.3hrs total;
+Eligí CHRONO, ROBO, LUCCA por el equipo.
+
+## Viajar a 65,000,000 en el Pasado; 6.3hrs total;
+
+Habla con la gente en el pueblo prehistórico.
+
+Su manera de hablar. Verbo infinitivo.
+
+El monte. Los monstruos son demasiados poderosos.
+
+¿Los rayos contra los saurios...? 
+
+Todos los miembros mueren. Puzle. 
+
+Vaya, los ataques físicos, muy eficaces.
+
+Además, compra los súperpociónes.
+
+
+
 
