@@ -62,7 +62,7 @@ variation in choice: LUCCA and CHRONO; use of items, instead of double tech?<br/
 
 ## Travel to the FUTURE; El Fin del tiempo 4.5hrs total;
 
-Speccio; puzzle; walk along the walls of the room; three times! <br/>
+SPECCHIO; puzzle; walk along the walls of the room; three times! <br/>
 Tres rondas, anda desde la puerta, <br/>
 mientras tocando la pared de la habitación;<br/>
 diagonal; math; trigonometry;<br/>
@@ -131,13 +131,13 @@ Sin embargo, busqué un nuevo amadura. Le dí a LUCCA.
 
 Baja el monte, ve al pueblo.
 
-Según la chica en el lugar de los reuniones, hay una manera para llamar al ptero que vola. ¿El jéfe sepa algo sobro esto?
+Según la chica en el lugar de los reuniones, hay una manera para llamar al ptero que vola. ¿El jéfa sepa algo sobre esto?
 
-Dice otra chica, en la coto de caza, cuando llueve, un monstruo muy raro aparece.
+Dice otra chica, en el coto de caza, cuando llueve, un monstruo muy raro aparece.
 
 Ya encontramos a este monstruo raro, se llama Nu. Y cuando ganamos, recibimos objetos que podemos intercambiar. 
 
-Me recordé SPECCIO. Volvímos al Fin del tiempo. Pleamos con SPECCIO otra vez. Y porque LUCCA se ha subido su nivel, podemos usar el napalm para dar más daños. Entonces, al final, ganamos.
+Me recordé SPECCHIO. Volvímos al Fin del tiempo. Peleamos con SPECCHIO otra vez. Y porque LUCCA se ha subido su nivel, podemos usar el napalm para dar más daños. Entonces, al final, ganamos.
 
 ### --
 
@@ -147,35 +147,51 @@ Es decir, necesito la información para seguir adelante.
 
 Yo recuerdo los videojuegos como Dragon Quest 1 que porque hay un bug necesitaba buscar por el internet cuál es la acción correcta.
 
-Además, observé que los videojuegos de Square Enix, aunque son recientes hay estas partes que necesitamos hablar o recibir los consejos.
+Además, observé que los videojuegos de Square Enix, aunque son recientes hay estas partes que necesitamos hablar y recibir los consejos.
 
-Entonces, según los sitios de web, gamefaqs, Malik Card, ecétera, necesito volver al tiempo 600AD, para buscar Sr. Rana...
+Entonces, según los sitios de web, gamefaqs, Malik Card, ecétera, necesito volver al tiempo 600AD, para buscar Sr. RANA...
 
-Comida, cocinero
+## --
 
-El monstruo esqueleto
+Discubrimos que el reino de Guardia está en una guerra contra los monstruos magícos de Magus, que, nos recordamos, ha creado Lávos para destrozar el planeta en futuro.
+
+## Los hermanos, el comandante y el cocinero
+
+Al puerte, donde están los soldados, ya tienen el problema de hambre. 
+
+Volvimos al castillo. Habla con el cocinero, que de heho es el hermano del comandante.
+
+Vamos a llevar la comida a los soldados.
+
+Después, podemos sequir adelante por el puerte.
+
+## El BOSS: El monstruo esqueleto
+
+Escena de combate: una gran batalla en el puerte
 
 CHRONO, LUCCA, MARLE
 
-cíclon, ambas partes
+Ataque para saber cuáles partes tienen las debilidades con cuáles tipos de los ataques: 
 
-napalm, parte alta cura, parte baja daño
+CHRONO: cíclon, ambas partes
 
-hielo, parte alta daño, parte bajo cura
+LUCCA: napalm, parte alta cura, parte baja daña
 
-Parte alta, Mandoble, hielo
+MARLE: hielo, parte alta daña, parte bajo cura
 
-Parte baja, fuego
+CHRONO&MARLE: parte alta dañan por Mandoble y hielo
+
+LUCCA: parte baja, fuego
 
 ## --
 
 Llega al súr por el puente.
 
-Habla con el pueblo. Hay un héroe desparecido, 
+Habla con la gente en el pueblo. Hay un héroe desaparecido, 
 
-monstruos que se llama ogan, etc.
+monstruos que se llama OGAN han aparecido, etc.
 
-El bosque en el éste, hay el hogar de FROG.
+El bosque en el este, hay el hogar de Sr. RANA.
 
 Pero cuando oye que el rey está herido, no quiere moverse más.
 
@@ -183,8 +199,14 @@ Ve al monte de dorado.
 
 ## --
 
-Los ogan, hay dos tipos. Los que tiene el martillo de madera, puedes quemar por magia de fuego del LUCCA, y después puede recibir más daños desde tus ataques.
+Escena de combate: muchos combates pequeños en el monte
 
-A los mercenarios, puedes derrotar por un golpe solo de CHRONO.
+Los ogan, hay dos tipos. Los que tienen el martillo de madera, puedes quemar por magia de fuego del LUCCA, y después reciben más daños por tus ataques.
+
+A los mercenarios, puedes derrotarlos por un golpe solo de CHRONO. Directa. 
+
+Los mercenarios parecen los ninjas, que tienen las caras de los pájaros, y tiran las estrellas para atacar a la gente.
+
+
 
 TODO: -update: this
