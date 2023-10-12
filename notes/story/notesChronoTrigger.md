@@ -105,7 +105,7 @@ Nuevos portales.
 
 Eligí CHRONO, ROBO, LUCCA por el equipo.
 
-## Viajar a 65,000,000 en el Pasado; 6.3hrs total;
+## Viaja a 65,000,000 en el Pasado; 6.3hrs total;
 
 Habla con la gente en el pueblo prehistórico.
 
@@ -121,6 +121,70 @@ Vaya, los ataques físicos, muy eficaces.
 
 Además, compra los súperpociónes.
 
+### --
 
+Al lugar más alto en el monte, nada, salvo una estrella sola.
 
+FF1? Puzle.
 
+Sin embargo, busqué un nuevo amadura. Le dí a LUCCA.
+
+Baja el monte, ve al pueblo.
+
+Según la chica en el lugar de los reuniones, hay una manera para llamar al ptero que vola. ¿El jéfe sepa algo sobro esto?
+
+Dice otra chica, en la coto de caza, cuando llueve, un monstruo muy raro aparece.
+
+Ya encontramos a este monstruo raro, se llama Nu. Y cuando ganamos, recibimos objetos que podemos intercambiar. 
+
+Me recordé SPECCIO. Volvímos al Fin del tiempo. Pleamos con SPECCIO otra vez. Y porque LUCCA se ha subido su nivel, podemos usar el napalm para dar más daños. Entonces, al final, ganamos.
+
+### --
+
+Alrededor dos horas, no he buscado el camino correcto.
+
+Es decir, necesito la información para seguir adelante.
+
+Yo recuerdo los videojuegos como Dragon Quest 1 que porque hay un bug necesitaba buscar por el internet cuál es la acción correcta.
+
+Además, observé que los videojuegos de Square Enix, aunque son recientes hay estas partes que necesitamos hablar o recibir los consejos.
+
+Entonces, según los sitios de web, gamefaqs, Malik Card, ecétera, necesito volver al tiempo 600AD, para buscar Sr. Rana...
+
+Comida, cocinero
+
+El monstruo esqueleto
+
+CHRONO, LUCCA, MARLE
+
+cíclon, ambas partes
+
+napalm, parte alta cura, parte baja daño
+
+hielo, parte alta daño, parte bajo cura
+
+Parte alta, Mandoble, hielo
+
+Parte baja, fuego
+
+## --
+
+Llega al súr por el puente.
+
+Habla con el pueblo. Hay un héroe desparecido, 
+
+monstruos que se llama ogan, etc.
+
+El bosque en el éste, hay el hogar de FROG.
+
+Pero cuando oye que el rey está herido, no quiere moverse más.
+
+Ve al monte de dorado.
+
+## --
+
+Los ogan, hay dos tipos. Los que tiene el martillo de madera, puedes quemar por magia de fuego del LUCCA, y después puede recibir más daños desde tus ataques.
+
+A los mercenarios, puedes derrotar por un golpe solo de CHRONO.
+
+TODO: -update: this
