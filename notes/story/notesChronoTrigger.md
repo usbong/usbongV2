@@ -249,7 +249,7 @@ Sr. Rana dice que la espada se necesita reparar por el Sr. Bosche.
 
 ¿Pero dónde está Sr. Bosche?
 
-## Ve al a 1000AD (donde hay los monstruos místicos) a través del fin del tiempo
+## Ve al 1000AD (donde hay los monstruos místicos) a través del fin del tiempo
 
 Desde el armario, ve a la casa de Sr. Bosche.
 
