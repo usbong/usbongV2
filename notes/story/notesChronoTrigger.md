@@ -195,7 +195,7 @@ El bosque en el este, hay el hogar de Sr. RANA.
 
 Pero cuando oye que el rey está herido, no quiere moverse más.
 
-Ve al monte de dorado.
+Ve al monte de Denadoro.
 
 ## --
 
@@ -205,8 +205,60 @@ Los ogan, hay dos tipos. Los que tienen el martillo de madera, puedes quemar por
 
 A los mercenarios, puedes derrotarlos por un golpe solo de CHRONO. Directa. 
 
-Los mercenarios parecen los ninjas, que tienen las caras de los pájaros, y tiran las estrellas para atacar a la gente.
+Los mercenarios parecen los ninjas, que tienen las caras de los pájaros, y tiran las estrellas y piedras pequeñas para atacar a la gente.
 
+Ejemplos de los objetos que hay en el monte
 
+Súperéter
 
+Los que pueden aumentar sus HP por 20%, etc. ¿Loot boxes en Borderlands 2 Game of the Year Edition?
+
+Además, el chico Tata.
+
+## El BOSS: Masa y Mune
+
+La primera vez, ataques físicos y de magía están bien.
+
+Atacaba a él que estaba al lado de la izquierda. ¿Mune?
+
+La segunda vez, Masa y Mune como uno monstruo, 
+
+parece como los en la pélicula ¿Spacejam?
+
+LUCCA, fuego
+
+CHRONO y MARLE, cíclo de aura (si habeís recibido daños alrededor de 100 puntos)
+
+CHRONO y MARLE, espada gélida (muy guay, chulo)
+
+Cuando tu equipo has ganado, recibeís una parte de espada Masamune que está rota.
+
+Necesitas repararla, pero al momento, ve a la caza de Tata que está en la parte sur del pueblo.
+
+## La casa de Tata
+
+Vas a recibir la medalla de héroe que se habla en la leyenda.
+
+El padre de Tata ha charlada con el pueblo que su hijo es el héroe de la leyenda. Fue una buena historia, pero según el chico sólo encontraba la madella en el suelo de la taberna.
+
+Entonces, porque él ha dado a ti la medalla, ya puedes volver a hablar con Sr. Rana a su casa en el bosque.
+
+Vas a discubrir que la empuñadura de la espada está en su casa.
+
+Sr. Rana dice que la espada se necesita reparar por el Sr. Bosche.
+
+¿Pero dónde está Sr. Bosche?
+
+## Ve al a 1000AD (donde hay los monstruos místicos) a través del fin del tiempo
+
+Desde el armario, ve a la casa de Sr. Bosche.
+
+Dice él que puede repararla, pero necesita las piedras rojas...
+
+¿Dónde puedes buscarlas?
+
+## Vuelve al Fin del tiempo
+
+El Sr. Guía acerca del poste de luz comparte a vosotros que puedes buscar las piedras rojas en el tiempo muy, muy pasado, como el tiempo prehistórico.
+ 
 TODO: -update: this
