@@ -259,6 +259,6 @@ Dice él que puede repararla, pero necesita las piedras rojas...
 
 ## Vuelve al Fin del tiempo
 
-El Sr. Guía acerca del poste de luz comparte a vosotros que puedes buscar las piedras rojas en el tiempo muy, muy pasado, como el tiempo prehistórico.
+El Sr. Guía acerca del poste de luz comparte a vosotros que podéis buscar las piedras rojas en el tiempo muy, muy pasado, como en el tiempo prehistórico.
  
 TODO: -update: this
