@@ -260,5 +260,52 @@ Dice él que puede repararla, pero necesita las piedras rojas...
 ## Vuelve al Fin del tiempo
 
 El Sr. Guía acerca del poste de luz comparte a vosotros que podéis buscar las piedras rojas en el tiempo muy, muy pasado, como en el tiempo prehistórico.
+
+Cambia el miembro del equipo. ROBO por LUCCA.
+
+Entonces, CHRONO, MARLE, ROBO.
+
+Recuerda que las habilidades, técnicas no se aumenta anque el nivel sube automáticamente.
+
+## Vuelve al 60.000.000AD (el tiempo prehistórico)
+
+Al pie del monte, aparace la jéfa.
+
+Un escena de ÁNIME.
+
+La jéfa les ayuda a derrotar los sauros (dinosauros).
+
+Su nombre, se llama AYLA.
+
+Sobre las piedras rójas que tu buscas, AYLA las sabe.
+
+Vamos a ir al pueblo IOKA.
+
+Pero primero, tendrémos una celebración con los bailes, las bebejás (bebidas)...
+
+Escena de beber las bebejás con la jéfa.
+
+Después, vais a saber que las piedras (de onírica) están en la jungla donde están los saurios que atacan al tribu de jéfa y también el otro tribu (que tiene el conocimiento para llamar a los pterodáctiles).
+
+Además, haz el intercambio de los objetos para recibir las armas y las armaduras mejores.
+
+comillo, pluma, cuerno...
+
+### Vamos a ir a la jungla
+
+### La parte #1: Una mazmorra, el bosque
+
+BAOBAO no es sauro, es un monstruo que tiene un cuerpo como el del mono, y tiene las alas. Carga otros monstruos para echar a tu equipo.
+
+Hay las vides que podéis utilizar como una escalera.
+
+### La parte #2: Una mazmorra, la cueva
+
+Sauros, les podéis derrotar más rápido con láser de ROBO.
+
+Además, el relámpago de CHRONO podéis utilizar para paralizar el sauro grande, y bajar su defensa.
+
+## Hasta aquí, el tiempo usado, 10.7 horas
  
+  
 TODO: -update: this
