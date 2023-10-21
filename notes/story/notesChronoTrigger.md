@@ -646,6 +646,41 @@ Ya está.
 
 ## El tiempo usado, 10.9 horas
 
+Ya hemos conseguido la piedra onírica.
 
+Entonces vamos a Bosch para reparar la espada Masamune.
+
+AYLA se queda en este tiempo, pero os dice que cuando volvéis, nosotros todos celebraremos con las bebidas, las comidas, etcétera.
+
+## Al fin del tiempo
+
+El guía nos comparte que la persona que puede ayudarnos está acerca del pueblo de Medina en el año 1000.
+
+Allí, están los monstruos místicos muy apreciable.
+  
+## En la casa de Bosch
+
+Nos ayuda a reparar la espada.
+
+Después hace tiempo, ya está reparada.
+
+## Al fin del tiempo
+
+El guía nota el esplendor de la espada. 
+
+## En el bosque donde está la casa de Frog 
+
+Cuando volvéis a quedar con Frog, enseñará la historia de Masamune.
+
+Había el comandante, Cyrus, que fue su amigo, y necesitaban coger una medallon desde la rana mala.
+
+Después Magus y el jéfe de los místicos aparecieron, y destrozaron la espada Masamune, y luego Cyrus.
+
+Además, para el Frog, se convertió en una rana por la magía de Magus.
+
+Entonces, porque ya ha obtenido la masamune, decide unir con vosotros para derrotar el jéfe de los místicos en su guarida.
+
+## El tiempo usado, 11.3 horas
+  
   
 TODO: -update: this
