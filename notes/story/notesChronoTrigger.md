@@ -681,6 +681,72 @@ Además, para el Frog, se convertió en una rana por la magía de Magus.
 Entonces, porque ya ha obtenido la masamune, decide unir con vosotros para derrotar el jéfe de los místicos en su guarida.
 
 ## El tiempo usado, 11.3 horas
-  
-  
+
+CHRONO, FROG, LUCCA
+
+Podéis intercambiar los membros de su equipo sin necesitar ir al fin del tiempo, aunque todavía sola LUCCA que se puede cambiar.
+
+¿Sólo en esta versión de SteamPowered...? 
+
+En fin, id al fin del tiempo para recibir la magía de agua por el Frog desde SPECCHIO que se has convertido en su otra forma.
+
+Todavía no puedo vencer a su nueva forma.
+
+Yo recuerdo que necesitamos subir los nivels de las magías como antes.
+
+## Al cueva de los místicos
+
+Está al este del pueblo según un hombre en la posada.
+
+Si vosotros no habeís recibido la magía por FROG, LUCCA decirá algo acerca de esta cosa.
+
+A la salida del cueva, vais a encontrar un soldado muerte que tiene un escrito de sangre.
+
+Es una pista para derrotar al monstruo místico, que cuando atacáis, el mismo ataque que ha utilizado será débil contra él.
+
+## Al palacio del Rey de los místicos
+
+Los fantasmas recorren el palacio.
+
+Y ellos son vuestros conocidos. 
+
+No os dan miedo, ni es absorbente como en los cuentos del pueblo de Amor, el Reino del cielo, etcétera en Dragon Quest VI. 
+
+Además, cuando vosotros habéis ido a los dos pasillos ambos, al centro donde los podéis eligir, aparecerá las estrellas para guardar.
+
+Enseguida, el Rey de los místicos aparecerá y llamará los monstruos para atacaros.
+
+No son muy dificiles derrotar.
+
+Después, id al pasillo a la izquierda.
+
+## El boss: Soja
+
+CHRONO, FROG, LUCCA
+
+Es un combate muy largo, pero poca a poca podeís ganar sin nadie se ha discapacitado.
+
+### La primera forma
+
+Entonces, el ataque más fuerte en este caso es la espada ígnea, que es una técnica de CHRONO y LUCCA ambos.
+
+Para FROG, es mejor que él les recupera unos pocos HP costando sólo 1 PM (puntos de magía).
+
+### La segunda forma
+
+Tenéis que utilizar los objetos, como súperéter, súperpoción, porque en este momento CHRONO y LUCCA ya ha utilizado sus PM, y el Soja viene con los ataques más fuertes.
+
+Entonces, utilizáis la espada ígnea para atacarle, y cuando los HP se ha bajado menos de la mitad más o menos, vais a utilizar el súperpoción. 
+
+Significa también que si hay dos o tres miembros que ya no tienen muchos de HP, parad sus ataques.
+
+Además, podeís continuar a utilizar la lengua de FROG para recuparar unos pocos HP, pero no olvidéis los objetos.
+
+## El tiempo usado, 12 horas
+
+
+
+
+
+
 TODO: -update: this
