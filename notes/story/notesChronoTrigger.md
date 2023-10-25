@@ -744,9 +744,40 @@ Además, podeís continuar a utilizar la lengua de FROG para recuparar unos poco
 
 ## El tiempo usado, 12 horas
 
+## Al pasillo a la derecha
 
+Podéis evitar los monstruos cuando salís el pasillo en la izquierda.
 
+En el pasillo a la derecha, los fantasmas de sus conocidos aparecen y cuando charláis con ellos, mostrarán sus formas verdaderas.
 
+Entonces, necesitáis pelear con los monstruos.
 
+## El señuelo
+
+En la hábitacion final, encontraréis al monstruo parece que el boss.
+
+Sin embargo, de hecho, es uno que es fácil derrotar, pero en cambio, robará los PM (puntos de magía) de uno de sus miembros.
+
+## El boss: Mayo
+
+CHRONO, FROG, LUCCA
+
+El ataque más fuerte es la espada ígnea con CHRONO y LUCCA.
+
+FROG puede utilizar su lengua para atacar también, pero descubrí que necesitamos a alguien que utiliza los objetos, como la panacea, para recuperar los alimentos de los miembros de nuestro equipo.
+
+Mayo os ataca para que los miembros no pueden atacarle.
+
+Por ejemplo, recibimos los alimentos tales como confusión, sueño (dormir), ciego (los ojos no se pueden ver bien).
+
+Entonces, los miembros no solo FROG necesitan parar los ataques, y aportar a utilizar los objetos.  
+
+Además, utilizamos los súperpociones, y los súperéteres.
+
+De hecho, acabamos utilizar los súperpociones.
+
+Es un combate que me pareció un poco largo, aunque cuando empecé a pensar acerca de esta cosa, discubrí que ya habíamos ganado.
+
+## El tiempo usado, 12.4 horas
 
 TODO: -update: this
