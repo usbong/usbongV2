@@ -836,7 +836,7 @@ CHRONO, FROG, LUCCA
 
 Entonces, necesitamos leer bien el texto, porque dijo cuál magía podemos utilizar para dar daños más fuertes a Magus.
 
-Por ejemplo, si Magus asorbió todas las magías menos el fiego, utilizamos el fiego. Si fue el agua, utilizamos lo mismo.
+Por ejemplo, si Magus asorbió todas las magías menos el fuego, utilizamos el fuego. Si fue el agua, utilizamos lo mismo.
 
 En este combate, utilizamos más la espada ígnea de CHRONO y LUCCA que el penetrante (agua) de CHRONO y FROG.
 
