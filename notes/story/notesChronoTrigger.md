@@ -798,7 +798,7 @@ Cuando llegamos al lugar donde estaba Vinnie, él salió otra vez.
 
 Siguiente, en otra habitación, Vinnie estaba para entorpecernos con sus trampas de suelos que cuando pisamos, nos bajamos en una habitación más grande. 
 
-Allí, habían algunas estrellas, aunque unas fueron falsas, y convirtieron en los monstruos no tan fuertes. Fueron bastantes debiles.
+Allí, había algunas estrellas, aunque unas fueron falsas, y convirtieron en los monstruos no tan fuertes. Fueron bastantes debiles.
 
 Después de algunos combates con ellos, buscamos la estrella para volver a la habitación donde estaba Vinnie.
 
