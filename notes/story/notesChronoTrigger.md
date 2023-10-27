@@ -780,4 +780,82 @@ Es un combate que me pareció un poco largo, aunque cuando empecé a pensar acer
 
 ## El tiempo usado, 12.4 horas
 
+Desde las estrellas a la mitad donde podemos ver la ventana grande del palacio, encontramos a Vinnie. 
+
+Sin embargo, los monstruos místicos  de repente aparecieron para atacar a nosotros. Habían escondido.
+
+Y Vinnie desapareció.
+
+Necesitamos ver bien si nuestros ataques de magía podían dar daños a ellos o no. Había los monstruos que recibieron solo ataques físicos.
+
+Después, fuimos rápido adelante para pillar a Vinnie.
+
+En las escaleras, podemos evitar los monstruos rodando por esconder. Desde esta parte podemos recordarnos el Donkey Kong.
+
+Encontramos otra vez a Vinne en una habitación, pero utilazaba una maquina de guillotina para entorpecernos.
+
+Cuando llegamos al lugar donde estaba Vinnie, él salió otra vez.
+
+Siguiente, en otra habitación, Vinnie estaba para entorpecernos con sus trampas de suelos que cuando pisamos, nos bajamos en una habitación más grande. 
+
+Allí, habían algunas estrellas, aunque unas fueron falsas, y convirtieron en los monstruos no tan fuertes. Fueron bastantes debiles.
+
+Después de algunos combates con ellos, buscamos la estrella para volver a la habitación donde estaba Vinnie.
+
+Sin embargo, necesitabamos bajarnos otra vez a la habitación grande porque los suelos disaparecieron a veces.
+
+Cuando ya llegamos al lugar donde estaba Vinnie, él salió otra vez.
+
+Siguiente, buscamos un pasillo que nos dirigía a Vinnie.
+
+Desde esta parte, recordé Dragon Quest VI, porque podemos ver primero el boss y ir a otro lugar antes de empezar a pelear.
+
+Especificamente, fue la parte del espejo en DQVI, donde necesitamos utilizarlo para salvar el Rey monstruo.
+
+## El boss: Vinnie
+
+CHRONO, FROG, LUCCA
+
+Él utiliza hielo duro como su escudo.
+
+Y descubrí que necesitamos atacar las cadenas de su habitación para derrotarle, porque los ataques directos a Vinnie no pasan bien para darle daños.
+
+Yo recordé Super Mario RPG en SFC/SNES.
+
+Además, de hecho, me parecía que el controlador nos ayudó para descubrir esta cosa, porque se mueve automáticamente a la izquierda en esta versión en Steam.
+
+Cuando ya habíamos derrotar a Vinnie, encontramos el siguiente boss en otra habitación.
+
+## El boss: Magus
+
+Me parecía que el fue como un vampira.
+
+Y Srta. LUCCA fue una caballera de MAGIC KNIGHT RAYEARTH...
+
+CHRONO, FROG, LUCCA
+
+Entonces, necesitamos leer bien el texto, porque dijo cuál magía podemos utilizar para dar daños más fuertes a Magus.
+
+Por ejemplo, si Magus asorbió todas las magías menos el fiego, utilizamos el fiego. Si fue el agua, utilizamos lo mismo.
+
+En este combate, utilizamos más la espada ígnea de CHRONO y LUCCA que el penetrante (agua) de CHRONO y FROG.
+
+Además, FROG ya había aprendido la habilidad para curar todos los miembros en nuestro equipo, costando solo 2 PM.
+
+Entonces, su papel en este combate fue curar, recuperar los miembros que habían recibido los daños desde los ataques de Magus.
+
+
+## La historia de Magus
+
+Recordamos que Magus creó el Lavos que en futuro destrozará el planeta. Estaba en el nucleo dentro del planeta, asborbiendo la energía de los seres vivos.
+
+En esta parte, no nosotros entendemos bien todavía porque Magus quería destrozar el planeta.
+
+En fin, si pensamos más en esta cosa ahora, los que tenemos son estos verbos creer y querer, también crear.
+
+Más...
+
+## El tiempo usado, 12+ horas
+
+
 TODO: -update: this
