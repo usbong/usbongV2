@@ -822,13 +822,13 @@ Y descubrí que necesitamos atacar las cadenas de su habitación para derrotarle
 
 Yo recordé Super Mario RPG en SFC/SNES.
 
-Además, de hecho, me parecía que el controlador nos ayudó para descubrir esta cosa, porque se mueve automáticamente a la izquierda en esta versión en Steam.
+Además, de hecho, me parecía que el controlador nos ayudó para descubrir esta cosa, porque se mueve automáticamente a la izquierda en esta versión de Steam.
 
 Cuando ya habíamos derrotado a Vinnie, encontramos el siguiente boss en otra habitación.
 
 ## El boss: Magus
 
-Me parecía que el fue como un vampira.
+Me parecía que él fue como un vampira.
 
 Y Srta. LUCCA fue una caballera de MAGIC KNIGHT RAYEARTH...
 
