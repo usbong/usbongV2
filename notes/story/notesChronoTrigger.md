@@ -824,7 +824,7 @@ Yo recordé Super Mario RPG en SFC/SNES.
 
 Además, de hecho, me parecía que el controlador nos ayudó para descubrir esta cosa, porque se mueve automáticamente a la izquierda en esta versión en Steam.
 
-Cuando ya habíamos derrotar a Vinnie, encontramos el siguiente boss en otra habitación.
+Cuando ya habíamos derrotado a Vinnie, encontramos el siguiente boss en otra habitación.
 
 ## El boss: Magus
 
