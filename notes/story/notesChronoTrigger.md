@@ -855,7 +855,48 @@ En fin, si pensamos más en esta cosa ahora, los que tenemos son estos verbos cr
 
 Más...
 
-## El tiempo usado, 12+ horas
+## El tiempo usado, 12.3 horas
 
+Cuando nos levantamos, ya estamos en una habitación en el tiempo prehistórico. Además, estaba AYLA.
+
+Aprendimos que quería ir al palacio del Rey de los sauros. Su amigo cercano, KINO, se había captado allí.
+
+Salió rápido, y según la gente en el pueblo fue AYLA al bosque del norte.
+
+Aquí necesitamos fijarnos en la palabra bosque, porque es fácil hacer falta en la dirección. Por ejemplo, podíamos ir primero al monte donde había el monstruo BAOBAO como lo que habíamos hecho antes.
+
+Entonces, al bosque del norte es la dirección que necesitamos ir. Sin embargo, como un consuelo, antes esta parte del bosque no estaba abierta.
+
+Cuando llegamos, encontramos al tribu de LARUBA y AYLA.
+
+Élla quería montar a sus pterodáctilos para volar al palacio del Rey de los sauros.
+
+Ella salío rápido otra vez.
+
+En este tiempo fue al monte para llamar al pterodáctilo.
+
+Los miembros que estaban en nuestro equipo fueron CHRONO, MARLE, ROBO.
+
+Recordad que aquí necesitamos utilizar más los ataques físicos que los de magía.
+
+En lugar más alto, estaba AYLA montando un pterodáctilo.
+
+Antes, lo que habíamos visto fue sola una estrella, y necesitamos volver al pueblo. No sabemos bien la dirección correcta.
+
+No obstante, porque ya estaba AYLA, podemos llamar los pterodáctilos para ir con élla al palacio de los sauros.
+
+Entonces, necesitamos escoger cuál miembro que queremos ir con AYLA y CHRONO. Escogí ROBO para tener más poder físico. 
+
+El palacio fue como un volcán que tenía una entrada muy parecida con una cueva.
+
+Los saurios aquí ya habíamos encontrado en los otros lugares en esta época. Entonces, podemos utilizar el ataque de CHRONO para dar electrocución al saurio verde, etcétera.
+
+También, hubo una parte que me recordé la torre del ejército para ser el soldado del Rey en DRAGON QUEST VI y la fortaleza en FFVI, aunque en este caso los dibujos fueron más grandes como los se utilizaban por El secreto del EVERMORE.
+
+Nosotros sabemos que DRAGON QUEST es más conocido en Japón que en los estados unidos, y la serie del FF es más conocida en los países afuera del Japón.
+
+Además, hubo una habitación grande que podemos ver las baldosas y había los cuadrados que nos dieron monstruos o nos trasladaron a otra baldosa en la misma habitación.
+
+Más…
 
 TODO: -update: this
