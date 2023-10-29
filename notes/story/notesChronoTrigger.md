@@ -897,6 +897,22 @@ Nosotros sabemos que DRAGON QUEST es más conocido en Japón que en los estados 
 
 Además, hubo una habitación grande que podemos ver las baldosas y había los cuadrados que nos dieron monstruos o nos trasladaron a otra baldosa en la misma habitación.
 
+## El tiempo usado, 13.7 horas
+
+Encontramos al boss monstruo.
+
+CHRONO, AYLA, ROBO
+
+Lo mejor para darle más daños fue atacar con AYLA y CHRONO por su furia eléctrica, y para recuperar desde los daños, el rayo reparado de ROBO.
+
+Sin embargo, primero, atacamos con el relámpago de CHRONO, para bajar la defensa del BOSS por electrocución, y después atacar con taladro de AYLA. 
+
+Luego, descubrí que tenemos también la patada turbo con AYLA y ROBO para atacar.
+
+Pero al final, necesitamos recuperar los daños recibidos. Entonces, el rayo reparado del ROBO a todos y el beso de AYLA a un amigo o a élla misma fueron muy útiles.
+
 Más…
+
+
 
 TODO: -update: this
