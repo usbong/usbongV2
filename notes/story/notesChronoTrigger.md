@@ -911,8 +911,10 @@ Luego, descubrí que tenemos también la patada turbo con AYLA y ROBO para ataca
 
 Pero al final, necesitamos recuperar los daños recibidos. Entonces, el rayo reparado del ROBO a todos y el beso de AYLA a un amigo o a élla misma fueron muy útiles.
 
+La referencia: https://chrono.fandom.com/es/; last accessed: 20231029
+
+Los nombres de las técnicas
+
 Más…
-
-
 
 TODO: -update: this
