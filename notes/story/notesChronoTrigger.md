@@ -932,6 +932,30 @@ Después, para el tiranosaurio, ataques físicos, como por ejemplo el TALADRO, u
 
 Además, cuando recibimos el mensaje que el tiranosaurio empezaba a atacar a nosotros después de 5 turnos, continuamos a atacarlo, mientras preparamos para recibir su ataque a todos miembros del nuestro equipo.
 
-Es decir, hacer con ROBO el rayo recuperado a todos miembros.
 
-## El tiempo usado, 14+ horas
+Es decir, hacer con ROBO el rayo reparado a todos miembros.
+
+## —
+
+Después de ganar contra AZARA y el tiranosaurio, vamos a encontrar el portal que apareció en el cueva. 
+
+El portal nos trasladaron al tiempo 12,000 B.C.
+
+Según ROBO, fue un tiempo bastante distante.
+Cuando llegamos allí, la tierra tenía los nieves, pero podemos ir a la tierra en el cielo a través de las luces que funcionaron como los portales en este sentido.
+
+En el cielo, había el reino de ZHYL.
+
+Tuvo tecnologías muy avanzadas. Las se creaban por los sabios. La gente aquí prefirieron dormir y vivir en sus sueños. 
+
+También, encontramos a Sarah y el chico, Janus, que hacen cosas siguiendo a la reina del ZHYL, aunque prefirieron hacer las otras.
+
+Además, cuando fuimos al lugar a donde fue Sarah, encontramos otra vez una puerta mágica en que Sarah usaba un colgante para abrirla.
+
+Entonces, aprendimos que el colgante de MARLE podíamos utilizar también para abrir la puerta, pero necesitamos primero añadirlo la magia en esta época.
+
+Después de buscar la habitación correcta donde había la magia necesaria para añadir al colgante de MARLE, pudimos abrir ya la puerta.
+
+La gente que estaba en la habitación sorprendieron que nosotros entrábamos mientras ellos hacían una reunión.
+
+Entonces, ellos nos dieron el BOSS para  captarnos.
