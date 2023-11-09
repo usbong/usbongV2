@@ -917,4 +917,21 @@ Los nombres de las técnicas
 
 Más…
 
-TODO: -update: this
+
+## El tiempo usado, 14+ horas
+
+Encontramos al boss final en esta mazmorra.
+
+### AZARA y el tiranosaurio de la piedra
+
+Desde el tiranosaurio, recordé el dinoriders, una serie de los dibujos animados en la televisión, cuanda era muy pequeño.
+
+Primero, destrozamos el jefe, AZARA, con el relámpago de CHRONO.
+
+Después, para el tiranosaurio, ataques físicos, como por ejemplo el TALADRO, una técnica doble de CHRONO y AYLA.
+
+Además, cuando recibimos el mensaje que el tiranosaurio empezaba a atacar a nosotros después de 5 turnos, continuamos a atacarlo, mientras preparamos para recibir su ataque a todos miembros del nuestro equipo.
+
+Es decir, hacer con ROBO el rayo recuperado a todos miembros.
+
+## El tiempo usado, 14+ horas
