@@ -959,3 +959,23 @@ Después de buscar la habitación correcta donde había la magia necesaria para 
 La gente que estaba en la habitación sorprendieron que nosotros entrábamos mientras ellos hacían una reunión.
 
 Entonces, ellos nos dieron el BOSS para  captarnos.
+
+## --
+
+El portal nos llegó al ZHYL en el tiempo de 12,000 BC. 
+
+Tenía una tecnología muy avanzada, así que la gente podría dormir y soñar sin tener problemas como hambre que ya hemos visto en el tiempo más en el futuro.
+
+Además, cuando encontramos al BOSS en este tiempo, utilizamos los mandoble y relámpago de CHRONO, y las habilidades de ROBO y AYLA para recuperar los daños a nuestro equipo. 
+
+Después de hacer el TALADRO, la técnica doble de AYLA y CHRONO, el BOSS golpeó a CHRONO, y los demás tambíen pronto. Sin embargo, antes de derrotarse, observaba la pauta de utilizar los objetos como, por ejemplo, el hiperpoción, el eter, aunque a través de esta manera, yo no podía recuperar todos los miembros que se estaban incapacitados con solo uno miembro.
+
+La verdad es que el boss tenía un ataque que podía cortar la vida de un miembro por 50%. También, tenía un ataque que dio alrededor de 400 daños al HP.
+
+Al final, todos los miembros de nuestro equipo se derrotó. De verdad, parecía que fue una parte de la historia.
+
+¿Podría cambiar el destino?
+
+Antes del combate, sacaba una captura que me recordé el GENSO SUIKODEN 1.
+
+Más antes, algunas partes parecían una mezcla de los videojuegos de SQUARE-ENIX, como SECRET OF MANA#1, FF6 y BAHAMUT LAGOON.
