@@ -670,3 +670,13 @@ Al final, todos los miembros de nuestro equipo se derrotó. De verdad, parecía 
 Antes del combate, sacaba una captura que me recordé el GENSO SUIKODEN 1.
 
 Más antes, algunas partes parecían una mezcla de los videojuegos de SQUARE-ENIX, como SECRET OF MANA#1, FF6 y BAHAMUT LAGOON.
+
+## --
+
+En el fin del tiempo, hacemos un entrenamiento con Sr. SPECCIO.
+
+Por último, ganamos contra su segunda forma.
+
+Utilizamos el supereter (recupera 30 MP). Además, aprendimos que recibiremos más después de ganar.
+
+Y, los daños también podemos aumentar o reducir basado en las armas y armaduras, porque hubo los efectos que fueron fuertes contra otros. Por ejemplo, un monstruo que podía recibir más daños desde el fuego, etcétera.
