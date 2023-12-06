@@ -647,9 +647,9 @@ Entonces, aprendimos que el colgante de MARLE podíamos utilizar también para a
 
 Después de buscar la habitación correcta donde había la magia necesaria para añadir al colgante de MARLE, pudimos abrir ya la puerta.
 
-La gente que estaba en la habitación sorprendieron que nosotros entrábamos mientras ellos hacían una reunión.
+Las personas que estaban en la habitación sorprendieron que nosotros entrábamos mientras ellos hacían una reunión.
 
-Entonces, ellos nos dieron el BOSS para  captarnos.
+Entonces, ellos nos dieron el BOSS para captarnos.
 
 ## --
 
@@ -680,3 +680,20 @@ Por último, ganamos contra su segunda forma.
 Utilizamos el supereter (recupera 30 MP). Además, aprendimos que recibiremos más después de ganar.
 
 Y, los daños también podemos aumentar o reducir basado en las armas y armaduras, porque hubo los efectos que fueron fuertes contra otros. Por ejemplo, un monstruo que podía recibir más daños desde el fuego, etcétera.
+
+## --
+
+
+El colgante de MARLE ya podemos utilizar para entrar a los cuartos que estában sellados por una magía.
+
+#### -- En BANGOR en el futuro
+
+Hubo más objetos (accesarios), por ejemplo, menos 25% en la magía utilazada.
+
+#### -- En el año 1000, la parte donde estaban los monstruos místicos
+
+Al pirámide, podemos elegir si quisimos una armadura para proteger la vida o una arma para aumentar la fuerza
+
+Elegí la armadura, el cásco que reduce los daños por 33% (?).
+
+Siguiente, según el guía en el fin del tiempo, necesitamos ir al lugar donde estuvo el reino místico.
