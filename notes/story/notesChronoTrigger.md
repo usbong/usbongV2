@@ -697,3 +697,35 @@ Al pirámide, podemos elegir si quisimos una armadura para proteger la vida o un
 Elegí la armadura, el cásco que reduce los daños por 33% (?).
 
 Siguiente, según el guía en el fin del tiempo, necesitamos ir al lugar donde estuvo el reino místico.
+
+## — El año 600
+
+El reino y reina en el castillo agradecieron a Chrono y su equipo, incluyendo el Sr Rana, por atreverse a pelear contra el Rey místico. Al final, ganamos.
+
+Sin embargo, ¿a dónde vamos a ir después?
+
+## — El fin del tiempo
+
+Según el Sr Guía, necesitamos quedar con Gasch para ayudarnos a volver al ZHYL a través de las Alas del tiempo. 
+
+Todavía, el portal (el puente/la puerta) al ZHYL se ha cerrado. Entonces, no podemos ir al reino mágico de ZHYL.
+
+Además, Sr Gasch tiene el problema de la memoria.
+
+Sin embargo, fuimos al tiempo en futuro, 2300 AD. Ya tenemos el colgante de MARLE y tuvo la magia para abrir las puertas selladas.
+
+Entonces, fuimos al portal que nos trasladaron al cúpula del Prometio. Necesitamos pasar por el lugar de las basuras, y pelear con los monstruos allí otra vez. Después, necesitamos ir al cúpula donde dormía el ayudante de Sr Gasch por el albañal.
+
+Por estas cosas, me parecía que no yo buscaba el destino correcto sin utilizar las guías en el internet.
+
+https://www.youtube.com/watch?v=d4AF5BdqjDQ&t=9601s
+
+> 🎮CHRONO TRIGGER #06| El Reino Magico de Zhyle |PC| Gameplay Español 1080 Full HD|
+
+
+El ayudante estaba durmiendo, pero fui a ayudarnos cuando encontraba las Alas del tiempo que es un vehículo para viajar el tiempo. A través de esta invención de Sr Gasch, podemos tener el poder para derrotar contra el gran monstruo Lavós que absorbía continuamente la energía del planeta.
+
+## —
+
+El pendiente de Oro
+
