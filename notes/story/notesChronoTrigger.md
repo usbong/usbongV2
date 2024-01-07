@@ -725,7 +725,71 @@ https://www.youtube.com/watch?v=d4AF5BdqjDQ&t=9601s
 
 El ayudante estaba durmiendo, pero fui a ayudarnos cuando encontraba las Alas del tiempo que es un vehículo para viajar el tiempo. A través de esta invención de Sr Gasch, podemos tener el poder para derrotar contra el gran monstruo Lavós que absorbía continuamente la energía del planeta.
 
-## —
+## --
 
 El pendiente de Oro
 
+## --
+
+En antigüedad, comprábamos las armaduras primero, como una regla de comprar en los JRPG.
+
+Ganamos contra el BOSS,  los dos toros con su jefe a través de relámpago 2 de Chrono, aunque había un tiempo que él estaba incapacitado un poco, y necesitábamos utilizar el Nectar de Atenea a él.
+
+Chrono, Sr Rana, y Robo
+
+Porque ya habíamos tenido las Alás del tiempo, fuimos al antigüedad para volver al ZHYL. 
+
+Todavía el portal para trasladarnos al ZHYL estaba cerrado, seguimos al monte cerca que tiene el puente que fue el monte del Tormenta.
+
+Antes de subir el monte del Tormenta que estaba flotando en el aire, encontramos a la gente en el pueblo para saber que el sabio que podía ayudarnos estaba en el monte.
+
+Además, pudimos comprar las armas y las armaduras más fuertes. Sin embargo, como lo que habías entendido en los juegos del rol tal como Final fantasy y Dragon quest, necesitamos comprar primero las armaduras, antes de las armas.
+
+En nuestro equipo, tenemos Chrono, Sr Rana, y Robo. Así que aunque queremos comprar una espada más fuerte para Chrono, lo que habíamos hecho primero fue comprar los cascos, y las siguientes armaduras.
+
+El monte del Tormenta tuvieron muchos monstruos, pero podíamos derrotarlos a través del relámpago 2 de Chrono. Además, utilizando un pendiente, no necesitamos gastar 4 PM, sino sólo necesitar 2 PM.
+
+Cuando encontramos el Boss, la primera vez, no podíamos ganar porque queríamos derrotarlo rápidamente por Pararayos, la técnica de Chrono y Sr Rana que puso su espada al enemigo y después, desde Chrono el relámpago cayó al espada para dar daños de la luz.
+
+Entonces, porque el Boss tiene 3 partes de su cuerpo que cuando la parte a la mitad se había destrozado podíamos ganar. Sin embargo, si los demás partes que fueron sus dos brazos, todavía existían, no podíamos atacar más fuerte. Significa que necesitamos destrozar un brazo a la derecha primero, usando la técnica Pararayos de Chrono y Sr Rana para se podría estropear en un turno sólo.
+
+Siguiente, no necesitamos destrozar el brazo a la izquierda, porque sólo en la derecha hizo la recuperación a su cuerpo. Sin embargo, necesitamos cuidar por el ataque de la izquierda que podía cortar la vida de un miembro de nuestro equipo por su mitad. 
+
+Después, Robo por su turno hacía los rayos recuperados a todos miembros de nuestro equipo o utilizaba el superpocíon o hiperpoción a él si el brazo de la izquierda atacó a él. El Sr Rana podía ayudar a recuperar por su magia de remedio cuando las vidas de los miembros se habían bajado demasiado. Sin embargo, generalmente, utilizamos su ataque con el Chrono para dar daños al boss continuamente.
+
+Después, encontramos otra vez al sabio que fue Sr Bosch. Y, Srta Sarah vino de ZHYL porque no quería utilizar su magia para levantarle a Lavos. Sin embargo, un hombre que se llamaba Dalton apareció y captó la Srta. 
+
+Necesitamos rescatar a ella.
+
+## —
+
+Ya pudimos volver al otro tiempo cuando llegamos a esta parte. Pudimos utilizar el portal dentro del cueva donde acerca estaban las Alás del tiempo para volver al fin del tiempo.
+
+Entonces, ya pudimos ver también que todo de los portales estaban en el fin del tiempo. Sin embargo, Sr SPECCHO en su última forma fue demasiado fuerte para que nuestro equipo podía ganar contra él. Significa que necesitamos tener los niveles siguientes de la magia de los miembros. Es decir, necesitaban participar ellos en los combates tambíen.
+
+En el equipo hubieron Chrono, Marle y Sr Rana.
+
+Siguiente, a través del transporte en el tiempo del monte de Tormenta, pudimos volver al ZHYL. 
+
+Cuando volvimos al ZHYL, vamos a encontrar a Dalton que es el boss siguiente.
+
+## --
+
+El boss, Dalton
+
+Él utilizaba generalmente una magia que dio los daños que cortaban por 50% la vida de un miembro, aunque luego tuvo otra manera que dio más daños tambíen.
+
+Entonces, utilizamos el Remedio de Sr Rana para recuperar algunos puntos de los daños en las vidas de todos los miembros. Además, la Cura de Marle pudimos utilizar para recuperar más puntos de la vida, aunque para sólo un miembro.
+
+Y para atacar, utilizamos Pararayos, la técnica doble de Chrono y Sr Rana. Podía dar más de 1000 daños.
+
+## --
+
+Después de ganar, tenemos que pasar a la nueva mazmorra. Aquí hubo los monstruos que se habían mezclado por los que recibieron los daños de magia sólo y los que fueron de los ataques físicos.
+
+Entonces, necesitábamos saber la técnica correcta para dar los daños bien. Por ejemplo, la cruza de Chrono y Sr Rana, pudimos utilizar para dar daños a los monstruos que no recibieron los daños de magia.
+
+A continuar…
+
+El tiempo usado, 17 horas
+Todo de los miembros ya tuvieron los niveles más de 30.
