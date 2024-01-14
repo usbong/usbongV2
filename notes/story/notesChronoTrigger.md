@@ -793,3 +793,25 @@ A continuar…
 
 El tiempo usado, 17 horas
 Todo de los miembros ya tuvieron los niveles más de 30.
+
+## --
+
+Conseguir al Dalton
+
+En la mazmorra, encontramos un piso que se bajaba cuando llegamos. Además, necesitábamos ganar contra los grupos de los monstruos que incluyeron los que se llamaron explorador que podían reflejar a nosotros vuestros ataques de magia. Entonces, no podíamos bien utilizar sólo el relámpago 2 de Chrono para derrotarlos rápidamente.
+
+Es decir, después de elegir cuales recibieron los daños físicos, utilizamos los ataques físicos entonces.
+
+Al parte cuando ya habíamos conseguido a Dalton, lanzaba él las gemelas, que fueron las jefas en esta mazmorra.
+
+Ganamos contra a ellas, utilizando el relámpago 2 de Chrono cuando Sr Rana utilizaba el remedio para recuperar algunos HP de todos los miembros de nuestro equipo.
+
+Siguiente, a través de Prisa de Marle, Sr Rana y Chrono podían también moverse más rápido. Después, utilizábamos el Pararayos de Chrono y Sr Rana juntos para atacar primero una de las gemelas.
+
+¡Ojo! Sólo necesitábamos utilizar la magia de la luz. Los ataques físicas sin magia tampoco fueron necesarios. La razón fue los ataques de las gemelas podían ser más fuertes si utilizábamos las mezclas de las magias y los físicos.
+
+Sin embargo, Chrono tuvo el lázaro para ayudar a un amigo estaba incapacitado. Sus HPs también se podían recuperar por alrededor de 200. 
+
+Ya está.
+
+El tiempo hasta aquí, 18 horas.
