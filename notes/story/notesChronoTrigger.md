@@ -829,7 +829,6 @@ La reina, la madre de Srta Sarah se reía por el poder del gran Lavos.
 Después, al final momento Chrono intentaba derrotar a Lavos, pero no fue efectivo, y murió.
 
 ## --
-## --
 
 Por la magia de Srta Sarah pudimos volver a la tierra en la Antigüedad. Cuando despertamos, descubrimos que los iluminados y los terrestres ya vivieron juntos. Desde su paisaje, pudimos recordarnos Suikoden 1, el videojuego de rol de Konami.
 
@@ -847,8 +846,9 @@ La pelea contra el boss fue fácil porque no atacaba nada, aunque no sabíamos e
 
 Después de esta lucha, encontramos a Sr Dalton que había añadido a nuestro vehículo sus alas propias. Entonces, tuvimos el segundo combate para este segmento de la historia. Además, la manera de vencer fue la misma que nosotros utilizábamos contra el Boss en la ala izquierda, aunque el puntos de magia de Marle estaba muy pocos. Al final, no necesitábamos utilizar los objetos para recuperar los nada, y ganamos sin más problemas.
 
-Hasta a esta parte, el tiempo utilizado más de 17 horas
+Hasta a esta parte, el tiempo utilizado: más de 17 horas
 
-Vocabulario
-enfermeros
+### Vocabulario
+
+enfermeros<br/>
 enfermos
