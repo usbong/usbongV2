@@ -828,3 +828,26 @@ La reina, la madre de Srta Sarah se reía por el poder del gran Lavos.
 
 Después, al final momento Chrono intentaba derrotar a Lavos, pero no fue efectivo, y murió.
 
+## --
+
+Por la magia de Srta Sarah pudimos volver a la tierra en la Antigüedad. Cuando despertamos, descubrimos que los iluminados y los terrestres ya vivieron juntos. Desde su paisaje, pudimos recordarnos Suikoden 1, el videojuego de rol de Konami.
+
+Sin embargo, el enemigo de antes, Sr Dalton todavía estuvo, y quería utilizar Las alas del tiempo, el vehículo de nuestro equipo para su nuevo reino.
+
+Además, se habían capturado por Sr Dalton y sus soldados, llevando a nosotros a su avión grande.
+
+Pudimos escapar desde la cárcel por fingiendo ser enfermeros. Sin embargo, el avión fue una mazmorra y necesitábamos utilizar muchos tiempos para saber cuál dirección fue correcta. Había las partes que pudimos subir al techo para ver los lugares a donde podíamos ir también. Además, algo que debimos hacer primero fue coger las armas, las armaduras y los objetos de nuestro equipo que los soldados habían tomado.
+
+Los enemigos aquí no fueron super poderosos que nos dieron muchos problemas. Es decir, no necesitábamos pensar mucho cuál estrategia fue mejor para ganar, etcétera, porque sólo lo que tuvimos fue el atacar normal. Gracias a Ayla que estuvo en nuestro equipo, la tarea no fue compleja nada.
+
+Después de hacer estas cosas, necesitamos ir a la ala izquierda que estuvo el boss. Pero de hecho fue un poco difícil buscar a este boss, porque estaba en la parte que nos parecía que si nosotros seguimos a esta parte de la ala, iríamos a caer desde el avión. 
+
+La pelea contra el boss fue fácil porque no atacaba nada, aunque no sabíamos esta cosa durante del combate. Utilizamos la catapulta de Ayla para dar los más daños, alrededor de 900 puntos. Sr Rana utilizó el ataque aéreo para dar acerca de 600 puntos de los daños. Para Marle, utilizo su magia de Prisa para que todos los miembros podían atacar rápidamente. Además, usamos su Hielo 2 para atacar al boss.
+
+Después de esta lucha, encontramos a Sr Dalton que había añadido a nuestro vehículo sus alas propias. Entonces, tuvimos el segundo combate para este segmento de la historia. Además, la manera de vencer fue la misma que nosotros utilizábamos contra el Boss en la ala izquierda, aunque el puntos de magia de Marle estaba muy pocos. Al final, no necesitábamos utilizar los objetos para recuperar los nada, y ganamos sin más problemas.
+
+Hasta a esta parte, el tiempo utilizado: más de 17 horas
+
+### Vocabulario
+enfermeros
+enfermos
