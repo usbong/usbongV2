@@ -815,3 +815,16 @@ Sin embargo, Chrono tuvo el lázaro para ayudar a un amigo estaba incapacitado. 
 Ya está.
 
 El tiempo hasta aquí, 18 horas.
+
+## --
+
+Seguimos al final cuarto donde estaban Srta Sarah, su madre, y el profeta.
+
+Enseguida, descubrimos que Srta Sarah no podía controlar a Lavos con su magia. Entonces, necesitábamos a pelear contra Lavos. Sin embargo, no pudimos nada a ganar aunque utilizábamos la espada Masamune, y rápidamente estábamos incapacitados.
+
+En este momento, el profeta reveló a todo que fue de hecho su plano para que él podía pelear contra Lavos después de muchos tiempos. Sin embargo, aún no podía a hacer nada para vencer contra Lavos, porque sólo se absorbió la magia del profeta, que es de hecho Sr Magus.
+
+La reina, la madre de Srta Sarah se reía por el poder del gran Lavos.
+
+Después, al final momento Chrono intentaba derrotar a Lavos, pero no fue efectivo, y murió.
+
