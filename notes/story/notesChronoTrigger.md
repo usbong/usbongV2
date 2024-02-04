@@ -852,3 +852,21 @@ Hasta a esta parte, el tiempo utilizado: más de 17 horas
 
 enfermeros<br/>
 enfermos
+
+## --
+
+Estuvimos en el tiempo de la Antigüedad. Compramos nuevas armaduras, y después de ver los niveles de los miembros, decidí sustituir a Sr Rana por Srta Lucca para que todos los miembros podían tener las técnicas siguientes aparte de subir sus niveles más.
+
+El equipo: Marle, Lucca, Ayla
+
+Fuimos al monte del norte, y a través de la estrella, encontramos al profeta, el sr Magus, otra vez. Aprendimos que él quería volver a Lavos para pelear contra el gran monstruo de nuevo, pero era demasiado poderoso. Además, los tres sabios se trasladaron a los tiempos distintos. Mientras, Srto Janus, que fue el sr Magus joven, se transfería al otro tiempo en el que vivía Sr Rana.
+
+Sr Magus utilizaba la magia para transportarse a los tiempos, y en el Zhyl, convencía a la reina que él fue un profeta para poder llamar al Lavos.
+
+Entonces, ya que la razón del muerte de Chrono fue más clara, tuvimos las opciones para luchar contra Sr Magus o no. Ahora mismo. Y, por supuesto, elegía pelear, y ganamos también, porque la catapulta de Ayla era super poderosa que le daba alrededor de 900 puntos de los daños cada ataque. Además, al añadir las técnicas de prisa de Marle para subir la velocidad y la coraza de Lucca para aumentar la defensa de cada miembro de nuestro equipo, me sentía que podíamos ganar sin dificultad. Sin embargo, después de utilizar la magia de Marle y Lucca ambos para atacarle, Sr Magus nos atacamos igualmente con los mismos típicos de la magia, y por lo tanto, necesitábamos utilizar el Nectar de atenea y los Superpociones, porque nadie tenía la magia para recuperar a todos los miembros al mismo tiempo.
+
+Después de ganar, aprendimos que hubo una manera para remediar a Chrono, pero en este momento, tenía este recuerdo que pudimos añadir a Sr Magus en nuestro equipo, aunque no estaba seguro cuál opción o manera era. Así que busqué la información por el Internet, y según los sitios de web, como, por ejemplo, GameFAQS, debimos elegir la opción que dijo la respuesta que no querríamos luchar contra Sr Magus.
+
+Hasta esta parte, el tiempo utilizado: más de 18 horas
+
+
