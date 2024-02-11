@@ -869,4 +869,18 @@ Después de ganar, aprendimos que hubo una manera para remediar a Chrono, pero e
 
 Hasta esta parte, el tiempo utilizado: más de 18 horas
 
+## --
 
+Volvimos al punto del tiempo que tuvimos las dos opciones para luchar contra Sr Magus o no. Y como lo que dijo el guía desde GameFaqs.com, elegimos la opción que no querríamos a pelear. 
+
+Así que Sr Magus unió a nuestro equipo. Después, en la cueva acerca el lugar donde nuestro vehículo Las alas del tiempo se había aparcado, tuvo un portal para volver al fin del tiempo. 
+
+Entonces, cuando llegamos al dicho tiempo, podíamos quedar de nuevo al Sr Specchio para saber si ya pudimos ganar contra su forma más nueva. Sin embargo, con Srta Marla, Srta Lucca, y Sr Magus, fue demasiado difícil porque nadie tenía una magia para recuperar todo de los miembros de nuestro equipo. Significó que necesitábamos cambiar a algún miembro, como, por ejemplo, Srta Lucca para el Sr Rana. Así que cuando volvimos a comprobar, pudimos ganar, utilizando la magia de Sr Magus que toda fue de los niveles dos, y además la prisa de Srta Marle, y también el remedio de Sr Rana.
+
+Después de esta parte, tuvimos la gana para probar a ganar siguiente contra el gran Lavos que es el final enemigo de este cuento. No obstante, antes de lanzar nuestro ataque, recibimos el huevo que se llamó Chrono Trigger desde el Sr Sabio del fin del tiempo. Además de crear el vehículo Las alas del tiempo, el huevo, según él, tuvo la magia para volver a nuestro amigo Chrono, aunque, por supuesto, necesitamos esforzarnos. 
+
+Siguiente, porque podíamos elegir la dirección a donde querríamos ir, con el Srta Marle, Sr Rana, y Sr Magus, intentábamos luchar a Lavos en 1999AD, el tiempo de catástrofe.
+
+En el vehículo, pensábamos los miembros de nuestro equipo y yo que fue necesario romper la parte exterior de Lavos primero, para que podíamos a atacarle a su corazón. Además, necesitábamos utilizar Las alas del tiempo como un gran sacrificio para hacer esta cosa. Entonces, rápidamente podíamos a entrar a la interior de Lavos. Sin embargo, con un ataque sólo todos los miembros de nuestro equipo se incapacitaron.
+
+Hasta esta parte, el tiempo usado: más de 18 horas acerca de 19 horas
