@@ -893,3 +893,15 @@ Referencia:
 
 > 📖10 errores comunes al aprender español | 10 common mistakes while learning Spanish 
 
+## --
+
+En el fin del tiempo, cambiamos los miembros de nuestro equipo. Así que Srta Marle, Stra Ayla y Srta Lucca fueron nuestros miembros para que todos los miembros podían mejorar sus niveles. Aún Srta Ayla y Srta Lucca estaban sólo en los niveles 34. Los otros amigos ya estaban más de 34.
+
+Siguiente, volvimos al 1000 AD cuando Srta Lucca mostraba su invención para trasladar objetos y las personas. 
+
+Yo recordé que hubo una parte en la feria que podíamos intercambiar el huevo Chrono Trigger por algo, aunque no estuvo seguro. No obstante, buscamos la casita donde según Sr Buitre, podía darnos un clon de nuestro amigo Chrono si ganemos en su juego. Todavía necesitábamos 40 puntos para empezar a jugar, así que buscamos otro lugar de juego para ganar los demás de los puntos que todavía no tuvimos. Fue el juego que Srta Ayla necesitaba beber diez cervezas dentro del tiempo designado. Y por cada victoria, el juego nos dio 5 puntos. Por esta manera, pudimos recibir rápidamente los puntos necesarios para jugar con Sr Buitre.
+
+De verdad, el juego de Sr Buitre fue fácil, o sea, más fácil que pensaba yo. Lo que debimos hacer fue imitar el clon de Chrono que hizo movimientos tales como reír, subir la mano, etcétera. Por fin, recibimos el clon de Chrono que Sr Buitre trajo a la casa de Chrono. Y cuando llegamos allí, encontramos a su madre que quería contarle si su hijo se comportaba bien con nosotros. Srta Lucca no podía decir algo más que quisimos prestar el clon de Chrono, y salimos de la casa después entonces.
+
+Hasta esta parte, el tiempo utilizado: más de 19 horas
+
