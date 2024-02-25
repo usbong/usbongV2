@@ -901,7 +901,40 @@ Siguiente, volvimos al 1000 AD cuando Srta Lucca mostraba su invención para tra
 
 Yo recordé que hubo una parte en la feria que podíamos intercambiar el huevo Chrono Trigger por algo, aunque no estuvo seguro. No obstante, buscamos la casita donde según Sr Buitre, podía darnos un clon de nuestro amigo Chrono si ganemos en su juego. Todavía necesitábamos 40 puntos para empezar a jugar, así que buscamos otro lugar de juego para ganar los demás de los puntos que todavía no tuvimos. Fue el juego que Srta Ayla necesitaba beber diez cervezas dentro del tiempo designado. Y por cada victoria, el juego nos dio 5 puntos. Por esta manera, pudimos recibir rápidamente los puntos necesarios para jugar con Sr Buitre.
 
-De verdad, el juego de Sr Buitre fue fácil, o sea, más fácil que pensaba yo. Lo que debimos hacer fue imitar el clon de Chrono que hizo movimientos tales como reír, subir la mano, etcétera. Por fin, recibimos el clon de Chrono que Sr Buitre trajo a la casa de Chrono. Y cuando llegamos allí, encontramos a su madre que quería contarle si su hijo se comportaba bien con nosotros. Srta Lucca no podía decir algo más que quisimos prestar el clon de Chrono, y salimos de la casa después entonces.
+De verdad, el juego de Sr Buitre fue fácil, o sea, más fácil que pensaba yo. Lo que debimos hacer fue imitar el clon de Chrono que hizo movimientos tales como reír, subir la mano, etcétera. Por fin, recibimos el premio, que fue un muñeco, un clon de Chrono que Sr Buitre trajo a la casa de Chrono. Y cuando llegamos allí, encontramos a su madre que quería contarle si su hijo se comportaba bien con nosotros. Srta Lucca no podía decir algo más que quisimos prestar el clon de Chrono, y salimos de la casa después entonces.
 
 Hasta esta parte, el tiempo utilizado: más de 19 horas
 
+## --
+
+Ya que tuvimos el muñeco, un clon de Chrono, nuestro amigo que murió por el Lavos, volvimos al fin del tiempo para saber la dirección siguiente. Aprendimos que el Sr Guión todavía no había cambiado su consejo que fue esforzarse para salvar a Chrono.
+
+Entonces, como ya me di cuenta que las otras chicas aún no tenían los niveles altos, elegí que Srta Lucca y Srta Ayla debían estar en el equipo con Srta Marle en ese tiempo.
+
+Así que con este equipo fuimos al año 1000 cuando era la fiesta del milenio. Visitamos a la casa de Lucca para encontrar a su padre que le dio a su niña favorita algunas armaduras, particularmente algo para aumentar su velocidad más.
+
+Después, fuimos a la antigüedad, un tiempo más antes, pero en vez de entrar y luchar en la montaña flotante de la Reina que, por el consejo de Sr Magus, levantaba al gran monstruo Lavos para destruir el planeta, investigamos si hubiera más lugares que podíamos ir para hacer cosas. Y, buscamos en una parte en el nordeste una cápsula de fuerza. Recordé a los amigos en  Suikoden, otro video juego donde pudimos tener más de cien amigos si podíamos encontrarles y saber cuál cosa que necesitaron para que pudieron venir y unir con nuestro ejército.
+
+Siguiente, volvimos al año 600, y encontramos otra vez a Vinnie en su fuerte dentro del bosque.
+
+Necesitábamos luchar contra sus dos jefes, Mayo y Soja, pero no fue super difícil ganar porque Srta Ayla ya tuvo la técnica Catapulta para dar más de 900 daños cada enemigo, entonces después de 3 ataques podíamos ganar sin muchos problemas.
+
+Además, tuvo una parte en el fuerte de Vinnie que podía recordarme Sr MURAYAMA, Yoshitaka, el creador y jefe de Suikoden 1 y 2 para el PlayStation 1 en los años 90. Fue una escena donde hubo un tesoro que según Vinnie, tiene algo muy excelente, pero como lo que pudimos ver estaba abajo de una guillotina y la cuchilla se caía y se subía continuamente. Sin embargo, un monstruo pequeño vino, y cuando veía el tesoro, rápidamente iba a su lugar, y murió entonces.
+
+Sin acercar al tesoro nada, nos íbamos al lugar donde estaba Vinnie, pero le largó muy rápido. No obstante, pudimos coger a Vinnie en el final cuarto de su fuerte y por lo tanto, debíamos luchar contra él. De verdad, necesité más tiempo para ganar contra Vinnie, porque el combate fue un puzle que nuestros ataques no pudieron darle muchos daños porque estuvo dentro de un escudo de magia. Además, lo que nos dijo continuamente después de cada nuestro ataque fue ¿adónde apuntas tu ataque? Entonces, por eso, me di cuenta que podíamos a apuntar a otro lugar aparte de a Vinnie, así que atacamos al interruptor que resultó en nuestro caído al cuatro abajo.
+
+Por supuesto, podíamos volver al cuatro donde estaba Vinnie, pero en vez de luchar otra vez contra él, un gato vino y atacar a otro interruptor, causando el caído de Vinnie.
+
+Como no debimos hacer más en su fuerte, salimos y rodeamos en el pueblo, encontrando a Toma que nos dijo algo sobre un prevenido que tuvo y quiso que podríamos a traer el brebaje en su tumba.
+
+Siguiente, observé que todos los miembros de nuestro equipo, salvo de Sr Magus que tuvo el nivel 37, tuvieron 36 ya. Y por lo tanto, cambiamos Srta Ayla por Sr Robo, porque recordé que hubo un papel importante para Sr Robo en esta parte cuando miraba mi hermano mayor jugaba a este video juego muy antes, en los años 90. 
+
+Asimismo, viajamos a otra isla, y encontramos a Fiona y su marido en otro pueblo en esta nueva isla. También, buscamos el problema en el desierto muy cerca de su casa.
+
+Cuando investigamos, descubrimos que podíamos bajar en el suelo dentro del desierto, y encontramos a los monstruos muy fuertes. Había también los tesoros que nos dieron los objetos como, por ejemplo, los Lapislázulis, que podían recuperar 200 puntos de la vida de todos los miembros en nuestro equipo.
+
+Recordé desde esta parte, el Dragon Quest VI donde necesitamos entrar a la cueva o mazmorra dos veces para ganar, porque los monstruos en el siguiente piso fueron demasiados fuertes y por eso, necesitamos comprar más objetos para recuperar nuestros puntos de la magia, etcétera.
+
+Así que, después de volver a la entrada del desierto, utilizamos el refugio, un objeto para recuperar todos los puntos de la vida y la magia de nuestro equipo. Y, otra vez, entramos al desierto. Buscamos que hubo el boss en el siguiente piso, y fue más fuerte que yo pensaba, porque no podíamos utilizar la magia para darle daños, aunque la podía bajar su defensa a través del hielo, la magia de Srta Marle. Entonces, utilizamos el puño de Sr Robo para destruir en un turno el ojo en el medio de jefe que fue un esqueleto. Sin embargo, la parte arriba donde estuvo la cabeza, y la abaja donde estuvieron sus pies fueron más difíciles derrotar. Como cada atacar al jefe, nos dio daños muy altos que necesitábamos utilizar uno o dos turnos para recuperar los puntos de la vida de todos los miembros de nuestro equipo. Así que el objeto Lapislázuli fue muy útil para hacer esta cosa.
+
+Hasta esta parte, el tiempo usado en total: más de 19 horas
