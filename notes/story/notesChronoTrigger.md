@@ -938,3 +938,21 @@ Recordé desde esta parte, el Dragon Quest VI donde necesitamos entrar a la cuev
 Así que, después de volver a la entrada del desierto, utilizamos el refugio, un objeto para recuperar todos los puntos de la vida y la magia de nuestro equipo. Y, otra vez, entramos al desierto. Buscamos que hubo el boss en el siguiente piso, y fue más fuerte que yo pensaba, porque no podíamos utilizar la magia para darle daños, aunque la podía bajar su defensa a través del hielo, la magia de Srta Marle. Entonces, utilizamos el puño de Sr Robo para destruir en un turno el ojo en el medio de jefe que fue un esqueleto. Sin embargo, la parte arriba donde estuvo la cabeza, y la abaja donde estuvieron sus pies fueron más difíciles derrotar. Como cada atacar al jefe, nos dio daños muy altos que necesitábamos utilizar uno o dos turnos para recuperar los puntos de la vida de todos los miembros de nuestro equipo. Así que el objeto Lapislázuli fue muy útil para hacer esta cosa.
 
 Hasta esta parte, el tiempo usado en total: más de 19 horas
+
+## --
+
+Sr Robo se acordó a ayudar Sra Fiona para revivir el bosque. Y cuando viajamos al presente, el tiempo después de 400 años, usando las Alas del tiempo, buscamos que ya estuvo el bosque y hubo un santuario para honrar a Sra Fiona y Sr Robo. Dentro del santuario, pudimos levantarle a Sr Robo quien nosotros supimos fue un robot. En la noche, creamos un campo en el bosque, y mientras Srta Lucca estuvo reparando a Sr Robo, compartió él a nosotros que a través de hacer esta tarea por 4 siglos, le parecía que el universo creó estos acontecimientos y también los portales para que podíamos viajar a los distintos tiempos, y que nos quiso hacer y vivenciar estas cosas mismas. 
+
+Además, le preguntó a Srta Lucca si ella no tuvo una vivencia que quería cambiar. Y le respondío que no pensó nada en estas cosas.
+
+Durante la noche, se despertió Srta Lucca y buscaba un portal que la trasladó al tiempo cuando erá muy pequeña y su madre aún estaba con ella y su padre en la misma casa que pudimos recordarnos había sido el mismo lugar donde su padre, Sr Taban, utilizó para hacer sus invenciones. Aunque en este momento, no estuvo Sr Taban porque necesitaba salir de casa, y ponía un mensaje para su esposa querida. Le dijo que no acercaras a la máquina nada.
+
+No obstante, cuando leyó la madre el mensaje, de repente, la máquina se andó, y cogí a ella. Ya no podía parar la máquina, ni huirla nada. Srta Lucca, una niñá, en este tiempo trató de parar la maquína de su padre, pero como no supo cómo podía hacerlo, su madre murió. Entonces, decidió ella que tuvo que aprender más la ciencia y el mecanismo de las máquinas.
+
+Hasta esta parte, el tiempo usado: más de 19 horas en total
+
+Referencia
+
+1) https://www.spanishdict.com/answers/242911/direct-objects-with-mltiple-verbs; last accessed: 20240306
+
+
