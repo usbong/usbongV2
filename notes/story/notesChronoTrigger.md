@@ -955,4 +955,22 @@ Referencia
 
 1) https://www.spanishdict.com/answers/242911/direct-objects-with-mltiple-verbs; last accessed: 20240306
 
+## --
 
+Como ya habíamos reunido con Sr Robo, fuimos al futuro para saber cuál cosa que pudimos buscar. Llegamos al cúpula de genos, y en la entrada, encontramos al ordenador que nos dijo que Sr Robo debía estar en la primera posición para ayudarnos. Y, para los miembros demás, Srta Marle y Srta Lucca nos acompañaron.
+
+Dentro de la mazmorra, pudimos coger en un cofre de tesoro «el toque protector» para proteger a su usuario desde los estado alterados. Además, encontramos a Átropos XR, una mujer robot que fue una amiga de Sr Robo, pero en esta occasion quiso pelearle, porque el circuito de ella había cambiado por el cerebro madre, una forma de la inteligencia artificial en este tiempo en el futuro y el gran enemigo en esta parte del cuento.
+
+No obstante, los demás miembros de nuestro equipo ayudaron a Sr Robo desde luego, y por lo tanto, pudimos ganar, aunque para atacarle a Átropos XR, fue mejor que Sr Robo lo hizo con los ataques físicos, tal como su «puño devastador», y para los demás, debieron hacer las otras tareas como, por ejemplo, recuperar los puntos de salud y darle al equipo la magia de prisa.
+
+Después de esta escena, por último, encontramos al cerebro madre, pero fue demasiado poderoso. No podíamos ganar contra él nada a pesar de tratar por muchas veces. También, cambiamos nuestro equipo para incluir Sr Rana en vez de Srta Lucca, porque tuvo la magia remedio que pudo recuperar los puntos de salud de todos miembros del equipo al mismo tiempo. Sin embargo, aunque pudimos utilizar su técnica «remedio», el cerebro madre nos dio los ataques para alterar los estados de cada miembro de nuestro equipo. Así que debíamos utilizar el objeto «panacea» para curar el estado del miembro, si no, no pude dirigirle nada. Además, observé que si utilizamos demasiado tiempo para pensar sobre cuál acción que debimos lanzar al enemigo, utilizó contraataques demasiados fuertes para incapacitarnos. Esto es un ejemplo de la inteligencia artificial también que pudimos ver en otros video juegos donde peleamos contra el CPU. Por ejemplo, los video juegos de la lucha como Street Fighter.
+
+Como resultado, elegimos ir a otro lugar. Pensaba yo que necesitamos más «toques protectores» para que nuestro equipo pudo defenderse contra estos daños al estado.
+
+Hasta esta parte, el tiempo utilizado: más de 21 horas
+
+### Referencias
+
+1) GOOGLE SEARCH ENGINE; TRANSLATE
+
+2) www.spanishdict.com
