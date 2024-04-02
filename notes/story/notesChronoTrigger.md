@@ -969,8 +969,32 @@ Como resultado, elegimos ir a otro lugar. Pensaba yo que necesitamos más «toqu
 
 Hasta esta parte, el tiempo utilizado: más de 21 horas
 
+## --
+
+Como el cerebro madre fue demasiado poderoso, decidimos salirle y nos ibamos al otro lugar para coger más «toques protectores». Pensaba yo que podían ayudarnos contra los estados alterados como, por ejemplo, confución que nos dieron muchos problems cuando pelearon al cerebro madre.
+
+Entonces, probábamos atrevernos otra vez a la profecía oscura, la gran mazmorra flotando en el aire. La verdad fue que la primera vez que hacíamos esta tarea no podíamos llegar hasta a la final parte nada, porque los monstruos fueron demasiado fuertes.
+
+Sin embargo, en esta vez, en el tiempo 1000 AD, antes de aparecer Lavos en la siguiente época, podíamos alcanzar al lugar más lejos, aunque necesitábamos luchar y utilizar más de 2 horas.
+
+Pensaba yo que podíamos subir nuestros niveles más si le ganemos a la profecía oscura en esta época, porque podíamos pelearle en las anteriores también.
+
+Fue una idea como lo que ya sabemos sobre el mecanismo de los cofres de magia que continuaron a tener sus tesoros si no los cogimos en la primera época cuando empezaron a aparecer.
+
+Dentro de la mazmorra, los monstruos fueron muy fuertes, pero como Sr. Robo, Srta. Marle y Sr. Rana estuvieron en nuestro equipo, tuvimos una mezcla de las técnicas para atacar físicamente o con la magia, y también para recuperar nuestros puntos de salud. Particularmente, el «placaje gélido», el ataque doble de Sr. Robo y Srta. Marle fue tan útil que lo utilizábamos mucho. Tuvo más eficaz que lo de Sr. Robo y Sr. Rana que podían poner Sr. Robo en una burbuja para volar y caer para dar daños a través de su peso. Por otra parte, para recuperar los puntos de salud, hubo el «remedio» de Sr. Rana y el «rayo» de Sr. Robo. Además, Srta. Marle tiene «cura nivel 2» que se puede utilizar aunque fue para solo un miembro del equipo. Entonces, necesitó ella a otro amigo para hacer una técnica doble y recuperar más puntos. Las técnicas dobles fueron, de verdad, muy útiles para bajar los gastos de las técnicas, aunque si la velocidad del otro miembro fuese muy lento, debimos a esperarle.
+
+Además, pudimos buscar los cascos protectores que fueron las razones para empezar a atrevernos la mazmorra otra vez. De hecho, buscamos otra armadura que se llamó armadura nova para protegernos también contra los estados alterados que el cerebro madre aprovechaba mucho para incapacitarnos rápidamente.
+
+En este momento, pudimos ver que ya tuvimos muchísimos dineros tal que pareció que podíamos comprar todo lo que quisimos, aunque desde luego identificar el lugar correcto donde lo hubo fue otra cosa diferente. Pude recordarme que esta manera se utilizó por la empresa de Square-Enix en sus otros videojuegos como, por ejemplo, Final Fantasy 6 y Front Mission: Gun Hazard en los años 90 también.
+
+Mucho más...
+
+Hasta esta parte, el tiempo utilizado: más de 23 horas
+
+
 ### Referencias
 
 1) GOOGLE SEARCH ENGINE; TRANSLATE
 
 2) www.spanishdict.com
+
