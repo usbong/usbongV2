@@ -1001,7 +1001,7 @@ Entonces, pensaba yo que necesitamos más armaduras para subir la resistencia de
 
 Sabiendo esta resulta cuando utilizamos el portál, reiniciamos el sistema y volvimos a la cueva donde los encontrábamos la primera vez el portál y las estrellas para guardar los recuerdos.
  
-Después, probábamos ir al lugar más dentro de la cueva, y lo que aprendimos más a través de esta investigación fue que el boss Lavos aún existí y estuvo listo para destruirnos bastante fácilmente. Aunque perdimos desde luego, observé, sin embargo, fue que como con la lucha contra Sr. Speccio, sóla Srta Marle pudo recibir los daños desde sus ataques por muchas veces. Por eso, ya tuve la razón más fuerte que necesitamos las armaduras contra la magia en serio para que pudiéramos tener la oportunidad ganar. 
+Después, probábamos ir al lugar más dentro de la cueva, y lo que aprendimos más a través de esta investigación fue que el boss Lavos aún existí y estuvo listo para destruirnos bastante fácilmente. Aunque perdimos desde luego, observé, sin embargo, fue que como con la lucha contra Sr. Speccio, sóla Srta Marle pudo recibir los daños desde sus ataques por muchas veces. Por eso, ya tuve la razón más fuerte que necesitamos las armaduras contra la magia en serio para que pudiéramos tener la oportunidad de ganar. 
  
 Hasta esta parte, tiempo utilizado: más de 24 horas
 
