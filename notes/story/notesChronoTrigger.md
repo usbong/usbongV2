@@ -1009,3 +1009,19 @@ Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
 2. www.spanishdict.com
 
+## --
+
+Aparte de querer más armaduras para protegernos contra los estados alterados como, por ejemplo, la confusión, me di cuenta que hasta este momento, nuestro amigo, Chrono, no había vuelto a nuestro equipo todavía. Así que debimos investigar la manera para hacer esta tarea. Otra vez, según el guion en el Fin del tiempo y también los hombres en los sitios de web, tuvimos que ir al futuro, porque hubo allí un monstruo sabio quien nos podía ayudar a crear los muñecos pequeños que pudieron parar la tormenta de nieve en el monte donde a la punta, podíamos volver en el momento antes del muerte de Chrono.
+
+Después de encontrar al monstruo sabio y irnos al monte de nieve hacia su punta, buscamos un portal que nos trasladó al momento cuando luchábamos contra Lavos. Y por reemplazar nuestro amigo con la muñeca que recibimos en la feria milenaria, podíamos salvar la vida de Chrono.
+
+Siguiente, nos fuimos al presente, el tiempo cuando intentábamos atrevernos a Profecía oscura, y pudimos llegar hasta el lugar dentro de Lavos después de derrotar a su caparazón.
+
+La Profecía oscura ya desapareció, aunque nosotros supimos que aún existió en los tiempos anteriores. También, en una isla, encontramos la tumba de Sr. Toma, el gran aventurero en el tiempo 600 AD. Cuando la investigamos, su fantasma apareció y nos dijo que la concha irisada que fue un tesoro estuvo en la cueva acerca de su tumba, en el noroeste. Sin embargo, no podíamos buscarla en el tiempo presente. Así que como lo dijeron los sitios de web, necesitábamos volver al tiempo 600 AD.
+
+Hasta esta parte, el tiempo utilizado: más de 25 horas
+ 
+Referencias
+1. GOOGLE SEARCH ENGINE; TRANSLATE
+2. www.spanishdict.com
+
