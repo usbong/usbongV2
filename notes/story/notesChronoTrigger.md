@@ -993,22 +993,19 @@ Hasta esta parte, el tiempo utilizado: más de 23 horas
 
 ## --
 
-Volvimos al presente, y entramos al Profecía oscura que todavía estuvo flotando en el aire. Sin saber que fue la mazmorra final en este mundo como lo que dijeron los sitios de web, nos intentamos atreverla otra vez. Y la verdad fue que pudimos llegar hasta el lugar después de ganar contra la caparazón de Lavos. Aparecía un portál acerca de las estrellas que solimos utilizar para guardar nuestros recuerdoes hasta este punto.
+Volvimos al presente, y entramos al Profecía oscura que todavía estuvo flotando en el aire. Sin saber que fue la mazmorra final en este mundo como lo que dijeron los sitios de web, nos intentamos atreverla otra vez. Y la verdad fue que esta vez, pudimos llegar hasta el lugar que buscamos después de ganar contra la caparazón de Lavos. Aparecía un portal acerca de las estrellas que solimos utilizar para guardar nuestros recuerdos hasta este punto.
 
-Probábamos ver primero adónde el portál nos trasladó, y buscamos que fue el Fin del tiempo. Además, el gran entrenador de la lucha Sr. Speccio se había convertido en su más fuerte forma tal que no podíamos vencerle nada. Sóla Srta Marle tuvo las armaduras para protegerle contra los ataques de Sr. Speccio que utilizó la magia tan fuertes que los demás miembros de nuestro equipo estuvieron incapacitados rápidamente.
+Probábamos ver primero adónde el portal nos trasladó, y buscamos que fue el Fin del tiempo. Además, el gran entrenador de la lucha Sr. Speccio se había convertido en su más fuerte forma tal que no podíamos vencerle nada. Sóla Srta. Marle tuvo las armaduras para protegerle contra los ataques de Sr. Speccio que utilizó la magia tan fuerte que los demás miembros de nuestro equipo estuvieron incapacitados rápidamente.
 
-Entonces, pensaba yo que necesitamos más armaduras para subir la resistencia de magia. Y el lugar donde estuvieron estas armaduras fue la Profecía oscura. Así que necesitamos volver a atreverla. 
+Entonces, pensaba yo que necesitamos más armaduras para subir la resistencia de magia. Y el lugar donde estuvieron estas armaduras fue la Profecía oscura. Así que necesitamos volver a atreverla.
 
-Sabiendo esta resulta cuando utilizamos el portál, reiniciamos el sistema y volvimos a la cueva donde los encontrábamos la primera vez el portál y las estrellas para guardar los recuerdos.
- 
-Después, probábamos ir al lugar más dentro de la cueva, y lo que aprendimos más a través de esta investigación fue que el boss Lavos aún existí y estuvo listo para destruirnos bastante fácilmente. Aunque perdimos desde luego, observé, sin embargo, fue que como con la lucha contra Sr. Speccio, sóla Srta Marle pudo recibir los daños desde sus ataques por muchas veces. Por eso, ya tuve la razón más fuerte que necesitamos las armaduras contra la magia en serio para que pudiéramos tener la oportunidad de ganar. 
- 
+Sabiendo esta resulta cuando utilizamos el portal, reiniciamos el sistema y volvimos a la cueva donde los encontrábamos la primera vez el portal y las estrellas para guardar los recuerdos.
+
+Después, probábamos ir al lugar más dentro de la cueva, y lo que aprendimos más a través de esta investigación fue que el boss Lavos aún existió y estuvo listo para destruirnos bastante fácilmente. Aunque perdimos desde luego, observé, sin embargo, que la lucha fue como la que tuvimos con Sr. Speccio. Al tiempo, sóla Srta. Marle pudo recibir los daños desde sus ataques por muchas veces. Por eso, ya tuve la razón más fuerte que necesitamos las armaduras contra la magia en serio para que pudiéramos tener la oportunidad de ganar.
+
 Hasta esta parte, tiempo utilizado: más de 24 horas
 
-
-### Referencias
-
-1) GOOGLE SEARCH ENGINE; TRANSLATE
-
-2) www.spanishdict.com
+Referencias
+1. GOOGLE SEARCH ENGINE; TRANSLATE
+2. www.spanishdict.com
 
