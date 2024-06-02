@@ -1025,3 +1025,19 @@ Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
 2. www.spanishdict.com
 
+## --
+
+Volvimos al tiempo 600 A.D. Fuimos a la cueva donde hubo la concha irisada que el gran aventurero Sr. Toma nos dijo cuando encontramos a su fantasma enfrente de su tumba en 1000 A.D., el presente. 
+
+Elegimos Chrono, Srta. Ayla y Sr. Rana para hacer esta búsqueda. Yo observaba que debimos mejorar los niveles de los miembros de nuestro equipo. Además, aprendimos que los monstruos en la mazmorra fueron los dinosaurios que encontrábamos en el tiempo muy antes cuando vivieron los miembros del pueblo de Srta. Ayla.
+
+Esta vez, podíamos llegar hacia el boss de la mazmorra sin tener muchos problemas. El boss fue un gran tiranosaurio y contó de cinco a cero para ahorrar su energía y lanzarla a nosotros. Sin embargo, podíamos utilizar las técnicas dobles de nuestro equipo como, por ejemplo, la furia eléctrica de Chrono y Srta. Ayla. Recordamos que los dinosaurios fueron débiles con la luz. Para recuperarnos, utilizamos el remedio de Sr. Rana. Después de ganar, volvimos al castillo donde el rey, la reina y los demás nos agradecieron y dijeron que protegerán la concha para poder buscarla aún en el futuro.
+
+Más…
+
+Hasta esta parte, el tiempo utilizado: más de 28 horas
+ 
+Referencias
+1. GOOGLE SEARCH ENGINE; TRANSLATE
+2. www.spanishdict.com
+
