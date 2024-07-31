@@ -1036,8 +1036,23 @@ Esta vez, podíamos llegar hacia el boss de la mazmorra sin tener muchos problem
 Más…
 
 Hasta esta parte, el tiempo utilizado: más de 28 horas
+
+## --
+
+Pusimos tiempo por la noche para atrevernos a Profecía oscura en el año 600AD.
+
+Fue increíble que podía vivenciar la sensación cuando era más joven, durante aquellos años en la década antes de la millennia.
+
+Pude acabar por la segunda vez la mazmorra con Sr. Magus, Chrono y Srta. Ayla. Hasta este punto, los niveles de todos los miembros de nuestro equipo ya alcanzaron a los alrededor de 50.
+
+Además, nos enfrentábamos al LAVOS, y podíamos llegar hacia su segunda forma, aunque perdimos. Observé que su ataque que pudo destruir a nuestro equipo rápidamente siempre había existido. La inteligencia artificial nos permitió a ganar al principio, pero ¿decidí destruirnos luego?
+
+También, busqué que ya habíamos utilizado todo de nuestros súper pociones. Probablemente, tuviéramos a acabar la Profecía oscura la tercera vez en el antigüedad.
+
+… más
  
 Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
 2. www.spanishdict.com
+
 
