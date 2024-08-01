@@ -1047,9 +1047,21 @@ Pude acabar por la segunda vez la mazmorra con Sr. Magus, Chrono y Srta. Ayla. H
 
 Además, nos enfrentábamos al LAVOS, y podíamos llegar hacia su segunda forma, aunque perdimos. Observé que su ataque que pudo destruir a nuestro equipo rápidamente siempre había existido. La inteligencia artificial nos permitió a ganar al principio, pero ¿decidí destruirnos luego?
 
-También, busqué que ya habíamos utilizado todo de nuestros súper pociones. Probablemente, tuviéramos a acabar la Profecía oscura la tercera vez en el antigüedad.
+También, busqué que ya habíamos utilizado todo de nuestros súper pociones. Probablemente, tuviéramos a acabar la Profecía oscura la tercera vez en la antigüedad.
 
 … más
+
+## —
+
+Antes de ir a la Profecía oscura en la antigüedad, compramos más objetos como, por ejemplo, súper pociones hacia su máximo. Todavía, nuestro equipo incluyó Sr. Magus, Chrono y Srta. Ayla. Además, ya habíamos logrado al menos el nivel 50 para todo.
+
+Siguiente, descubrí que Srta. Lucca y Srta. Ayla fueron fuertes en la mazmorra, utilizando los ataques que se mezclaron el fuego y el físico. Busqué también que hubo más técnicas disponibles para Sr. Magus y Srta. Ayla. 
+
+Por otro lado, Srta. Marle tuvo el nivel más alto a 51, y luego ¿se pusiera añadir en nuestro equipo?
+
+Así que ¡¿el equipo final tuviera Chrono, Srta. Marle y Srta. Ayla?! 
+
+…más
  
 Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
