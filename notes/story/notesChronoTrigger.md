@@ -1049,7 +1049,7 @@ Además, nos enfrentábamos al LAVOS, y podíamos llegar hacia su segunda forma,
 
 También, busqué que ya habíamos utilizado todo de nuestros súper pociones. Probablemente, tuviéramos a acabar la Profecía oscura la tercera vez en la antigüedad.
 
-… más
+... más
 
 ## —
 
@@ -1061,7 +1061,17 @@ Por otro lado, Srta. Marle tuvo el nivel más alto a 51, y luego ¿se pusiera a�
 
 Así que ¡¿el equipo final tuviera Chrono, Srta. Marle y Srta. Ayla?! 
 
-…más
+... más
+
+
+## —
+
+Robo ahora ya parecío más débil que Srta. Ayla.
+Mientras tanto, el remedio de Sr. Rana ya no parecío tan útil debido a su capacidad para recuperar los puntos de la salud fue baja, y no podía comparar con el nivel de los súper pociones.
+
+Aprendí que ya alcancé la final, y en esta vez, la mazmorra de la Profecía oscura no terminó al lugar donde pudimos pelear contra Lavos. Así que sólo pudimos hacer fue volver a la primera parte después de llegar a la final. Sin embargo, los monstruos regeneraron, y por lo tanto se pudieron utilizar para adquirir las técnicas de los miembros de nuestro equipo después de subir sus niveles.
+
+... más
  
 Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
