@@ -1063,18 +1063,34 @@ Así que ¡¿el equipo final tuviera Chrono, Srta. Marle y Srta. Ayla?!
 
 ... más
 
-
 ## —
 
-Robo ahora ya parecío más débil que Srta. Ayla.
+Sr. Robo ahora ya parecío más débil que Srta. Ayla.
 Mientras tanto, el remedio de Sr. Rana ya no parecío tan útil debido a su capacidad para recuperar los puntos de la salud fue baja, y no podía comparar con el nivel de los súper pociones.
 
 Aprendí que ya alcancé la final, y en esta vez, la mazmorra de la Profecía oscura no terminó al lugar donde pudimos pelear contra Lavos. Así que sólo pudimos hacer fue volver a la primera parte después de llegar a la final. Sin embargo, los monstruos regeneraron, y por lo tanto se pudieron utilizar para adquirir las técnicas de los miembros de nuestro equipo después de subir sus niveles.
 
 ... más
+
+Srta. Ayla todavía parecío fuerte. 
+
+Además, Sr. Magus no tuvo las técnicas dobles y triples, y a veces fue débil a pesar de tener las magias, porque no tuvo ningún ataque físico especial. fue un profeta oscuro.
+
+Por otro lado, Chrono fue fuerte cuando estuvo con Srta. Ayla para hacer las técnicas dobles, porque el consumo de los puntos de magia fue menos.
+
+Hasta esta parte, el tiempo utilizado: 32 horas más o menos.
+
+## —
+
+Aprendí que había acabado el juego después de “la segunda forma” de Lavos. Ya era su tercera forma. 
+
+Nuestro equipo final incluyó Chrono, Sr. Magus y Srta. Ayla. 
+
+Magias claras y oscuras.
+
+Srta. Aya fue lo más fuerte con su Patada triple. 
+
  
 Referencias
 1. GOOGLE SEARCH ENGINE; TRANSLATE
 2. www.spanishdict.com
-
-
