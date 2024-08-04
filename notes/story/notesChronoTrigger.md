@@ -385,7 +385,7 @@ Todavía no puedo vencer a su nueva forma.
 
 Yo recuerdo que necesitamos subir los nivels de las magías como antes.
 
-## Al cueva de los místicos
+## A la cueva de los místicos
 
 Está al este del pueblo según un hombre en la posada.
 
