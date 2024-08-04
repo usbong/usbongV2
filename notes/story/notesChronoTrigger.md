@@ -1074,7 +1074,7 @@ Aprendí que ya alcancé la final, y en esta vez, la mazmorra de la Profecía os
 
 Srta. Ayla todavía parecío fuerte. 
 
-Además, Sr. Magus no tuvo las técnicas dobles y triples, y a veces fue débil a pesar de tener las magias, porque no tuvo ningún ataque físico especial. fue un profeta oscuro.
+Además, Sr. Magus no tuvo las técnicas dobles y triples, y a veces fue débil a pesar de tener las magias, porque no tuvo ningún ataque físico especial. Fue un profeta oscuro.
 
 Por otro lado, Chrono fue fuerte cuando estuvo con Srta. Ayla para hacer las técnicas dobles, porque el consumo de los puntos de magia fue menos.
 
